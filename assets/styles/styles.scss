@@ -151,22 +151,7 @@
     p {
         max-width: 52rem;
     }
-    .collaborationCard {
-        background-color: $white;
-        padding: $commonUnit / 2;
-        border: $commonBorder;
-        border-radius: $cardRadius / 2;
-        aspect-ratio: 1 / 1;
-        min-height: 10rem;
-        @extend .flex-center;
 
-        img {
-            max-width: 70% !important;
-            object-fit: contain;
-            display: block;
-            margin: auto;
-        }
-    }
     .aboutVideo {
         @extend .flex-center-start;
         min-height: 80vh;
@@ -209,10 +194,27 @@
         z-index: 1;
     }
 }
+// Collaboration Card
+.collaborationCard {
+    background-color: $white;
+    padding: $commonUnit / 2;
+    border: $commonBorder;
+    border-radius: $cardRadius / 2;
+    aspect-ratio: 1 / 1;
+    min-height: 10rem;
+    @extend .flex-center;
 
+    img {
+        max-width: 70% !important;
+        object-fit: contain;
+        display: block;
+        margin: auto;
+    }
+}
 // Why us
 .whyUs {
     .whyUsCard {
+        background-color: $white;
         @extend .flex-start;
         gap: $commonUnit;
         background: $white;
@@ -252,6 +254,7 @@
 // Stats
 .stats {
     .statCard {
+        background-color: $white;
         @extend .flex-center;
         flex-direction: column;
         gap: $commonUnit / 2;
@@ -389,24 +392,6 @@
                 }
             }
         }
-        .swiper.thumbs {
-            .swiper-wrapper {
-                @extend .flex-center;
-                gap: $commonUnit;
-                .swiper-slide {
-                    border: none;
-                    img {
-                        $wh: 6.25rem;
-                        max-width: $wh !important;
-                        max-height: $wh !important;
-                        border-radius: $cardRadius;
-                    }
-                }
-                // &.swiper-slide-thumb-active img {
-                //     transform: scale(1.5);
-                // }
-            }
-        }
     }
 }
 
@@ -446,6 +431,345 @@
     }
 }
 
+// Pages Css Starts
+
+// About Us
+.aboutUs {
+    .pgHeader {
+        margin: 0;
+    }
+    .aboutImgContainer {
+        border-radius: $cardRadius * 2;
+        overflow: hidden;
+        border: $commonUnit / 2 solid $white;
+
+        img {
+            display: block;
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover;
+        }
+    }
+}
+// Mission Vision
+.missionVision {
+    background-color: $primary !important;
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../media/mission-bg.jpg) no-repeat center/cover fixed;
+        mix-blend-mode: overlay;
+    }
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+    .mvCard {
+        background: $glossy3;
+        -webkit-backdrop-filter: blur(0.3125rem);
+        backdrop-filter: blur(0.3125rem);
+        padding: $commonUnit * 2;
+        height: 100%;
+        border: 0.0625rem solid rgba($color: $white, $alpha: 0.1);
+        border-radius: $cardRadius;
+
+        .mvHeader {
+            @extend .flex-center-start;
+            gap: $commonUnit / 2;
+            margin-bottom: $commonUnit;
+
+            .icon {
+                $wh: 4.375rem;
+                width: $wh;
+                height: $wh;
+                background: $dark;
+                @extend .flex-center;
+                border-radius: 50%;
+                i {
+                    font-size: $h3;
+                    color: $white;
+                }
+            }
+            h3 {
+                font-size: $h5;
+                color: $white;
+            }
+        }
+        .mvBody {
+            p {
+                text-align: justify;
+                text-align-last: left;
+                color: $white;
+            }
+        }
+    }
+}
+// Gallery
+.gridGallery {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-auto-rows: 1rem auto;
+
+    figure {
+        overflow: hidden;
+        position: relative;
+        margin: 0 !important;
+
+        img {
+            opacity: 1;
+            transition: linear 1s;
+            width: 100% !important;
+        }
+
+        img[data-src] {
+            opacity: 0;
+        }
+
+        &:hover img {
+            opacity: 0.8;
+            transform: scale(1.1);
+        }
+
+        .projectCaption {
+            position: absolute;
+            left: 0;
+            bottom: 1.25rem;
+            content: "";
+            z-index: 2;
+            min-width: 80%;
+            padding: 1.5625rem 1.5625rem 1.5625rem 0.9375rem;
+            background-color: $dark;
+            transform: translateX(-110%);
+            transition: all 0.4s;
+            display: none;
+
+            span {
+                color: $primary;
+            }
+
+            h4 {
+                font-size: $h6;
+                color: $white;
+                margin: 0;
+            }
+        }
+
+        &:hover {
+            .projectCaption {
+                transform: translateX(0%);
+            }
+        }
+    }
+}
+img.mfp-img {
+    height: 100% !important;
+}
+
+// CTA
+.cta {
+    .ctaCard {
+        background-color: $primary;
+        border-radius: $cardRadius;
+        overflow: hidden;
+        position: relative;
+        padding: $commonUnit * 2;
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            background: url(../media/cta-bg.jpg) no-repeat center/cover fixed;
+            mix-blend-mode: overlay;
+        }
+        .ctaContent {
+            position: relative;
+            z-index: 1;
+            @extend .flex-center-between;
+            flex-wrap: wrap;
+            gap: $commonUnit;
+
+            .ctaText {
+                h2 {
+                    color: $white;
+                    margin-bottom: 0;
+                }
+                p {
+                    color: $white;
+                }
+            }
+            .roundedBtn {
+                @extend .flex-center;
+                flex-wrap: nowrap;
+                gap: $commonUnit / 3;
+                background-color: $white;
+                border-radius: $cardRadius * 4;
+                .icon {
+                    $wh: 2.5rem;
+                    width: $wh;
+                    height: $wh;
+                    @extend .flex-center;
+                    border-radius: 50%;
+                    background-color: $dark;
+                    i {
+                        font-size: $large;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+// Projects
+.projectDetails {
+    .projectContainer {
+        @extend .flex-start-center;
+        flex-direction: column;
+        gap: $commonUnit / 2;
+        height: 100%;
+
+        .projectThumb {
+            @extend .flex-center-start;
+            gap: $commonUnit / 2;
+            flex-grow: 1;
+            width: 100%;
+            padding: $commonUnit / 2;
+            background-color: $white;
+            cursor: pointer;
+            border: $commonBorder;
+            border-radius: $cardRadius / 2;
+
+            .projectImg {
+                $wh: 4.375rem;
+                min-width: $wh;
+                max-width: $wh;
+                height: $wh;
+                display: block;
+                overflow: hidden;
+                border: $commonBorder;
+                border-radius: $cardRadius / 3;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .projectInfo {
+                flex-grow: 1;
+
+                h3 {
+                    font-size: $large;
+                    line-height: normal;
+                    margin-bottom: 0;
+                }
+            }
+            &:hover,
+            &.active {
+                background-color: $dark;
+
+                .projectInfo h3 {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+.contactUs {
+    .addressCard {
+        background-color: $light;
+        height: 100%;
+        border: $commonBorder;
+        border-radius: $cardRadius / 2;
+        overflow: hidden;
+        .addressHeader {
+            padding: $commonUnit / 2 $commonUnit;
+            background-color: $primary;
+            h5 {
+                font-size: $h6;
+                color: $white;
+                margin: 0;
+            }
+        }
+        .addressBody {
+            padding:  $commonUnit;
+
+            addresss {
+                font-size: $xLarge;
+                color: $dark;
+                margin: 0;
+            }
+        }
+    }
+    .contactCard {
+        background-color: $white;
+        height: 100%;
+        padding: $commonUnit * 2;
+        border-radius: $cardRadius;
+
+        .pgHeader {
+            margin-bottom: $commonUnit;
+        }
+        &.form {
+            background-color: $white;
+            border: $commonBorder;
+            box-shadow: $cardShadow;
+        }
+        h3 {
+            margin-bottom: $commonUnit * 2;
+        }
+        .contactChip {
+            background-color: $light;
+            @extend .flex-center-start;
+            gap: $commonUnit;
+            padding: $commonUnit;
+            margin-bottom: $commonUnit;
+            border-radius: $cardRadius;
+
+            .icon {
+                $wh: 4.375rem;
+                min-width: $wh;
+                min-height: $wh;
+                @extend .flex-center;
+                background-color: $primary;
+                border-radius: $cardRadius;
+
+                i {
+                    font-size: $h3 - 0.4rem;
+                    color: $white;
+                }
+            }
+            .contactDetail {
+                h5 {
+                    font-size: $h5;
+                    color: $dark;
+                    display: block;
+                    margin-bottom: $commonUnit / 3;
+                }
+                span,
+                a {
+                    font-weight: 500;
+                    color: $dark !important;
+                    line-height: 1.3;
+                    display: block;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+// Map {
+.map {
+    padding: 0 !important;
+}
 // Footer
 footer {
     background: $dark;

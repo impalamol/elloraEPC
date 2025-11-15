@@ -29,9 +29,55 @@
     });
 </script>
 <script>
-    // === Thumbs Gallery ===
-    const thumbs = new Swiper(".thumbs", {
+    var a = 0;
+    $(window).scroll(function () {
+        var oTop = $('.stats').offset().top - window.innerHeight;
+        if (a == 0 && $(window).scrollTop() > oTop) {
+            $('.statValue').each(function () {
+                var $this = $(this),
+                    countTo = $this.attr('data-count');
+                $({
+                    countNum: $this.text()
+                }).animate({
+                    countNum: countTo
+                }, {
+                    duration: 5000,
+                    easing: 'swing',
+                    step: function () {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function () {
+                        $this.text(this.countNum);
+                    }
+                });
+            });
+            a = 1;
+        }
+    });
+</script>
+<script>
+    // === Testimonial Thumbs ===
+    const testimonialThumbs = new Swiper(".testimonialThumbs", {
+        spaceBetween: 20,
+        slidesPerView: 'auto',
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+
+    // === Testimonial Main ===
+    new Swiper(".testimonialGallery", {
         loop: true,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: { swiper: testimonialThumbs },
+    });
+
+
+    // === Project Thumbs ===
+    const projectThumbs = new Swiper(".projectThumbs", {
         spaceBetween: 20,
         slidesPerView: 2,
         freeMode: true,
@@ -40,29 +86,21 @@
             0: { slidesPerView: 2 },
             576: { slidesPerView: 3 },
             768: { slidesPerView: 4 },
-            992: { slidesPerView: 5 }
+            992: { slidesPerView: 6 }
         }
     });
-    // Swiper Gallery
-    new Swiper(".swiperGallery", {
+
+    // === Project Main ===
+    new Swiper(".projectGallery", {
         loop: true,
         spaceBetween: 20,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+        thumbs: { swiper: projectThumbs },
+    });
 
-        thumbs: { swiper: thumbs },
-    });
-    // Swiper Gallery
-    var swiper = new Swiper(".departmentSwiper", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
 </script>
 <script>
     var a = 0;
@@ -107,6 +145,86 @@
             992: { slidesPerView: 6 }
         }
     });
+</script>
+<script>
+    $(document).ready(function () {
+        $('.popupGallery').magnificPopup({
+            c    delegate: 'a',
+            type: 'image',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0, 1] // Preload 1 image before and after the current one
+            },
+            keyboard: {
+                enabled: true,
+                left: true,
+                right: true,
+                escKey: true,
+                up: false,
+                down: false
+            },
+            navigation: {
+                arrowEl: true
+            },
+            mainClass: 'mfp-fade', // Add a smooth fade transition between slides
+            removalDelay: 300, // Delay removal to allow the fade-out effect
+        });
+    });
+</script>
+<script>
+    function resizeGridItem(item) {
+        grid = document.getElementsByClassName("gridGallery")[0];
+        rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+        rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+        rowSpan = Math.ceil((item.querySelector('figure').getBoundingClientRect().height + rowGap) / (rowHeight +
+            rowGap));
+        item.style.gridRowEnd = "span " + rowSpan;
+    }
+
+    function resizeAllGridItems() {
+        allItems = document.getElementsByClassName("item");
+        for (x = 0; x < allItems.length; x++) {
+            resizeGridItem(allItems[x]);
+        }
+    }
+
+    function resizeInstance(instance) {
+        item = instance.elements[0];
+        resizeGridItem(item);
+    }
+
+    window.onload = resizeAllGridItems();
+    window.addEventListener("resize", resizeAllGridItems);
+
+    allItems = document.getElementsByClassName("item");
+    for (x = 0; x < allItems.length; x++) {
+        imagesLoaded(allItems[x], resizeInstance);
+    }
+</script>
+<script>
+    (function () {
+        var elements = document.querySelectorAll('img[data-src]');
+        var index = 0;
+        var lazyLoad = function () {
+            if (index >= elements.length) return;
+            var item = elements[index];
+            if ((this.scrollY + this.innerHeight) > item.offsetTop) {
+                var src = item.getAttribute("data-src");
+                item.src = src;
+                item.addEventListener('load', function () {
+                    item.removeAttribute('data-src');
+                });
+                index++;
+                lazyLoad();
+            }
+        };
+        var init = function () {
+            window.addEventListener('scroll', lazyLoad);
+            lazyLoad();
+        };
+        return init();
+    })();
 </script>
 <script>
     var currentYear = new Date().getFullYear();
