@@ -73,7 +73,7 @@ textarea:not([rows]) {
   display: flex;
 }
 
-.flex-center, .testimonials .testimonialContainer .swiper.thumbs .swiper-wrapper, .projects .projectCard .projectHeader a, .stats .statCard, .whyUs .whyUsCard .icon, .about .collaborationCard, .hero .paginationContainer .navigation .swiper-button-next,
+.flex-center, .contactUs .contactCard .contactChip .icon, .cta .ctaCard .ctaContent .roundedBtn .icon, .cta .ctaCard .ctaContent .roundedBtn, .missionVision .mvCard .mvHeader .icon, .projects .projectCard .projectHeader a, .stats .statCard, .whyUs .whyUsCard .icon, .collaborationCard, .hero .paginationContainer .navigation .swiper-button-next,
 .hero .paginationContainer .navigation .swiper-button-prev, .hero .paginationContainer .navigation, .hero .heroSlide, .navbar .circleLink,
 .navbar .circleBtn, .searchModal .nrs, .searchModal .searchResult .resultItem a .productIcon img, .videoBtn, .pgHeader.centered .pgTitle,
 .pgHeader.centered .pgSection, .pgHeader.centered {
@@ -82,7 +82,7 @@ textarea:not([rows]) {
   justify-content: center;
 }
 
-.flex-center-between, footer .copyright .copyrightContent, .projects .projectCard .projectHeader, .hero .paginationContainer, .searchModal .searchResult .resultItem, .searchModal .searchBar {
+.flex-center-between, footer .copyright .copyrightContent, .cta .ctaCard .ctaContent, .projects .projectCard .projectHeader, .hero .paginationContainer, .searchModal .searchResult .resultItem, .searchModal .searchBar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,7 +94,7 @@ textarea:not([rows]) {
   justify-content: space-around;
 }
 
-.flex-center-start, footer .copyright .copyrightContent .copyrightLinks, .about .aboutVideo, .searchModal .searchResult .resultItem a, .pgHeader .pgTitle .pgSection, .btnGroup {
+.flex-center-start, footer .copyright .copyrightContent .copyrightLinks, .contactUs .contactCard .contactChip, .projectDetails .projectContainer .projectThumb, .missionVision .mvCard .mvHeader, .about .aboutVideo, .searchModal .searchResult .resultItem a, .btnGroup {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -142,7 +142,7 @@ textarea:not([rows]) {
   justify-content: space-around;
 }
 
-.flex-start-center, .breadcrumbs, .pgHeader.verticallyCentered {
+.flex-start-center, .projectDetails .projectContainer, .breadcrumbs, .pgHeader.verticallyCentered {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -567,19 +567,6 @@ section:not(.hero) .container {
   flex-grow: 1;
   max-width: 53.125rem;
 }
-.pgHeader .pgTitle .pgSection {
-  font-size: 0.875rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.0625rem;
-  line-height: normal;
-  color: #415791;
-  gap: 0.75rem;
-  background-color: #444971;
-  padding: 0.75rem 1.5rem;
-  margin-bottom: 0.75rem;
-  border-radius: 0.25rem;
-}
 .pgHeader .pgTitle h2 {
   font-size: 3rem;
   margin: 0;
@@ -608,7 +595,8 @@ section:not(.hero) .container {
 .pgHeader.full .pgTitle {
   max-width: 100%;
 }
-.pgHeader.darkSection .pgTitle h2 {
+.pgHeader.darkSection .pgTitle h2,
+.pgHeader.darkSection .pgTitle h6 {
   color: #ffffff;
 }
 .pgHeader.darkSection .pgTitle p {
@@ -815,20 +803,24 @@ section:not(.hero) .container {
   background: linear-gradient(139.46deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%);
   box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.007);
   -webkit-backdrop-filter: blur(0.5rem);
-          backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
   border: 1px solid #ffffff;
   border-radius: 1rem;
 }
 
 .breadcrumbs {
-  background-position: top !important;
+  background-repeat: no-repeat !important;
   background-attachment: fixed !important;
-  background-size: 100% 80% !important;
+  background-position: top !important;
+  background-size: contain !important;
   image-rendering: -webkit-optimize-contrast;
+  -webkit-image-rendering: crisp-edges;
   image-rendering: crisp-edges;
   flex-direction: column;
-  height: 100%;
-  min-height: 400px;
+  height: 25rem;
+  margin-top: 5rem;
+  position: relative;
+  overflow: hidden;
 }
 .breadcrumbs::after {
   position: absolute;
@@ -837,7 +829,7 @@ section:not(.hero) .container {
   content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(93.88deg, #011932 0%, rgba(1, 25, 50, 0.2) 100%);
+  background: linear-gradient(93.88deg, #000033 0%, rgba(0, 0, 50, 0.5) 100%);
 }
 .breadcrumbs .breadcrumbContent {
   position: relative;
@@ -886,42 +878,50 @@ section:not(.hero) .container {
   height: -moz-fit-content !important;
   height: fit-content !important;
 }
-.swiper.swiperGallery {
+.swiper .swiper-slide img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  filter: grayscale(1);
+  transition: all 0.6s linear;
+}
+.swiper .swiper-slide.swiper-slide-thumb-active img {
+  filter: grayscale(0);
+}
+.swiper.projectGallery, .swiper.testimonialGallery {
   padding: 0;
   margin-bottom: 1.5rem;
   border-radius: 1.5rem;
   overflow: hidden;
 }
-.swiper.swiperGallery .swiper-slide img {
+.swiper.projectGallery .swiper-slide img, .swiper.testimonialGallery .swiper-slide img {
+  filter: grayscale(0) !important;
   width: 100% !important;
   margin: auto !important;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.swiper.thumbs {
+.swiper.projectThumbs {
   margin-bottom: 0;
 }
-.swiper.thumbs .swiper-slide {
-  width: -moz-fit-content !important;
-  width: fit-content !important;
+.swiper.projectThumbs .swiper-slide {
   border: 0.0625rem solid #e4e4e4;
   padding: 0.375rem;
   border-radius: 1rem;
 }
-.swiper.thumbs .swiper-slide img {
-  -o-object-fit: cover;
-  object-fit: cover;
-  filter: grayscale(0.9);
-  border-radius: 0.5rem;
+.swiper.projectThumbs .swiper-slide img {
+  width: 100% !important;
+  min-height: 5rem !important;
+  max-height: 5rem !important;
 }
-.swiper.thumbs .swiper-slide.swiper-slide-thumb-active img {
-  filter: grayscale(0);
+.swiper.testimonialThumbs .swiper-slide {
+  width: 6.25rem;
 }
 .swiper .swiper-button-next,
 .swiper .swiper-button-prev {
-  background-color: rgba(255, 255, 255, 0.2);
-  width: 4.5rem !important;
-  height: 4.5rem !important;
+  background-color: rgba(0, 0, 51, 0.5);
+  width: 3rem !important;
+  height: 3rem !important;
   border-radius: 50%;
   transition: background 1s linear;
 }
@@ -933,11 +933,15 @@ section:not(.hero) .container {
 }
 .swiper .swiper-button-next:hover,
 .swiper .swiper-button-prev:hover {
-  background-color: white;
+  background-color: #000033;
 }
 .swiper .swiper-button-next:hover::after,
 .swiper .swiper-button-prev:hover::after {
-  color: #000033;
+  color: #ffffff;
+}
+.swiper .swiper-wrapper {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
 }
 
 .navbar {
@@ -1074,21 +1078,6 @@ section:not(.hero) .container {
 .about p {
   max-width: 52rem;
 }
-.about .collaborationCard {
-  background-color: #ffffff;
-  padding: 0.75rem;
-  border: 0.0625rem solid #e4e4e4;
-  border-radius: 0.5rem;
-  aspect-ratio: 1/1;
-  min-height: 10rem;
-}
-.about .collaborationCard img {
-  max-width: 70% !important;
-  -o-object-fit: contain;
-     object-fit: contain;
-  display: block;
-  margin: auto;
-}
 .about .aboutVideo {
   min-height: 80vh;
   background-repeat: no-repeat;
@@ -1128,7 +1117,24 @@ section:not(.hero) .container {
   z-index: 1;
 }
 
+.collaborationCard {
+  background-color: #ffffff;
+  padding: 0.75rem;
+  border: 0.0625rem solid #e4e4e4;
+  border-radius: 0.5rem;
+  aspect-ratio: 1/1;
+  min-height: 10rem;
+}
+.collaborationCard img {
+  max-width: 70% !important;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
 .whyUs .whyUsCard {
+  background-color: #ffffff;
   gap: 1.5rem;
   background: #ffffff;
   padding: 1.5rem;
@@ -1158,6 +1164,7 @@ section:not(.hero) .container {
 }
 
 .stats .statCard {
+  background-color: #ffffff;
   flex-direction: column;
   gap: 0.75rem;
   padding: 1.5rem;
@@ -1274,17 +1281,6 @@ section:not(.hero) .container {
   font-size: 0.875rem;
   display: block;
 }
-.testimonials .testimonialContainer .swiper.thumbs .swiper-wrapper {
-  gap: 1.5rem;
-}
-.testimonials .testimonialContainer .swiper.thumbs .swiper-wrapper .swiper-slide {
-  border: none;
-}
-.testimonials .testimonialContainer .swiper.thumbs .swiper-wrapper .swiper-slide img {
-  max-width: 6.25rem !important;
-  max-height: 6.25rem !important;
-  border-radius: 1rem;
-}
 
 .certificates .certificateCard {
   background-color: #ffffff;
@@ -1314,6 +1310,296 @@ section:not(.hero) .container {
 }
 .certificates .certificateCard:hover {
   box-shadow: rgba(0, 0, 51, 0.1) 0rem 0.4375rem 1.8125rem 0rem;
+}
+
+.aboutUs .pgHeader {
+  margin: 0;
+}
+.aboutUs .aboutImgContainer {
+  border-radius: 2rem;
+  overflow: hidden;
+  border: 0.75rem solid #ffffff;
+}
+.aboutUs .aboutImgContainer img {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.missionVision {
+  background-color: #444971 !important;
+}
+.missionVision::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../media/mission-bg.jpg) no-repeat center/cover fixed;
+  mix-blend-mode: overlay;
+}
+.missionVision .container {
+  position: relative;
+  z-index: 1;
+}
+.missionVision .mvCard {
+  background: linear-gradient(142deg, rgba(255, 255, 255, 0.02) 24%, rgba(255, 255, 255, 0.05) 100%);
+  -webkit-backdrop-filter: blur(0.3125rem);
+  backdrop-filter: blur(0.3125rem);
+  padding: 3rem;
+  height: 100%;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+}
+.missionVision .mvCard .mvHeader {
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.missionVision .mvCard .mvHeader .icon {
+  width: 4.375rem;
+  height: 4.375rem;
+  background: #000033;
+  border-radius: 50%;
+}
+.missionVision .mvCard .mvHeader .icon i {
+  font-size: 2.625rem;
+  color: #ffffff;
+}
+.missionVision .mvCard .mvHeader h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+.missionVision .mvCard .mvBody p {
+  text-align: justify;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  color: #ffffff;
+}
+
+.gridGallery {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-auto-rows: 1rem auto;
+}
+.gridGallery figure {
+  overflow: hidden;
+  position: relative;
+  margin: 0 !important;
+}
+.gridGallery figure img {
+  opacity: 1;
+  transition: linear 1s;
+  width: 100% !important;
+}
+.gridGallery figure img[data-src] {
+  opacity: 0;
+}
+.gridGallery figure:hover img {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+.gridGallery figure .projectCaption {
+  position: absolute;
+  left: 0;
+  bottom: 1.25rem;
+  content: "";
+  z-index: 2;
+  min-width: 80%;
+  padding: 1.5625rem 1.5625rem 1.5625rem 0.9375rem;
+  background-color: #000033;
+  transform: translateX(-110%);
+  transition: all 0.4s;
+  display: none;
+}
+.gridGallery figure .projectCaption span {
+  color: #444971;
+}
+.gridGallery figure .projectCaption h4 {
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin: 0;
+}
+.gridGallery figure:hover .projectCaption {
+  transform: translateX(0%);
+}
+
+img.mfp-img {
+  height: 100% !important;
+}
+
+.cta .ctaCard {
+  background-color: #444971;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  padding: 3rem;
+}
+.cta .ctaCard::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../media/cta-bg.jpg) no-repeat center/cover fixed;
+  mix-blend-mode: overlay;
+}
+.cta .ctaCard .ctaContent {
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.cta .ctaCard .ctaContent .ctaText h2 {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+.cta .ctaCard .ctaContent .ctaText p {
+  color: #ffffff;
+}
+.cta .ctaCard .ctaContent .roundedBtn {
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+  background-color: #ffffff;
+  border-radius: 4rem;
+}
+.cta .ctaCard .ctaContent .roundedBtn .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #000033;
+}
+.cta .ctaCard .ctaContent .roundedBtn .icon i {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.projectDetails .projectContainer {
+  flex-direction: column;
+  gap: 0.75rem;
+  height: 100%;
+}
+.projectDetails .projectContainer .projectThumb {
+  gap: 0.75rem;
+  flex-grow: 1;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: 0.0625rem solid #e4e4e4;
+  border-radius: 0.5rem;
+}
+.projectDetails .projectContainer .projectThumb .projectImg {
+  min-width: 4.375rem;
+  max-width: 4.375rem;
+  height: 4.375rem;
+  display: block;
+  overflow: hidden;
+  border: 0.0625rem solid #e4e4e4;
+  border-radius: 0.3333333333rem;
+}
+.projectDetails .projectContainer .projectThumb .projectImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.projectDetails .projectContainer .projectThumb .projectInfo {
+  flex-grow: 1;
+}
+.projectDetails .projectContainer .projectThumb .projectInfo h3 {
+  font-size: 1rem;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.projectDetails .projectContainer .projectThumb:hover, .projectDetails .projectContainer .projectThumb.active {
+  background-color: #000033;
+}
+.projectDetails .projectContainer .projectThumb:hover .projectInfo h3, .projectDetails .projectContainer .projectThumb.active .projectInfo h3 {
+  color: #ffffff;
+}
+
+.contactUs .addressCard {
+  background-color: #ecedf1;
+  height: 100%;
+  border: 0.0625rem solid #e4e4e4;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.contactUs .addressCard .addressHeader {
+  padding: 0.75rem 1.5rem;
+  background-color: #444971;
+}
+.contactUs .addressCard .addressHeader h5 {
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin: 0;
+}
+.contactUs .addressCard .addressBody {
+  padding: 1.5rem;
+}
+.contactUs .addressCard .addressBody addresss {
+  font-size: 1.125rem;
+  color: #000033;
+  margin: 0;
+}
+.contactUs .contactCard {
+  background-color: #ffffff;
+  height: 100%;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+.contactUs .contactCard .pgHeader {
+  margin-bottom: 1.5rem;
+}
+.contactUs .contactCard.form {
+  background-color: #ffffff;
+  border: 0.0625rem solid #e4e4e4;
+  box-shadow: rgba(0, 0, 51, 0.1) 0rem 0.4375rem 1.8125rem 0rem;
+}
+.contactUs .contactCard h3 {
+  margin-bottom: 3rem;
+}
+.contactUs .contactCard .contactChip {
+  background-color: #ecedf1;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+}
+.contactUs .contactCard .contactChip .icon {
+  min-width: 4.375rem;
+  min-height: 4.375rem;
+  background-color: #444971;
+  border-radius: 1rem;
+}
+.contactUs .contactCard .contactChip .icon i {
+  font-size: 2.225rem;
+  color: #ffffff;
+}
+.contactUs .contactCard .contactChip .contactDetail h5 {
+  font-size: 1.5rem;
+  color: #000033;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.contactUs .contactCard .contactChip .contactDetail span,
+.contactUs .contactCard .contactChip .contactDetail a {
+  font-weight: 500;
+  color: #000033 !important;
+  line-height: 1.3;
+  display: block;
+  margin-bottom: 0;
+}
+
+.map {
+  padding: 0 !important;
 }
 
 footer {

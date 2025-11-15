@@ -311,7 +311,7 @@ $currentPage = 'home';
                         </div>
                     </div>
                     <div class="testimonialContainer">
-                        <div class="swiper swiperGallery">
+                        <div class="swiper testimonialGallery">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="testimonialCard">
@@ -379,7 +379,7 @@ $currentPage = 'home';
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
                         </div>
-                        <div thumbsSlider="" class="swiper thumbs">
+                        <div thumbsSlider="" class="swiper testimonialThumbs">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <img src="assets/media/testimonials/user1.png" alt="User 1" title="User 1" />

@@ -392,20 +392,6 @@ section:not(.hero) {
         flex-grow: 1;
         max-width: 53.125rem;
 
-        .pgSection {
-            font-size: $medium;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.0625rem;
-            line-height: normal;
-            color: $secondary;
-            @extend .flex-center-start;
-            gap: $commonUnit / 2;
-            background-color: $primary;
-            padding: $commonUnit / 2 $commonUnit;
-            margin-bottom: $commonUnit / 2;
-            border-radius: $cardRadius / 4;
-        }
         h2 {
             font-size: $h2;
             margin: 0;
@@ -417,7 +403,7 @@ section:not(.hero) {
         h6 {
             font-weight: 400 !important;
             font-size: $h5;
-            color: $primary
+            color: $primary;
         }
     }
     &.centered {
@@ -444,7 +430,8 @@ section:not(.hero) {
     }
     &.darkSection {
         .pgTitle {
-            h2 {
+            h2,
+            h6 {
                 color: $white;
             }
             p {
@@ -691,6 +678,7 @@ section:not(.hero) {
 .glossyCard {
     background: linear-gradient(139.46deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%);
     box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.007);
+    -webkit-backdrop-filter: blur(0.5rem);
     backdrop-filter: blur(0.5rem);
     border: 1px solid $white;
     border-radius: $cardRadius;
@@ -698,15 +686,20 @@ section:not(.hero) {
 
 // Breadcrumbs {
 .breadcrumbs {
-    background-position: top !important;
+    background-repeat: no-repeat !important;
     background-attachment: fixed !important;
-    background-size: 100% 80% !important;
+    background-position: top !important;
+    background-size: contain !important;
     image-rendering: -webkit-optimize-contrast;
+    -webkit-image-rendering: crisp-edges;
     image-rendering: crisp-edges;
     @extend .flex-start-center;
     flex-direction: column;
-    height: 100%;
-    min-height: 400px;
+    height: 25rem;
+    margin-top: 5rem;
+    position: relative;
+    overflow: hidden;
+
     &::after {
         position: absolute;
         top: 0;
@@ -714,7 +707,7 @@ section:not(.hero) {
         content: "";
         width: 100%;
         height: 100%;
-        background: linear-gradient(93.88deg, #011932 0%, rgba(1, 25, 50, 0.2) 100%);
+        background: linear-gradient(93.88deg, $dark 0%, rgba(0, 0, 50, 0.5) 100%);
     }
     .breadcrumbContent {
         position: relative;
@@ -771,45 +764,57 @@ section:not(.hero) {
 // Swiper Gallery
 .swiper {
     height: fit-content !important;
-    &.swiperGallery {
+    .swiper-slide {
+        img {
+            -o-object-fit: cover;
+            object-fit: cover;
+            border-radius: $cardRadius / 2;
+            filter: grayscale(1);
+            transition: all 0.6s linear;
+        }
+        &.swiper-slide-thumb-active {
+            img {
+                filter: grayscale(0);
+            }
+        }
+    }
+    &.projectGallery,
+    &.testimonialGallery {
         padding: 0;
         margin-bottom: $commonUnit;
         border-radius: $commonUnit;
         overflow: hidden;
 
         .swiper-slide img {
+            filter: grayscale(0) !important;
             width: 100% !important;
             // height: 25rem;
             margin: auto !important;
             object-fit: contain;
         }
     }
-    &.thumbs {
+    &.projectThumbs {
         margin-bottom: 0;
         .swiper-slide {
-            width: fit-content !important;
             border: $commonBorder;
             padding: $commonUnit / 4;
             border-radius: $cardRadius;
             img {
-                // width: 100% !important;
-                // height: 5rem !important;
-                -o-object-fit: cover;
-                object-fit: cover;
-                filter: grayscale(0.9);
-                border-radius: $cardRadius / 2;
+                width: 100% !important;
+                min-height: 5rem !important;
+                max-height: 5rem !important;
             }
-            &.swiper-slide-thumb-active {
-                img {
-                    filter: grayscale(0);
-                }
-            }
+        }
+    }
+    &.testimonialThumbs {
+        .swiper-slide {
+            width: 6.25rem;
         }
     }
     .swiper-button-next,
     .swiper-button-prev {
-        background-color: rgba($color: $white, $alpha: 0.2);
-        $wh: $commonUnit * 3;
+        background-color: rgba($color: $dark, $alpha: 0.5);
+        $wh: $commonUnit * 2;
         width: $wh !important;
         height: $wh !important;
         border-radius: 50%;
@@ -820,10 +825,13 @@ section:not(.hero) {
             color: $white;
         }
         &:hover {
-            background-color: rgba($color: $white, $alpha: 1);
+            background-color: rgba($color: $dark, $alpha: 1);
             &::after {
-                color: $dark;
+                color: $white;
             }
         }
+    }
+    .swiper-wrapper {
+        width: fit-content !important;
     }
 }
