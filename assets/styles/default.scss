@@ -689,7 +689,7 @@ section:not(.hero) {
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
     background-position: top !important;
-    background-size: contain !important;
+    background-size: cover !important;
     image-rendering: -webkit-optimize-contrast;
     -webkit-image-rendering: crisp-edges;
     image-rendering: crisp-edges;

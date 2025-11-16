@@ -130,7 +130,7 @@ textarea:not([rows]) {
   justify-content: flex-start;
 }
 
-.flex-start-between {
+.flex-start-between, .blogDetails .pagination {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -142,7 +142,7 @@ textarea:not([rows]) {
   justify-content: space-around;
 }
 
-.flex-start-center, .projectDetails .projectContainer, .breadcrumbs, .pgHeader.verticallyCentered {
+.flex-start-center, footer .footerContent .footerCard .footerLogo, .projectDetails .projectContainer, .breadcrumbs, .pgHeader.verticallyCentered {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -812,7 +812,7 @@ section:not(.hero) .container {
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
   background-position: top !important;
-  background-size: contain !important;
+  background-size: cover !important;
   image-rendering: -webkit-optimize-contrast;
   -webkit-image-rendering: crisp-edges;
   image-rendering: crisp-edges;
@@ -1525,6 +1525,78 @@ img.mfp-img {
   color: #ffffff;
 }
 
+.blogDetails h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.blogDetails .blogHero {
+  margin: 3rem 0;
+  overflow: hidden;
+}
+.blogDetails .blogHero img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 31.25rem;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 2rem;
+}
+.blogDetails article p {
+  text-align: justify;
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+.blogDetails article p.lead,
+.blogDetails article p:empty,
+.blogDetails article div:empty,
+.blogDetails article div:has(br:only-child) {
+  display: none;
+}
+.blogDetails article ol ul:has(li) p,
+.blogDetails article ol ul:has(li) p > span {
+  font-size: inherit !important;
+  margin-bottom: 0;
+}
+.blogDetails .pagination {
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+}
+.blogDetails .pagination .next,
+.blogDetails .pagination .previous {
+  background-color: #ecedf1;
+  padding: 1.5rem;
+  flex-grow: 1;
+  border-radius: 0.5rem;
+}
+.blogDetails .pagination .previous {
+  text-align: left;
+}
+.blogDetails .pagination .next {
+  text-align: right;
+}
+.blogDetails .pagination a {
+  display: block;
+}
+.blogDetails .pagination .paginationLink {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #444971;
+}
+.blogDetails .pagination .titleLink {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #000033;
+  margin-top: 1.5rem;
+}
+.blogDetails .pagination .titleLink:hover {
+  color: #000033;
+}
+
 .contactUs .addressCard {
   background-color: #ecedf1;
   height: 100%;
@@ -1544,7 +1616,7 @@ img.mfp-img {
 .contactUs .addressCard .addressBody {
   padding: 1.5rem;
 }
-.contactUs .addressCard .addressBody addresss {
+.contactUs .addressCard .addressBody address {
   font-size: 1.125rem;
   color: #000033;
   margin: 0;
@@ -1624,11 +1696,10 @@ footer .footerContent {
 footer .footerContent .footerCard {
   position: relative;
   z-index: 2;
-  padding: 1.5rem;
   height: 100%;
 }
 footer .footerContent .footerCard .footerLogo {
-  margin-bottom: 3rem;
+  flex-direction: column;
 }
 footer .footerContent .footerCard .footerLogo img {
   max-width: 9.375rem !important;
