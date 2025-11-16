@@ -146,20 +146,7 @@ $currentPage = 'contact';
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
-    <div class="modal fade" id="highlightPopupModal" tabindex="-1" aria-labelledby="highlightPopupModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="highlightPopupModalLabel">Title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="assets/media/gallery/gallery.jpg" alt="Img Title" title="Img Title">
-                </div>
-            </div>
-        </div>
-    </div>
+
     <?php include 'includes/footer.php'; ?>
     <?php include 'includes/scripts.php'; ?>
 </body>

@@ -683,6 +683,91 @@ img.mfp-img {
         }
     }
 }
+// Blog Details
+.blogDetails {
+    h1 {
+        font-size: $h2;
+        font-weight: 700;
+    }
+
+    .blogHero {
+        margin: $commonUnit * 2 0;
+        overflow: hidden;
+        img {
+            width: 100%;
+            object-fit: cover;
+            max-height: 31.25rem;
+            object-position: center;
+            border-radius: $cardRadius * 2;
+        }
+    }
+    article {
+        p {
+            text-align: justify;
+            text-align-last: left;
+        }
+
+        p.lead,
+        p:empty,
+        div:empty,
+        div:has(br:only-child) {
+            display: none;
+        }
+        ol ul:has(li) {
+            p,
+            p > span {
+                font-size: inherit !important;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .pagination {
+        @extend .flex-start-between;
+        gap: $commonUnit;
+        flex-wrap: wrap;
+        background-color: $white;
+        padding: $commonUnit;
+        margin-top: $commonUnit;
+        border-radius: $cardRadius;
+        .next,
+        .previous {
+            background-color: $light;
+            padding: $commonUnit;
+            flex-grow: 1;
+            border-radius: $cardRadius / 2;
+        }
+
+        .previous {
+            text-align: left;
+        }
+
+        .next {
+            text-align: right;
+        }
+
+        a {
+            display: block;
+        }
+
+        .paginationLink {
+            font-size: $xLarge;
+            font-weight: 600;
+            color: $primary;
+        }
+
+        .titleLink {
+            font-size: $medium;
+            font-weight: 600;
+            color: $dark;
+            margin-top: $commonUnit;
+
+            &:hover {
+                color: $dark;
+            }
+        }
+    }   
+}
 .contactUs {
     .addressCard {
         background-color: $light;
@@ -702,7 +787,7 @@ img.mfp-img {
         .addressBody {
             padding:  $commonUnit;
 
-            addresss {
+            address {
                 font-size: $xLarge;
                 color: $dark;
                 margin: 0;
@@ -792,11 +877,11 @@ footer {
         .footerCard {
             position: relative;
             z-index: 2;
-            padding: $commonUnit;
             height: 100%;
-
+            
             .footerLogo {
-                margin-bottom: $commonUnit * 2;
+                @extend .flex-start-center;
+                flex-direction: column;
                 img {
                     max-width: 9.375rem !important;
                 }
