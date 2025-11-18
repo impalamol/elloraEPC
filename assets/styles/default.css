@@ -299,19 +299,19 @@ h6 {
 }
 
 h1 {
-  font-size: 3.375rem;
+  font-size: 3.125rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.75rem;
 }
 
 h3 {
-  font-size: 2.625rem;
+  font-size: 2.375rem;
 }
 
 h4 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 h5 {
@@ -352,7 +352,6 @@ input[type=number] {
 .form-select {
   background-color: #ffffff;
   border-color: #e4e4e4 !important;
-  min-height: 3.4375rem;
 }
 
 .btn {
@@ -565,7 +564,7 @@ section:not(.hero) .container {
   max-width: 53.125rem;
 }
 .pgHeader .pgTitle h2 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   margin: 0;
 }
 .pgHeader .pgTitle h2 span {
@@ -725,7 +724,7 @@ section:not(.hero) .container {
   padding: 1.5rem;
 }
 .searchModal .nrs i {
-  font-size: 2.625rem;
+  font-size: 2.375rem;
   text-align: center;
   line-height: normal;
 }
@@ -833,7 +832,7 @@ section:not(.hero) .container {
   z-index: 2;
 }
 .breadcrumbs .breadcrumbContent h2 {
-  font-size: 2.25rem;
+  font-size: 2rem;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 0;
