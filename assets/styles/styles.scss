@@ -250,7 +250,6 @@
         }
     }
 }
-
 // Stats
 .stats {
     .statCard {
@@ -282,7 +281,6 @@
         }
     }
 }
-
 // projects
 .projects {
     .projectCard {
@@ -292,6 +290,7 @@
         border: $commonBorder;
         border-radius: $cardRadius;
         transition: all 0.6s linear;
+        height: 100%;
 
         .projectHeader {
             @extend .flex-center-between;
@@ -394,7 +393,6 @@
         }
     }
 }
-
 // Certificates
 .certificates {
     .certificateCard {
@@ -430,9 +428,7 @@
         }
     }
 }
-
 // Pages Css Starts
-
 // About Us
 .aboutUs {
     .pgHeader {
@@ -570,7 +566,6 @@
 img.mfp-img {
     height: 100% !important;
 }
-
 // CTA
 .cta {
     .ctaCard {
@@ -766,8 +761,75 @@ img.mfp-img {
                 color: $dark;
             }
         }
-    }   
+    }
 }
+// Career
+.career {
+    .vacancyCard {
+        position: relative;
+        background-color: $white;
+        padding: $commonUnit;
+        border: $commonBorder;
+        border-radius: $cardRadius / 2;
+
+        .vacancyMedia {
+            margin-bottom: $commonUnit;
+            overflow: hidden;
+            border-radius: $cardRadius;
+        }
+        .vacancyHeader {
+            margin-bottom: $commonUnit / 2;
+            h3 {
+                font-size: $h6;
+                margin: 0;
+            }
+            .vacancyMeta {
+                @extend .flex-center-start;
+                gap: $commonUnit / 2;
+            }
+        }
+        .vacancyBody {
+            p {
+                font-size: $medium;
+                -webkit-line-clamp: 2;
+                line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+#careerModal {
+    .modal-body {
+        overflow: hidden;
+    }
+    .careerForm,
+    .careerPopupContent {
+        position: relative;
+        padding: 2.5rem;
+        height: 100%;
+    }
+    .careerPopupContent {
+        overflow-y: auto;
+        max-height: calc(100% - 4.8125rem);
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-bottom: $commonUnit / 2;
+        }
+    }
+    .careerForm {
+        background-color: $light;
+    }
+}
+// Contact Us
 .contactUs {
     .addressCard {
         background-color: $light;
@@ -785,7 +847,7 @@ img.mfp-img {
             }
         }
         .addressBody {
-            padding:  $commonUnit;
+            padding: $commonUnit;
 
             address {
                 font-size: $xLarge;
@@ -878,7 +940,7 @@ footer {
             position: relative;
             z-index: 2;
             height: 100%;
-            
+
             .footerLogo {
                 @extend .flex-start-center;
                 flex-direction: column;

@@ -41,6 +41,62 @@ $currentPage = 'projects';
         <section class="projectDetails">
             <div class="container">
                 <div class="row">
+                    <div class="pgHeader full">
+                        <div class="pgTitle">
+                            <p>Explore the breadth of our expertise through our diverse portfolio of ongoing projects.
+                                Ellora EPC, one of the leading commercial, industrial , and civil contractors in India,
+                                is currently engaged in a wide range of challenging and rewarding initiatives across
+                                various sectors. As a trusted civil contractor, we are actively delivering high-quality
+                                solutions in cities like Mumbai, Pune, Hyderabad, and beyond. Discover the Ellora EPC
+                                contracting company difference through our current projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row flex-lg-row-reverse">
+                    <div class="col-12 col-lg-12 col-xl-4 col-xxl-4">
+                        <div class="projectContainer">
+                            <div class="projectThumb active">
+                                <figure class="projectImg">
+                                    <img src="assets/media/projects/project1.jpg" alt="Project">
+                                </figure>
+                                <div class="projectInfo">
+                                    <h3>Next Gen Manufacturer</h3>
+                                </div>
+                            </div>
+                            <div class="projectThumb">
+                                <figure class="projectImg">
+                                    <img src="assets/media/projects/project2.jpg" alt="Project">
+                                </figure>
+                                <div class="projectInfo">
+                                    <h3>Reliance Consumer Products Ltd</h3>
+                                </div>
+                            </div>
+                            <div class="projectThumb">
+                                <figure class="projectImg">
+                                    <img src="assets/media/projects/project3.jpg" alt="Project">
+                                </figure>
+                                <div class="projectInfo">
+                                    <h3>ABB Nashik</h3>
+                                </div>
+                            </div>
+                            <div class="projectThumb">
+                                <figure class="projectImg">
+                                    <img src="assets/media/projects/project4.jpg" alt="Project">
+                                </figure>
+                                <div class="projectInfo">
+                                    <h3>7 Apple Hospitality</h3>
+                                </div>
+                            </div>
+                            <div class="projectThumb">
+                                <figure class="projectImg">
+                                    <img src="assets/media/projects/project5.jpg" alt="Project">
+                                </figure>
+                                <div class="projectInfo">
+                                    <h3>Hiranandani Industrial Parks</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-12 col-lg-12 col-xl-8 col-xxl-8 mb-3 mb-lg-0">
                         <div class="projectShowcase active">
                             <div class="swiper projectGallery">
@@ -127,55 +183,7 @@ $currentPage = 'projects';
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-12 col-xl-4 col-xxl-4">
-                        <div class="projectInfo">
-                            <p>Explore the breadth of our expertise through our diverse portfolio of ongoing projects.
-                                Ellora EPC, one of the leading commercial, industrial , and civil contractors in India,
-                                is currently engaged in a wide range of challenging and rewarding initiatives across
-                                various sectors. As a trusted civil contractor, we are actively delivering high-quality
-                                solutions in cities like Mumbai, Pune, Hyderabad, and beyond. Discover the Ellora EPC
-                                contracting company difference through our current projects.</p>
-                        </div>
-                    </div>
-                </div>
 
-            </div>
-        </section>
-        <section class="projects">
-            <div class="container">
-                <div class="row">
-                    <div class="pgHeader">
-                        <div class="pgTitle">
-                            <h2>Other Projects</h2>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-3">
-                        <div class="projectCard">
-                            <div class="projectHeader">
-                                <h3>Next Generation Manufacturer</h3>
-                                <a href="" class="stretched-link"><i class="ph-duotone ph-arrow-up-right"></i></a>
-                            </div>
-                            <figure class="projectMedia"><img src="assets/media/projects/project1.jpg" alt=""></figure>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-3">
-                        <div class="projectCard">
-                            <div class="projectHeader">
-                                <h3>Reliance Consumer Products Ltd</h3>
-                                <a href="" class="stretched-link"><i class="ph-duotone ph-arrow-up-right"></i></a>
-                            </div>
-                            <figure class="projectMedia"><img src="assets/media/projects/project2.jpg" alt=""></figure>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-3">
-                        <div class="projectCard">
-                            <div class="projectHeader">
-                                <h3>ABB Nashik</h3>
-                                <a href="" class="stretched-link"><i class="ph-duotone ph-arrow-up-right"></i></a>
-                            </div>
-                            <figure class="projectMedia"><img src="assets/media/projects/project3.jpg" alt=""></figure>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>

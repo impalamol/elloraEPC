@@ -94,7 +94,7 @@ textarea:not([rows]) {
   justify-content: space-around;
 }
 
-.flex-center-start, footer .copyright .copyrightContent .copyrightLinks, .contactUs .contactCard .contactChip, .projectDetails .projectContainer .projectThumb, .missionVision .mvCard .mvHeader, .about .aboutVideo, .searchModal .searchResult .resultItem a, .btnGroup {
+.flex-center-start, footer .copyright .copyrightContent .copyrightLinks, .contactUs .contactCard .contactChip, .career .vacancyCard .vacancyHeader .vacancyMeta, .projectDetails .projectContainer .projectThumb, .missionVision .mvCard .mvHeader, .about .aboutVideo, .searchModal .searchResult .resultItem a, .btnGroup {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -302,19 +302,19 @@ h6 {
 }
 
 h1 {
-  font-size: 3.375rem;
+  font-size: 3.125rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.75rem;
 }
 
 h3 {
-  font-size: 2.625rem;
+  font-size: 2.375rem;
 }
 
 h4 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 h5 {
@@ -355,7 +355,6 @@ input[type=number] {
 .form-select {
   background-color: #ffffff;
   border-color: #e4e4e4 !important;
-  min-height: 3.4375rem;
 }
 
 .btn {
@@ -568,7 +567,7 @@ section:not(.hero) .container {
   max-width: 53.125rem;
 }
 .pgHeader .pgTitle h2 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   margin: 0;
 }
 .pgHeader .pgTitle h2 span {
@@ -728,7 +727,7 @@ section:not(.hero) .container {
   padding: 1.5rem;
 }
 .searchModal .nrs i {
-  font-size: 2.625rem;
+  font-size: 2.375rem;
   text-align: center;
   line-height: normal;
 }
@@ -836,7 +835,7 @@ section:not(.hero) .container {
   z-index: 2;
 }
 .breadcrumbs .breadcrumbContent h2 {
-  font-size: 2.25rem;
+  font-size: 2rem;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 0;
@@ -1032,7 +1031,7 @@ section:not(.hero) .container {
   display: inline-block;
 }
 .hero .heroSlide .heroContent h1 {
-  font-size: 3.375rem;
+  font-size: 3.125rem;
   font-weight: 800;
 }
 .hero .paginationContainer {
@@ -1068,7 +1067,7 @@ section:not(.hero) .container {
 }
 
 .about h2 {
-  font-size: 3.375rem;
+  font-size: 3.125rem;
   font-weight: 100;
   margin-bottom: 1.5rem;
 }
@@ -1149,7 +1148,7 @@ section:not(.hero) .container {
   border-radius: 50%;
 }
 .whyUs .whyUsCard .icon i {
-  font-size: 2.625rem;
+  font-size: 2.375rem;
   color: #ffffff;
 }
 .whyUs .whyUsCard .whyUsContent h3 {
@@ -1172,14 +1171,14 @@ section:not(.hero) .container {
   border-radius: 1rem;
 }
 .stats .statCard i {
-  font-size: 4.125rem;
+  font-size: 3.875rem;
   color: #444971;
 }
 .stats .statCard .statContent {
   text-align: center;
 }
 .stats .statCard .statContent h3 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   color: #000033;
   margin: 0;
 }
@@ -1196,6 +1195,7 @@ section:not(.hero) .container {
   border: 0.0625rem solid #e4e4e4;
   border-radius: 1rem;
   transition: all 0.6s linear;
+  height: 100%;
 }
 .projects .projectCard .projectHeader {
   margin-bottom: 1.5rem;
@@ -1366,7 +1366,7 @@ section:not(.hero) .container {
   border-radius: 50%;
 }
 .missionVision .mvCard .mvHeader .icon i {
-  font-size: 2.625rem;
+  font-size: 2.375rem;
   color: #ffffff;
 }
 .missionVision .mvCard .mvHeader h3 {
@@ -1526,7 +1526,7 @@ img.mfp-img {
 }
 
 .blogDetails h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: 700;
 }
 .blogDetails .blogHero {
@@ -1597,6 +1597,64 @@ img.mfp-img {
   color: #000033;
 }
 
+.career .vacancyCard {
+  position: relative;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border: 0.0625rem solid #e4e4e4;
+  border-radius: 0.5rem;
+}
+.career .vacancyCard .vacancyMedia {
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.career .vacancyCard .vacancyHeader {
+  margin-bottom: 0.75rem;
+}
+.career .vacancyCard .vacancyHeader h3 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+.career .vacancyCard .vacancyHeader .vacancyMeta {
+  gap: 0.75rem;
+}
+.career .vacancyCard .vacancyBody p {
+  font-size: 0.875rem;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0;
+}
+
+#careerModal .modal-body {
+  overflow: hidden;
+}
+#careerModal .careerForm,
+#careerModal .careerPopupContent {
+  position: relative;
+  padding: 2.5rem;
+  height: 100%;
+}
+#careerModal .careerPopupContent {
+  overflow-y: auto;
+  max-height: calc(100% - 4.8125rem);
+}
+#careerModal .careerPopupContent h1,
+#careerModal .careerPopupContent h2,
+#careerModal .careerPopupContent h3,
+#careerModal .careerPopupContent h4,
+#careerModal .careerPopupContent h5,
+#careerModal .careerPopupContent h6 {
+  margin-bottom: 0.75rem;
+}
+#careerModal .careerForm {
+  background-color: #ecedf1;
+}
+
 .contactUs .addressCard {
   background-color: #ecedf1;
   height: 100%;
@@ -1652,7 +1710,7 @@ img.mfp-img {
   border-radius: 1rem;
 }
 .contactUs .contactCard .contactChip .icon i {
-  font-size: 2.225rem;
+  font-size: 1.975rem;
   color: #ffffff;
 }
 .contactUs .contactCard .contactChip .contactDetail h5 {
