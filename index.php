@@ -464,6 +464,24 @@ $currentPage = 'home';
             </div>
         </div>
     </div>
+    <div class="modal fade" id="aboutVideo" tabindex="-1" aria-labelledby="aboutVideoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="aboutVideoLabel">Video Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe id="youtube-video" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <?php include 'includes/footer.php'; ?>
     <?php include 'includes/scripts.php'; ?>
 </body>
