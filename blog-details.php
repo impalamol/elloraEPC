@@ -44,7 +44,90 @@ $currentPage = 'blogs';
                     <article class="blogContent">
                         <h1>One Contract, Total Control: Unpacking the Financial Advantages of Turnkey EPC.</h1>
                         <figure class="blogHero">
-                            <img src="assets/media/blogs/blog1.jpg" alt="Blog 1" />
+                            <div class="projectShowcase active">
+                                <div class="swiper projectGallery">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project1.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project2.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project3.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project4.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project5.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project6.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project7.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project8.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project9.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project10.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project11.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project12.jpg" alt="Project">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <div thumbsSlider="" class="swiper projectThumbs">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project1.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project2.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project3.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project4.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project5.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project6.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project7.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project8.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project9.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project10.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project11.jpg" alt="Project">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/media/projects/project12.jpg" alt="Project">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </figure>
                         <p>The decision to build a new factory or warehouse is a massive investment. Too often, clients
                             are lured into the traditional Design-Bid-Build model, only to face budget shock from
@@ -97,7 +180,7 @@ $currentPage = 'blogs';
                 </div>
             </div>
         </section>
-                <section class="blogs">
+        <section class="blogs">
             <div class="container">
                 <div class="row">
                     <div class="pgHeader">
@@ -105,7 +188,7 @@ $currentPage = 'blogs';
                             <h2>Recent Blogs</h2>
                         </div>
                     </div>
-                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mb-3">
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-4 col-xxl-4 mb-3">
                         <div class="blogCard">
                             <figure class="blogMedia"><img src="assets/media/blogs/blog1.jpg" alt=""></figure>
                             <div class="blogBody">
@@ -117,7 +200,7 @@ $currentPage = 'blogs';
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mb-3">
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-4 col-xxl-4 mb-3">
                         <div class="blogCard">
                             <figure class="blogMedia"><img src="assets/media/blogs/blog2.jpg" alt=""></figure>
                             <div class="blogBody">
@@ -125,6 +208,17 @@ $currentPage = 'blogs';
                                 </h3>
                                 <p>Discover how Pre-Engineered Buildings (PEB) cut construction time by 40% for modern
                                     logistics facilities.</p>
+                                <a href="blog-details" class="btn btn-link stretched-link">Read Full Article <i
+                                        class="ph-duotone ph-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-3">
+                        <div class="blogCard">
+                            <figure class="blogMedia"><img src="assets/media/blogs/blog3.jpg" alt=""></figure>
+                            <div class="blogBody">
+                                <h3></h3>
+                                <p></p>
                                 <a href="blog-details" class="btn btn-link stretched-link">Read Full Article <i
                                         class="ph-duotone ph-arrow-up-right"></i></a>
                             </div>

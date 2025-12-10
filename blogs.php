@@ -74,10 +74,6 @@ $currentPage = 'blogs';
                             </div>
                         </div>
                     </div>
-                    <p class="text-center mt-5">
-                        <a href="products" class="btn btn-light">View All
-                            <i class="ph-duotone ph-arrow-up-right"></i></a>
-                    </p>
                 </div>
             </div>
         </section>

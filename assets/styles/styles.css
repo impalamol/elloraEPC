@@ -887,13 +887,13 @@ section:not(.hero) .container {
 .swiper .swiper-slide.swiper-slide-thumb-active img {
   filter: grayscale(0);
 }
-.swiper.projectGallery, .swiper.testimonialGallery {
+.swiper.projectGallery, .swiper.testimonialGallery, .swiper.collaborationSwiper {
   padding: 0;
   margin-bottom: 1.5rem;
   border-radius: 1.5rem;
   overflow: hidden;
 }
-.swiper.projectGallery .swiper-slide img, .swiper.testimonialGallery .swiper-slide img {
+.swiper.projectGallery .swiper-slide img, .swiper.testimonialGallery .swiper-slide img, .swiper.collaborationSwiper .swiper-slide img {
   filter: grayscale(0) !important;
   width: 100% !important;
   margin: auto !important;
@@ -1266,6 +1266,10 @@ section:not(.hero) .container {
   transition: all 0.6s linear;
   overflow: hidden;
 }
+.testimonials .testimonialContainer .testimonialCard {
+  max-width: 700px;
+  margin: 0 auto;
+}
 .testimonials .testimonialContainer .testimonialCard p {
   font-size: 1.375rem;
   text-align: center;
@@ -1534,13 +1538,12 @@ img.mfp-img {
   overflow: hidden;
 }
 .blogDetails .blogHero img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100% !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
   max-height: 31.25rem;
   -o-object-position: center;
      object-position: center;
-  border-radius: 2rem;
 }
 .blogDetails article p {
   text-align: justify;
@@ -1627,7 +1630,6 @@ img.mfp-img {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-bottom: 0;
 }
 
 #careerModal .modal-body {
@@ -1653,6 +1655,12 @@ img.mfp-img {
 }
 #careerModal .careerForm {
   background-color: #ecedf1;
+}
+
+.modal .modal-header .modal-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 .contactUs .addressCard {
@@ -1841,10 +1849,10 @@ footer .copyright .copyrightContent p {
   margin: 0;
 }
 footer .copyright .copyrightContent a {
-  color: #415791;
+  color: #f1c143;
 }
 footer .copyright .copyrightContent a:hover {
-  color: #f1c143;
+  color: #ffffff;
 }
 footer .copyright .copyrightContent .copyrightLinks {
   flex-wrap: wrap;

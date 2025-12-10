@@ -10,13 +10,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
                 <li class="nav-item">
-                    <a class="nav-link <?php echo ($currentPage === 'home') ? 'active' : ''; ?>" aria-current="page" href="index">Home</a>
+                    <a class="nav-link <?php echo ($currentPage === 'home') ? 'active' : ''; ?>" aria-current="page"
+                        href="index">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php echo ($currentPage === 'about') ? 'active' : ''; ?>" href="about">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link <?php echo ($currentPage === 'services') ? 'active' : ''; ?>" href="services">Services</a>
+                    <a class="nav-link <?php echo ($currentPage === 'about') ? 'active' : ''; ?>" href="about">About
+                        Us</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -28,16 +27,26 @@
                         <li><a class="dropdown-item" href="projects">Completed Projects</a></li>
                     </ul>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link <?php echo ($currentPage === 'blogs') ? 'active' : ''; ?>" href="blogs">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link <?php echo ($currentPage === 'careers') ? 'active' : ''; ?>"
+                        href="careers">Career</a>
+                </li>
             </ul>
             <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
-                <li class="nav-item">
-                    <a class="nav-link circleLink" href="blogs" title="Blogs"><i class="ph-duotone ph-read-cv-logo"></i></a>
+                <!-- <li class="nav-item">
+                    <a class="nav-link circleLink" href="blogs" title="Blogs"><i
+                            class="ph-duotone ph-read-cv-logo"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link circleLink" href="careers" title="Careers"><i class="ph-duotone ph-users-three"></i></a>
-                </li>
+                    <a class="nav-link circleLink" href="careers" title="Careers"><i
+                            class="ph-duotone ph-users-three"></i></a>
+                </li> -->
                 <li class="nav-item">
-                    <a class="nav-link circleBtn" href="contact" title="Contact Us"><i class="ph-duotone ph-phone"></i> Contact Us</a>
+                    <a class="nav-link circleBtn" href="contact" title="Contact Us"><i class="ph-duotone ph-phone"></i>
+                        Contact Us</a>
                 </li>
             </ul>
         </div>
