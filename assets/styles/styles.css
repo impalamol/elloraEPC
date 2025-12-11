@@ -998,6 +998,7 @@ section:not(.hero) .container {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
+  filter: grayscale(0) !important;
 }
 .hero .heroSlide {
   position: relative;
