@@ -290,32 +290,32 @@ h5,
 h6 {
   font-style: normal;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.5;
-  letter-spacing: 0.0187rem;
+  letter-spacing: -0.0187rem;
   color: #000033;
   position: relative;
   margin-bottom: 0.75rem;
 }
 
 h1 {
-  font-size: 3.125rem;
-}
-
-h2 {
   font-size: 2.75rem;
 }
 
-h3 {
+h2 {
   font-size: 2.375rem;
 }
 
-h4 {
+h3 {
   font-size: 2rem;
 }
 
+h4 {
+  font-size: 1.625rem;
+}
+
 h5 {
-  font-size: 1.5rem;
+  font-size: 1.375rem;
 }
 
 h6 {
@@ -564,7 +564,7 @@ section:not(.hero) .container {
   max-width: 53.125rem;
 }
 .pgHeader .pgTitle h2 {
-  font-size: 2.75rem;
+  font-size: 2.375rem;
   margin: 0;
 }
 .pgHeader .pgTitle h2 span {
@@ -572,7 +572,7 @@ section:not(.hero) .container {
 }
 .pgHeader .pgTitle h6 {
   font-weight: 400 !important;
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   color: #444971;
 }
 .pgHeader.centered {
@@ -618,7 +618,7 @@ section:not(.hero) .container {
   animation: animateBtn 3s linear infinite;
 }
 .videoBtn i {
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   color: #000033;
 }
 @keyframes animateBtn {
@@ -644,7 +644,7 @@ section:not(.hero) .container {
   background-color: #000033;
 }
 .modal .modal-content .modal-header h1 {
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   font-weight: 600;
   color: #ffffff;
 }
@@ -724,7 +724,7 @@ section:not(.hero) .container {
   padding: 1.5rem;
 }
 .searchModal .nrs i {
-  font-size: 2.375rem;
+  font-size: 2rem;
   text-align: center;
   line-height: normal;
 }
@@ -740,7 +740,7 @@ section:not(.hero) .container {
   padding: 1.5rem;
 }
 .enquiryModal .modal-header h5 {
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   color: #ffffff !important;
 }
 .enquiryModal .modal-body {
@@ -832,7 +832,7 @@ section:not(.hero) .container {
   z-index: 2;
 }
 .breadcrumbs .breadcrumbContent h2 {
-  font-size: 2rem;
+  font-size: 1.625rem;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 0;

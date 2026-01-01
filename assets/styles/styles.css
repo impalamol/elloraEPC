@@ -293,32 +293,32 @@ h5,
 h6 {
   font-style: normal;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.5;
-  letter-spacing: 0.0187rem;
+  letter-spacing: -0.0187rem;
   color: #000033;
   position: relative;
   margin-bottom: 0.75rem;
 }
 
 h1 {
-  font-size: 3.125rem;
-}
-
-h2 {
   font-size: 2.75rem;
 }
 
-h3 {
+h2 {
   font-size: 2.375rem;
 }
 
-h4 {
+h3 {
   font-size: 2rem;
 }
 
+h4 {
+  font-size: 1.625rem;
+}
+
 h5 {
-  font-size: 1.5rem;
+  font-size: 1.375rem;
 }
 
 h6 {
@@ -567,7 +567,7 @@ section:not(.hero) .container {
   max-width: 53.125rem;
 }
 .pgHeader .pgTitle h2 {
-  font-size: 2.75rem;
+  font-size: 2.375rem;
   margin: 0;
 }
 .pgHeader .pgTitle h2 span {
@@ -575,7 +575,7 @@ section:not(.hero) .container {
 }
 .pgHeader .pgTitle h6 {
   font-weight: 400 !important;
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   color: #444971;
 }
 .pgHeader.centered {
@@ -621,7 +621,7 @@ section:not(.hero) .container {
   animation: animateBtn 3s linear infinite;
 }
 .videoBtn i {
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   color: #000033;
 }
 @keyframes animateBtn {
@@ -647,7 +647,7 @@ section:not(.hero) .container {
   background-color: #000033;
 }
 .modal .modal-content .modal-header h1 {
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   font-weight: 600;
   color: #ffffff;
 }
@@ -727,7 +727,7 @@ section:not(.hero) .container {
   padding: 1.5rem;
 }
 .searchModal .nrs i {
-  font-size: 2.375rem;
+  font-size: 2rem;
   text-align: center;
   line-height: normal;
 }
@@ -743,7 +743,7 @@ section:not(.hero) .container {
   padding: 1.5rem;
 }
 .enquiryModal .modal-header h5 {
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   color: #ffffff !important;
 }
 .enquiryModal .modal-body {
@@ -835,7 +835,7 @@ section:not(.hero) .container {
   z-index: 2;
 }
 .breadcrumbs .breadcrumbContent h2 {
-  font-size: 2rem;
+  font-size: 1.625rem;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 0;
@@ -926,7 +926,7 @@ section:not(.hero) .container {
 }
 .swiper .swiper-button-next::after,
 .swiper .swiper-button-prev::after {
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   font-weight: 600;
   color: #ffffff;
 }
@@ -1011,7 +1011,7 @@ section:not(.hero) .container {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 51, 0.6);
+  background-color: rgba(0, 0, 51, 0.05);
   content: "";
   z-index: 0;
 }
@@ -1032,7 +1032,7 @@ section:not(.hero) .container {
   display: inline-block;
 }
 .hero .heroSlide .heroContent h1 {
-  font-size: 3.125rem;
+  font-size: 2.75rem;
   font-weight: 800;
 }
 .hero .paginationContainer {
@@ -1068,7 +1068,7 @@ section:not(.hero) .container {
 }
 
 .about h2 {
-  font-size: 3.125rem;
+  font-size: 2.75rem;
   font-weight: 100;
   margin-bottom: 1.5rem;
 }
@@ -1149,7 +1149,7 @@ section:not(.hero) .container {
   border-radius: 50%;
 }
 .whyUs .whyUsCard .icon i {
-  font-size: 2.375rem;
+  font-size: 2rem;
   color: #ffffff;
 }
 .whyUs .whyUsCard .whyUsContent h3 {
@@ -1172,16 +1172,19 @@ section:not(.hero) .container {
   border-radius: 1rem;
 }
 .stats .statCard i {
-  font-size: 3.875rem;
+  font-size: 3.5rem;
   color: #444971;
 }
 .stats .statCard .statContent {
   text-align: center;
 }
 .stats .statCard .statContent h3 {
-  font-size: 2.75rem;
+  font-size: 2.375rem;
   color: #000033;
   margin: 0;
+}
+.stats .statCard .statContent h3::after {
+  content: "+";
 }
 .stats .statCard .statContent p {
   font-size: 0.875rem;
@@ -1279,7 +1282,7 @@ section:not(.hero) .container {
   text-align: center;
 }
 .testimonials .testimonialContainer .testimonialCard .userInfo h6 {
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   margin-bottom: 0;
 }
 .testimonials .testimonialContainer .testimonialCard .userInfo small {
@@ -1345,14 +1348,13 @@ section:not(.hero) .container {
   width: 100%;
   height: 100%;
   background: url(../media/mission-bg.jpg) no-repeat center/cover fixed;
-  mix-blend-mode: overlay;
 }
 .missionVision .container {
   position: relative;
   z-index: 1;
 }
 .missionVision .mvCard {
-  background: linear-gradient(142deg, rgba(255, 255, 255, 0.02) 24%, rgba(255, 255, 255, 0.05) 100%);
+  background: linear-gradient(142deg, rgba(0, 0, 51, 0.02) 24%, rgba(0, 0, 51, 0.05) 100%);
   -webkit-backdrop-filter: blur(0.3125rem);
   backdrop-filter: blur(0.3125rem);
   padding: 3rem;
@@ -1371,11 +1373,11 @@ section:not(.hero) .container {
   border-radius: 50%;
 }
 .missionVision .mvCard .mvHeader .icon i {
-  font-size: 2.375rem;
+  font-size: 2rem;
   color: #ffffff;
 }
 .missionVision .mvCard .mvHeader h3 {
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   color: #ffffff;
 }
 .missionVision .mvCard .mvBody p {
@@ -1453,7 +1455,6 @@ img.mfp-img {
   width: 100%;
   height: 100%;
   background: url(../media/cta-bg.jpg) no-repeat center/cover fixed;
-  mix-blend-mode: overlay;
 }
 .cta .ctaCard .ctaContent {
   position: relative;
@@ -1531,7 +1532,7 @@ img.mfp-img {
 }
 
 .blogDetails h1 {
-  font-size: 2.75rem;
+  font-size: 2.375rem;
   font-weight: 700;
 }
 .blogDetails .blogHero {
@@ -1719,11 +1720,11 @@ img.mfp-img {
   border-radius: 1rem;
 }
 .contactUs .contactCard .contactChip .icon i {
-  font-size: 1.975rem;
+  font-size: 1.6rem;
   color: #ffffff;
 }
 .contactUs .contactCard .contactChip .contactDetail h5 {
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   color: #000033;
   display: block;
   margin-bottom: 0.5rem;
