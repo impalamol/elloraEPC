@@ -148,7 +148,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba($color: $dark, $alpha: 0.6);
+            background-color: rgba($color: $dark, $alpha: 0.05);
             content: "";
             z-index: 0;
         }
@@ -347,6 +347,9 @@
                 font-size: $h2;
                 color: $dark;
                 margin: 0;
+                &::after {
+                    content: "+";
+                }
             }
             p {
                 font-size: $medium;
@@ -536,7 +539,7 @@
         width: 100%;
         height: 100%;
         background: url(../media/mission-bg.jpg) no-repeat center/cover fixed;
-        mix-blend-mode: overlay;
+        // mix-blend-mode: overlay;
     }
     .container {
         position: relative;
@@ -660,7 +663,7 @@ img.mfp-img {
             width: 100%;
             height: 100%;
             background: url(../media/cta-bg.jpg) no-repeat center/cover fixed;
-            mix-blend-mode: overlay;
+            // mix-blend-mode: overlay;
         }
         .ctaContent {
             position: relative;
