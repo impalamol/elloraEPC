@@ -73,7 +73,7 @@ textarea:not([rows]) {
   display: flex;
 }
 
-.flex-center, .contactUs .contactCard .contactChip .icon, .cta .ctaCard .ctaContent .roundedBtn .icon, .cta .ctaCard .ctaContent .roundedBtn, .missionVision .mvCard .mvHeader .icon, .projects .projectCard .projectHeader a, .stats .statCard, .whyUs .whyUsCard .icon, .collaborationCard, .hero .paginationContainer .navigation .swiper-button-next,
+.flex-center, .contactUs .contactCard .contactChip .icon, .ventures .ventureCard, .cta .ctaCard .ctaContent .roundedBtn .icon, .cta .ctaCard .ctaContent .roundedBtn, .missionVision .mvCard .mvHeader .icon, .projects .projectCard .projectHeader a, .stats .statCard, .whyUs .whyUsCard .icon, .collaborationCard, .hero .paginationContainer .navigation .swiper-button-next,
 .hero .paginationContainer .navigation .swiper-button-prev, .hero .paginationContainer .navigation, .hero .heroSlide, .navbar .circleLink,
 .navbar .circleBtn, .searchModal .nrs, .searchModal .searchResult .resultItem a .productIcon img, .videoBtn, .pgHeader.centered .pgTitle,
 .pgHeader.centered .pgSection, .pgHeader.centered {
@@ -1765,6 +1765,46 @@ img.mfp-img {
   font-size: 1.25rem;
   font-weight: 600;
   color: #ffffff;
+}
+
+.ventures .ventureCard {
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  padding: 0;
+  border: none;
+  border-right: 0.0625rem solid #e4e4e4;
+  border-radius: 0;
+  box-shadow: none;
+}
+.ventures .ventureCard::after {
+  width: 85%;
+  height: 1px;
+  margin: 0 auto;
+  left: -8%;
+  right: 0;
+  bottom: -1.625rem;
+  display: block;
+  position: absolute;
+  content: "";
+  background: #e4e4e4;
+}
+.ventures .ventureCard img {
+  max-width: 80% !important;
+  display: block;
+  margin: 0 auto;
+}
+.ventures > [class^=col-]:nth-child(5n) .ventureCard,
+.ventures > [class*=" col-"]:nth-child(5n) .ventureCard {
+  border-right: none;
+}
+.ventures > [class^=col-]:nth-child(n+6) .ventureCard,
+.ventures > [class*=" col-"]:nth-child(n+6) .ventureCard {
+  margin-bottom: 0;
+}
+.ventures > [class^=col-]:nth-child(n+6) .ventureCard::after,
+.ventures > [class*=" col-"]:nth-child(n+6) .ventureCard::after {
+  display: none;
 }
 
 .contactUs .addressCard {

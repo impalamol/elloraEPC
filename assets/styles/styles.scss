@@ -1038,6 +1038,65 @@ img.mfp-img {
         }
     }
 }
+// Ventures
+.ventures {
+    .ventureCard {
+        @extend .flex-center;
+        flex-direction: column;
+        position: relative;
+        height: 100%;
+        padding: 0;
+        border: none;
+        border-right: $commonBorder;
+        border-radius: 0;
+        box-shadow: none;
+
+        &::after {
+            width: 85%;
+            height: 1px;
+            margin: 0 auto;
+            left: -8%;
+            right: 0;
+            bottom: -1.625rem;
+            display: block;
+            position: absolute;
+            content: "";
+            background: $border;
+        }
+
+        img {
+            max-width: 80% !important;
+            display: block;
+            margin: 0 auto;
+        }
+        // h3 {
+        //     font-size: $large;
+        //     font-weight: 600;
+        //     color: $dark;
+        //     margin: $commonUnit 0 0;
+        // }
+    }
+
+    // Every 4th card (last in the row) – remove right border
+    > [class^="col-"]:nth-child(5n),
+    > [class*=" col-"]:nth-child(5n) {
+        .ventureCard {
+            border-right: none;
+        }
+    }
+
+    // Cards starting from the 5th – hide bottom border
+    > [class^="col-"]:nth-child(n + 6),
+    > [class*=" col-"]:nth-child(n + 6) {
+        .ventureCard {
+            margin-bottom: 0;
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
 // Contact Us
 .contactUs {
     .addressCard {
