@@ -72,7 +72,6 @@
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-        thumbs: { swiper: testimonialThumbs },
     });
 
 

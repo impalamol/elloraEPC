@@ -104,7 +104,7 @@ $currentPage = 'home';
                                 accountability across all industrial projects</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-4">
+                    <div class="col-md-6 col-lg-6 col-xl-4 col-xxl-4 mb-4">
                         <div class="whyUsCard">
                             <div class="icon">
                                 <i class="ph-duotone ph-hourglass-high"></i>
@@ -117,7 +117,7 @@ $currentPage = 'home';
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-4">
+                    <div class="col-md-6 col-lg-6 col-xl-4 col-xxl-4 mb-4">
                         <div class="whyUsCard">
                             <div class="icon">
                                 <i class="ph-duotone ph-medal"></i>
@@ -130,7 +130,7 @@ $currentPage = 'home';
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-4">
+                    <div class="col-md-6 col-lg-6 col-xl-4 col-xxl-4 mb-4">
                         <div class="whyUsCard">
                             <div class="icon">
                                 <i class="ph-duotone ph-shield-check"></i>
@@ -143,7 +143,7 @@ $currentPage = 'home';
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-6 mb-4">
+                    <div class="col-md-6 col-lg-6 col-xl-4 col-xxl-4 mb-4">
                         <div class="whyUsCard">
                             <div class="icon">
                                 <i class="ph-duotone ph-buildings"></i>
@@ -153,6 +153,19 @@ $currentPage = 'home';
                                 <p>We manage the full lifecycle—Engineering, Procurement, Construction—offering a single
                                     point of accountability for a seamless build.
                                 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4 col-xxl-4 mb-4">
+                        <div class="whyUsCard">
+                            <div class="icon">
+                                <i class="ph-duotone ph-solar-panel"></i>
+                            </div>
+                            <div class="whyUsContent">
+                                <h3>Solar EPC Solutions</h3>
+                                <p>We provide complete Solar EPC services from engineering and procurement to
+                                    installation and commissioning ensuring efficient, reliable, and high-performance
+                                    solar power solutions delivered on time with quality and safety.</p>
                             </div>
                         </div>
                     </div>
@@ -319,7 +332,6 @@ $currentPage = 'home';
                                             process—from design changes to supply chain risks—and delivered the factory
                                             precisely on budget. True single-point accountability.</p>
                                         <div class="userInfo">
-                                            <h6>Aanya Fernandes</h6>
                                             <small>CFO, National Logistics Park Development</small>
                                         </div>
                                     </div>
@@ -331,7 +343,6 @@ $currentPage = 'home';
                                             project management was flawless; they achieved Schedule Certainty and handed
                                             over a fully commissioned plant weeks ahead of the deadline.</p>
                                         <div class="userInfo">
-                                            <h6>Amol Impal</h6>
                                             <small>VP of Operations, Leading Food & Beverage Producer</small>
                                         </div>
                                     </div>
@@ -345,7 +356,6 @@ $currentPage = 'home';
                                             manufacturing
                                             line.</p>
                                         <div class="userInfo">
-                                            <h6>Priya S. Menon</h6>
                                             <small>Director of Manufacturing, Global Auto Component Supplier</small>
                                         </div>
                                     </div>
@@ -358,7 +368,6 @@ $currentPage = 'home';
                                             seamless
                                             coordination between civil, MEP, and automation contractors.</p>
                                         <div class="userInfo">
-                                            <h6>Arjun Malik</h6>
                                             <small>Project Head, India E-Commerce Distribution Center</small>
                                         </div>
                                     </div>
@@ -370,7 +379,6 @@ $currentPage = 'home';
                                             to
                                             site safety speaks volumes about their culture of excellence.</p>
                                         <div class="userInfo">
-                                            <h6>Rhea D'Souza</h6>
                                             <small>Head of Infrastructure, Pharmaceutical Major</small>
                                         </div>
                                     </div>
@@ -379,25 +387,7 @@ $currentPage = 'home';
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
                         </div>
-                        <div thumbsSlider="" class="swiper testimonialThumbs">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="assets/media/testimonials/user1.png" alt="User 1" title="User 1" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/media/testimonials/user2.png" alt="User 2" title="User 2" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/media/testimonials/user3.png" alt="User 3" title="User 3" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/media/testimonials/user4.png" alt="User 4" title="User 4" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/media/testimonials/user5.png" alt="User 5" title="User 5" />
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -407,13 +397,62 @@ $currentPage = 'home';
                 <div class="row">
                     <div class="pgHeader">
                         <div class="pgTitle">
-                            <h2>Recognized Excellence </h2>
-                            <h6>Industry Awards & Certifications</h6>
+                            <h2>Recognized Excellence</h2>
+                            <h6>Industry Certifications</h6>
                             <p>Official recognition of our unwavering commitment to quality, safety, and project
                                 execution standards.</p>
                         </div>
+                        <a href="certificates" class="btn btn-link">View All <i
+                                class="ph-duotone ph-arrow-up-right"></i></a>
                     </div>
-
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
+                        <a href="#" target="_blank" class="certificateCard">
+                            <figure>
+                                <img src="assets/media/certificates/certificate1.jpg" alt="Certificates">
+                            </figure>
+                            <h6>Best Company 2025</h6>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
+                        <a href="#" target="_blank" class="certificateCard">
+                            <figure>
+                                <img src="assets/media/certificates/certificate2.jpg" alt="Certificates">
+                            </figure>
+                            <h6>Certificate 2</h6>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
+                        <a href="#" target="_blank" class="certificateCard">
+                            <figure>
+                                <img src="assets/media/certificates/certificate3.jpg" alt="Certificates">
+                            </figure>
+                            <h6>Certificate 3</h6>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
+                        <a href="#" target="_blank" class="certificateCard">
+                            <figure>
+                                <img src="assets/media/certificates/certificate4.jpg" alt="Certificates">
+                            </figure>
+                            <h6>Certificate 4</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="awards certificates">
+            <div class="container">
+                <div class="row">
+                    <div class="pgHeader">
+                        <div class="pgTitle">
+                            <h2>Recognized Excellence</h2>
+                            <h6>Industry Awards</h6>
+                            <p>Official recognition of our unwavering commitment to quality, safety, and project
+                                execution standards.</p>
+                        </div>
+                        <a href="awards" class="btn btn-link">View All <i
+                                class="ph-duotone ph-arrow-up-right"></i></a>
+                    </div>
                     <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
                         <a href="#" target="_blank" class="certificateCard">
                             <figure>
