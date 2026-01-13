@@ -1,5 +1,5 @@
 <?php
-$currentPage = 'awards';
+$currentPage = 'certificates';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +13,7 @@ $currentPage = 'awards';
         content="Leading turnkey EPC solutions provider in India, specializing in factories, warehouses, and logistics parks.">
     <meta property="og:type" content="website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EPC Contractor India | Industrial Construction & Warehouses - Ellora EPC | Awards</title>
+    <title>EPC Contractor India | Industrial Construction & Warehouses - Ellora EPC | Certificates</title>
     <?php include 'includes/styles.php'; ?>
 </head>
 
@@ -22,32 +22,34 @@ $currentPage = 'awards';
     <?php include 'includes/header.php'; ?>
 
     <main>
-        <section class="breadcrumbs" style="background: url(assets/media/breadcrumbs/awards.jpg)">
+        <section class="breadcrumbs" style="background: url(assets/media/breadcrumbs/certificates.jpg)">
             <div class="container">
                 <div class="row">
                     <div class="breadcrumbContent">
-                        <h2>Awards</h2>
+                        <h2>Certificates</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index"><i
                                             class="ph-duotone ph-house-simple"></i></a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Awards</li>
+                                <li class="breadcrumb-item active" aria-current="page">Certificates</li>
                             </ol>
                         </nav>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="awards certificates">
+        <section class="certificates">
             <div class="container">
                 <div class="row">
                     <div class="pgHeader">
                         <div class="pgTitle">
                             <h2>Recognized Excellence</h2>
-                            <h6>Industry Awards</h6>
+                            <h6>Industry Certifications</h6>
                             <p>Official recognition of our unwavering commitment to quality, safety, and project
                                 execution standards.</p>
                         </div>
+                        <a href="certificates" class="btn btn-link">View All <i
+                                class="ph-duotone ph-arrow-up-right"></i></a>
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
                         <a href="#" target="_blank" class="certificateCard">

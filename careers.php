@@ -46,6 +46,15 @@ $currentPage = 'careers';
                             <h2>Work With Us</h2>
                             <h6>Connect with us to help you address your queries faster.</h6>
                         </div>
+                        <form action="">
+                            <div class="input-group searchGroup">
+                                <input type="text" class="form-control"
+                                    placeholder="Search Vacancy" aria-label="search-jobs"
+                                    aria-describedby="search-jobs">
+                                <button class="btn btn-primary" type="button" id="search-jobs"><i
+                                        class="ph-duotone ph-magnifying-glass"></i></button>
+                            </div>
+                        </form>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-4">
                         <div class="vacancyCard">
@@ -63,7 +72,9 @@ $currentPage = 'careers';
                                 <p>Lead multi-million dollar EPC projects for manufacturing and logistics clients.
                                     Responsible for schedule certainty, budget control, and seamless delivery from
                                     contract signing to commissioning.</p>
-                                <a class="btn btn-primary stretched-link" href="#" data-bs-toggle="modal" data-bs-target="#careerModal">Apply <i class="ph-duotone ph-arrow-bend-right-up"></i></a>
+                                <a class="btn btn-primary stretched-link" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#careerModal">Apply <i
+                                        class="ph-duotone ph-arrow-bend-right-up"></i></a>
                             </div>
                         </div>
                     </div>
@@ -89,8 +100,7 @@ $currentPage = 'careers';
             </div>
         </section>
     </main>
-    <div class="modal fade" id="careerModal" tabindex="-1" aria-labelledby="careerPopupLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="careerModal" tabindex="-1" aria-labelledby="careerPopupLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -114,60 +124,68 @@ $currentPage = 'careers';
                             <div class="careerForm">
                                 <form>
                                     <div class="row">
-                                        <div class="col-lg-12 col-xl-12 col-xxl-12 mb-3">
+                                        <div class="col-lg-12 mb-3">
                                             <div class="form-floating">
                                                 <input type="text" id="fname" name="fname" class="form-control"
-                                                    placeholder="What is your name? *" required=""
-                                                    data-error="First Name is required." autocomplete="off">
-                                                <label for="fName">Full Name *</label>
+                                                    placeholder="What is your name? *" required autocomplete="off">
+                                                <label for="fname">Full Name *</label>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-xl-12 col-xxl-12 mb-3">
+                                        <div class="col-lg-12 mb-3">
                                             <div class="form-floating">
                                                 <input type="email" id="email" name="email" class="form-control"
-                                                    placeholder="Tell us your Email ID "
-                                                    data-error="Valid email is required." autocomplete="off">
+                                                    placeholder="Tell us your Email ID" autocomplete="off">
                                                 <label for="email">Email Address</label>
                                             </div>
                                         </div>
-
-                                        <div class="col-lg-12 col-xl-12 col-xxl-12 mb-3">
+                                        <div class="col-lg-12 mb-3">
                                             <div class="form-floating">
                                                 <input name="mobile" id="mobile" type="tel" class="form-control"
                                                     placeholder="Enter your mobile number" maxlength="10"
-                                                    data-error="Mobile No. is required." autocomplete="off">
-                                                <label for="phone">Phone Number</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 col-xl-12 col-xxl-12 mb-3">
-                                            <div class="form-floating">
-                                                <input type="email" id="email" name="email" class="form-control"
-                                                    placeholder="Email " data-error="Valid email is required."
                                                     autocomplete="off">
-                                                <label for="email">Education</label>
+                                                <label for="mobile">Phone Number</label>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-xl-12 col-xxl-12 mb-3">
+                                        <div class="col-lg-12 mb-3">
+                                            <div class="form-floating">
+                                                <input type="text" id="education" name="education" class="form-control"
+                                                    placeholder="Education" autocomplete="off">
+                                                <label for="education">Education</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 mb-3">
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                    id="experienced" value="I am Experienced">
+                                                <input class="form-check-input" type="radio" name="experience"
+                                                    id="experienced" value="Experienced">
                                                 <label class="form-check-label" for="experienced">I am
                                                     Experienced</label>
                                             </div>
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                    id="fresher" value="I am Fresher">
+                                                <input class="form-check-input" type="radio" name="experience"
+                                                    id="fresher" value="Fresher">
                                                 <label class="form-check-label" for="fresher">I am Fresher</label>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-xl-12 col-xxl-12 mb-3">
-                                            <div class="formGroup">
-                                                <input class="form-control" type="file" id="formFile">
+                                        <div class="col-lg-12 mb-3">
+                                            <div class="form-floating">
+                                                <input type="number" id="lastSalary" name="last_salary"
+                                                    class="form-control" placeholder="Last Salary" autocomplete="off">
+                                                <label for="lastSalary">Last Salary (₹)</label>
                                             </div>
                                         </div>
+                                        <div class="col-lg-12 mb-3">
+                                            <div class="form-floating">
+                                                <input type="number" id="expectedSalary" name="expected_salary"
+                                                    class="form-control" placeholder="Expected Salary"
+                                                    autocomplete="off">
+                                                <label for="expectedSalary">Expected Salary (₹)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 mb-3">
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
                                         <div class="col-lg-12">
-                                            <button type="submit" name="submit" id="submit"
-                                                class="btn btn-primary">Submit</button>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
                                         </div>
                                     </div>
                                 </form>

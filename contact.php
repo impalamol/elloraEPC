@@ -96,35 +96,37 @@ $currentPage = 'contact';
                                 <div class="row">
                                     <div class="col-12 col-lg-12 col-xl-12 col-xxl-12 mb-4">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Full Name">
-                                            <label for="name">Full Name</label>
+                                            <input type="text" class="form-control" id="companyName"
+                                                placeholder="Company Name">
+                                            <label for="companyName">Company Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-xl-12 col-xxl-12 mb-4">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="fullName"
+                                                placeholder="Full Name">
+                                            <label for="fullName">Full Name</label>
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 mb-4">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="email"
-                                                placeholder="Email Address">
-                                            <label for="email">Email Address</label>
+                                            <input type="email" class="form-control" id="businessEmail"
+                                                placeholder="Business Email">
+                                            <label for="businessEmail">Business Email</label>
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 mb-4">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="phone"
-                                                placeholder="Phone Number">
-                                            <label for="phone">Phone Number</label>
-                                        </div>
-                                    </div>
-                                   <div class="col-12 col-lg-12 col-xl-12 col-xxl-12 mb-4">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                            <label for="subject">Subject</label>
+                                            <input type="tel" class="form-control" id="mobileNumber"
+                                                placeholder="Mobile Number">
+                                            <label for="mobileNumber">Mobile Number</label>
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-12 col-xl-12 col-xxl-12 mb-4">
                                         <div class="form-floating">
                                             <textarea class="form-control" placeholder="Your Message" id="message"
                                                 style="height: 9.375rem"></textarea>
-                                            <label for="message">Your Message (Optional)</label>
+                                            <label for="message">Message</label>
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6 col-xl-6 col-xxl-6">
