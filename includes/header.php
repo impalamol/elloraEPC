@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
         <a class="navbar-brand" href="index">
-            <img src="assets/media/ellora-logo.png" alt="Ellora EPC" title="Ellora EPC" width="170">
+            <img src="assets/media/ellora-logo.png" alt="Ellora EPC" title="Ellora EPC" width="140">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

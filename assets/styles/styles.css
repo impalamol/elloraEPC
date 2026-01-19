@@ -73,7 +73,7 @@ textarea:not([rows]) {
   display: flex;
 }
 
-.flex-center, .contactUs .contactCard .contactChip .icon, .ventures .ventureCard, .cta .ctaCard .ctaContent .roundedBtn .icon, .cta .ctaCard .ctaContent .roundedBtn, .missionVision .mvCard .mvHeader .icon, .projects .projectCard .projectHeader a, .stats .statCard, .whyUs .whyUsCard .icon, .collaborationCard, .hero .paginationContainer .navigation .swiper-button-next,
+.flex-center, footer .footerContent .footerCard .social a, .contactUs .contactCard .contactChip .icon, .ventures .ventureCard, .cta .ctaCard .ctaContent .roundedBtn .icon, .cta .ctaCard .ctaContent .roundedBtn, .missionVision .mvCard .mvHeader .icon, .projects .projectCard .projectHeader a, .stats .statCard, .whyUs .whyUsCard .icon, .collaborationCard, .hero .paginationContainer .navigation .swiper-button-next,
 .hero .paginationContainer .navigation .swiper-button-prev, .hero .paginationContainer .navigation, .hero .heroSlide, .navbar .circleLink,
 .navbar .circleBtn, .searchModal .nrs, .searchModal .searchResult .resultItem a .productIcon img, .videoBtn, .pgHeader.centered .pgTitle,
 .pgHeader.centered .pgSection, .pgHeader.centered {
@@ -94,7 +94,7 @@ textarea:not([rows]) {
   justify-content: space-around;
 }
 
-.flex-center-start, footer .copyright .copyrightContent .copyrightLinks, .contactUs .contactCard .contactChip, .career .vacancyCard .vacancyHeader .vacancyMeta, .projectDetails .projectContainer .projectThumb, .missionVision .mvCard .mvHeader, .about .aboutVideo, .searchModal .searchResult .resultItem a, .btnGroup {
+.flex-center-start, footer .copyright .copyrightContent .copyrightLinks, footer .footerContent .footerCard .social, .contactUs .contactCard .contactChip, .career .vacancyCard .vacancyHeader .vacancyMeta, .projectDetails .projectContainer .projectThumb, .missionVision .mvCard .mvHeader, .about .aboutVideo, .searchModal .searchResult .resultItem a, .btnGroup {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -1913,6 +1913,54 @@ footer .footerContent .footerCard .footerLogo {
 }
 footer .footerContent .footerCard .footerLogo img {
   max-width: 9.375rem !important;
+}
+footer .footerContent .footerCard .social {
+  flex-wrap: wrap;
+  gap: 0.75rem !important;
+}
+footer .footerContent .footerCard .social a {
+  font-size: 1.125rem;
+  min-width: 2rem;
+  min-height: 2rem;
+  max-width: 2rem;
+  max-height: 2rem;
+  margin: 0 !important;
+  border-radius: 50%;
+  margin: 0;
+  transition: transform 0.6s ease-in-out;
+}
+footer .footerContent .footerCard .social a i {
+  color: #ffffff;
+}
+footer .footerContent .footerCard .social .in {
+  background-color: #0077b5;
+}
+footer .footerContent .footerCard .social .in:hover {
+  background-color: rgb(0, 85.4696132597, 130);
+}
+footer .footerContent .footerCard .social .fb {
+  background-color: #4267b2;
+}
+footer .footerContent .footerCard .social .fb:hover {
+  background-color: rgb(52.2049180328, 81.4713114754, 140.7950819672);
+}
+footer .footerContent .footerCard .social .tw {
+  background-color: #1da1f2;
+}
+footer .footerContent .footerCard .social .tw:hover {
+  background-color: rgb(11.9665271967, 133.4728033473, 208.0334728033);
+}
+footer .footerContent .footerCard .social .insta {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+footer .footerContent .footerCard .social .insta:hover {
+  background: linear-gradient(45deg, rgb(243.4931506849, 172.9178082192, 98.5068493151), rgb(227.0377358491, 35.9622641509, 166.4528301887));
+}
+footer .footerContent .footerCard .social .yt {
+  background-color: #ff0000;
+}
+footer .footerContent .footerCard .social .yt:hover {
+  background-color: #cc0000;
 }
 footer .footerContent .footerCard h5 {
   font-size: 1.25rem;
