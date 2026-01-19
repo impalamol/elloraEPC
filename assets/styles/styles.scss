@@ -1215,8 +1215,81 @@ footer {
                 img {
                     max-width: 9.375rem !important;
                 }
-            }
+            } // Social
+            .social {
+                @extend .flex-center-start;
+                flex-wrap: wrap;
+                gap: $commonUnit / 2 !important;
 
+                a {
+                    font-size: $xLarge;
+                    @extend .flex-center;
+                    $wh: $commonUnit + $commonUnit / 3;
+                    min-width: $wh;
+                    min-height: $wh;
+                    max-width: $wh;
+                    max-height: $wh;
+                    margin: 0 !important;
+                    border-radius: 50%;
+                    margin: 0;
+                    transition: transform 0.6s ease-in-out;
+
+                    i {
+                        color: $white;
+                    }
+
+                    // &:hover {
+                    //     transform: translateY(-$commonUnit / 2);
+                    // }
+                }
+
+                // LinkedIn
+                .in {
+                    background-color: #0077b5; // LinkedIn blue
+                    &:hover {
+                        background-color: darken(#0077b5, 10%);
+                    }
+                }
+
+                // Facebook
+                .fb {
+                    background-color: #4267b2; // Facebook blue
+                    &:hover {
+                        background-color: darken(#4267b2, 10%);
+                    }
+                }
+
+                // Twitter
+                .tw {
+                    background-color: #1da1f2; // Twitter blue
+                    &:hover {
+                        background-color: darken(#1da1f2, 10%);
+                    }
+                }
+
+                // Instagram
+                .insta {
+                    background: linear-gradient(
+                        45deg,
+                        #f09433,
+                        #e6683c,
+                        #dc2743,
+                        #cc2366,
+                        #bc1888
+                    ); // Instagram gradient
+                    &:hover {
+                        background: linear-gradient(45deg, lighten(#f09433, 10%), lighten(#bc1888, 10%));
+                    }
+                }
+
+                // YouTube
+                .yt {
+                    background-color: #ff0000; // YouTube red
+                    &:hover {
+                        background-color: darken(#ff0000, 10%);
+                    }
+                }
+            }
             h5 {
                 font-size: $h6;
                 text-transform: capitalize;

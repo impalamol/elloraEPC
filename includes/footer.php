@@ -2,10 +2,40 @@
     <div class="footerContent">
         <div class="container">
             <div class="row">
-                <div class="col-6 col-md-3 col-lg-3 col-xl-2 col-xxl-2 mb-4">
+                <div class="col-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-4">
                     <div class="footerCard">
                         <div class="footerLogo">
                             <img src="assets/media/ellora-logo2.png" alt="Ellora Logo" class="img-fluid">
+                        </div>
+                        <hr />
+                        <div class="footerSocial mt-3">
+                            <div class="social">
+                                <a href="#" class="in" title="Follow Us On LinkedIn">
+                                    <i class="ph-duotone ph-linkedin-logo"></i>
+                                </a>
+                                <a href="#" class="fb" title="Follow Us On Facebook">
+                                    <i class="ph-duotone ph-facebook-logo"></i>
+                                </a>
+                                <a href="#" class="tw" title="Follow Us On Twitter">
+                                    <i class="ph-duotone ph-twitter-logo"></i>
+                                </a>
+                                <a href="#" class="insta" title="Follow Us On Instagram">
+                                    <i class="ph-duotone ph-instagram-logo"></i>
+                                </a>
+                                <!-- <a href="#" class="yt" title="Follow Us On YouTube">
+                                    <i class="ph-duotone ph-youtube-logo"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="footerSubscribe">
+                            <h5 class="footerHeading">Would you like to hear from us?</h5>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="your email..."
+                                    aria-label="your email..." aria-describedby="subscribeBtn">
+                                <button class="btn btn-outline-secondary" type="button"
+                                    id="subscribeBtn">Subscribe</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -61,7 +91,7 @@
                 </div>
 
                 <!-- Support -->
-                <div class="col-6 col-md-3 col-lg-2 col-xl-3 col-xxl-3 mb-4">
+                <div class="col-6 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-4">
                     <div class="footerCard">
                         <h5>Support</h5>
                         <ul class="list-unstyled">
