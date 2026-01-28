@@ -243,6 +243,40 @@
     });
 </script>
 <script>
+    document.querySelectorAll('#customSelect .dropdown-item').forEach(item => {
+        item.addEventListener('click', function () {
+            const dropdown = this.closest('.dropdown');
+            const button = dropdown.querySelector('.dropdown-toggle');
+            const searchInput = dropdown.querySelector('input[type="text"]');
+            const items = dropdown.querySelectorAll('.dropdown-item');
+
+            // set selected value
+            button.textContent = this.textContent;
+
+            // ✅ clear search input
+            searchInput.value = '';
+
+            // ✅ reset all options visibility
+            items.forEach(i => i.style.display = '');
+
+            // close dropdown
+            bootstrap.Dropdown.getInstance(button).hide();
+        });
+    });
+
+    function filterOptions(input) {
+        const filter = input.value.toLowerCase();
+        const items = input.closest('.dropdown-menu')
+            .querySelectorAll('.dropdown-item');
+
+        items.forEach(item => {
+            item.style.display = item.textContent.toLowerCase().includes(filter)
+                ? ''
+                : 'none';
+        });
+    }
+</script>
+<script>
     var currentYear = new Date().getFullYear();
     document.getElementById("year").textContent = currentYear;
 </script>

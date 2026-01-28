@@ -47,12 +47,26 @@ $currentPage = 'careers';
                             <h6>Connect with us to help you address your queries faster.</h6>
                         </div>
                         <form action="">
-                            <div class="input-group searchGroup">
-                                <input type="text" class="form-control"
-                                    placeholder="Search Vacancy" aria-label="search-jobs"
-                                    aria-describedby="search-jobs">
-                                <button class="btn btn-primary" type="button" id="search-jobs"><i
-                                        class="ph-duotone ph-magnifying-glass"></i></button>
+                            <div class="dropdown w-100" id="customSelect">
+                                <button class="form-control text-start dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select option
+                                </button>
+                                <div class="dropdown-menu w-100 p-0">
+                                    <div class="sticky-top bg-white p-2 border-bottom">
+                                        <input type="text" class="form-control" placeholder="Search..."
+                                            onkeyup="filterOptions(this)" />
+                                    </div>
+                                    <div class="options" style="max-height: 220px; overflow-y: auto;">
+                                        <button class="dropdown-item" type="button">About</button>
+                                        <button class="dropdown-item" type="button">Base</button>
+                                        <button class="dropdown-item" type="button">Blog</button>
+                                        <button class="dropdown-item" type="button">Contact</button>
+                                        <button class="dropdown-item" type="button">Custom</button>
+                                        <button class="dropdown-item" type="button">Support</button>
+                                        <button class="dropdown-item" type="button">Tools</button>
+                                    </div>
+                                </div>
                             </div>
                         </form>
                     </div>

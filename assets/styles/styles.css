@@ -1609,6 +1609,16 @@ img.mfp-img {
   color: #0e0f17;
 }
 
+.career #customSelect {
+  min-width: 12.5rem;
+  position: relative;
+}
+.career #customSelect .dropdown-toggle::after {
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%);
+}
 .career .vacancyCard {
   position: relative;
   background-color: #ffffff;
