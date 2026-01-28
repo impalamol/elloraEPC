@@ -853,6 +853,16 @@ img.mfp-img {
 }
 // Career
 .career {
+    #customSelect {
+        min-width: 12.5rem;
+        position: relative;
+        .dropdown-toggle::after  {
+            position: absolute;
+            top: 50%;
+            right: $commonUnit;
+            transform: translateY(-50%);
+        }
+    }
     .vacancyCard {
         position: relative;
         background-color: $white;
