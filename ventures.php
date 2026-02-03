@@ -49,51 +49,60 @@ $currentPage = 'ventures';
                                 technology, logistics, and workspace solutions.</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-5">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-5">
                         <div class="ventureCard">
                             <img src="assets/media/ventures/ellora-group.webp" alt="Ellora Group">
-                            <p class="text-center mb-0 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Ellora prefab is a leading manufacturer of Pre Engineering Buildings & Steel Structures
+                                in INDIA. The team comprised of skilled professionals and technical experts boasts a
+                                renowned reputation for stead fast dedication to excellence.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-5">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-5">
                         <div class="ventureCard">
                             <img src="assets/media/ventures/ellora-infotech.webp" alt="Ellora Infotech">
-                            <p class="text-center mb-0 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-5">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-5">
                         <div class="ventureCard">
                             <img src="assets/media/ventures/ellora-lifespace.webp" alt="Ellora Lifespace">
-                            <p class="text-center mb-0 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-5">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-5">
                         <div class="ventureCard">
                             <img src="assets/media/ventures/ellora-logistics.webp" alt="Ellora Logistics">
-                            <p class="text-center mb-0 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-5">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-5">
                         <div class="ventureCard">
                             <img src="assets/media/ventures/ellora-workspace.webp" alt="Ellora Workspace">
-                            <p class="text-center mb-0 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-5">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-5">
                         <div class="ventureCard">
                             <img src="assets/media/ventures/palmasia.webp" alt="Palmasia Industries">
-                            <p class="text-center mb-0 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-5">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-5">
                         <div class="ventureCard">
                             <img src="assets/media/ventures/elr.webp" alt="ELR">
-                            <p class="text-center mb-0 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
                         </div>
                     </div>
 

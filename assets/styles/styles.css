@@ -73,7 +73,7 @@ textarea:not([rows]) {
   display: flex;
 }
 
-.flex-center, footer .footerContent .footerCard .social a, .contactUs .contactCard .contactChip .icon, .ventures .ventureCard, .cta .ctaCard .ctaContent .roundedBtn .icon, .cta .ctaCard .ctaContent .roundedBtn, .missionVision .mvCard .mvHeader .icon, .projects .projectCard .projectHeader a, .stats .statCard, .whyUs .whyUsCard .icon, .collaborationCard, .hero .paginationContainer .navigation .swiper-button-next,
+.flex-center, footer .footerContent .footerCard .social a, footer .footerContent .footerCard .footerLogo, footer .footerContent .footerCard.logo, .contactUs .contactCard .contactChip .icon, .cta .ctaCard .ctaContent .roundedBtn .icon, .cta .ctaCard .ctaContent .roundedBtn, .missionVision .mvCard .mvHeader .icon, .projects .projectCard .projectHeader a, .stats .statCard, .whyUs .whyUsCard .icon, .collaborationCard, .hero .paginationContainer .navigation .swiper-button-next,
 .hero .paginationContainer .navigation .swiper-button-prev, .hero .paginationContainer .navigation, .hero .heroSlide, .navbar .circleLink,
 .navbar .circleBtn, .searchModal .nrs, .searchModal .searchResult .resultItem a .productIcon img, .videoBtn, .pgHeader.centered .pgTitle,
 .pgHeader.centered .pgSection, .pgHeader.centered {
@@ -94,7 +94,7 @@ textarea:not([rows]) {
   justify-content: space-around;
 }
 
-.flex-center-start, footer .copyright .copyrightContent .copyrightLinks, footer .footerContent .footerCard .social, .contactUs .contactCard .contactChip, .career .vacancyCard .vacancyHeader .vacancyMeta, .projectDetails .projectContainer .projectThumb, .missionVision .mvCard .mvHeader, .about .aboutVideo, .searchModal .searchResult .resultItem a, .btnGroup {
+.flex-center-start, footer .copyright .copyrightContent .copyrightLinks, footer .footerContent .footerCard .social, .contactUs .contactCard .contactChip, .ventures .ventureCard, .career .vacancyCard .vacancyHeader .vacancyMeta, .projectDetails .projectContainer .projectThumb, .missionVision .mvCard .mvHeader, .about .aboutVideo, .searchModal .searchResult .resultItem a, .btnGroup {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -142,7 +142,7 @@ textarea:not([rows]) {
   justify-content: space-around;
 }
 
-.flex-start-center, footer .footerContent .footerCard .footerLogo, .projectDetails .projectContainer, .breadcrumbs, .pgHeader.verticallyCentered {
+.flex-start-center, .projectDetails .projectContainer, .breadcrumbs, .pgHeader.verticallyCentered {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -1801,8 +1801,13 @@ img.mfp-img {
   background: #e4e4e4;
 }
 .ventures .ventureCard img {
-  max-width: 80% !important;
+  max-width: 70% !important;
   display: block;
+  margin: 0 auto 1.5rem;
+}
+.ventures .ventureCard p {
+  text-align: center;
+  max-width: 85%;
   margin: 0 auto;
 }
 .ventures > [class^=col-]:nth-child(5n) .ventureCard,
@@ -1919,8 +1924,14 @@ footer .footerContent .footerCard {
   z-index: 2;
   height: 100%;
 }
+footer .footerContent .footerCard.logo {
+  height: 100%;
+}
 footer .footerContent .footerCard .footerLogo {
+  background-color: #ffffff;
   flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 1rem;
 }
 footer .footerContent .footerCard .footerLogo img {
   max-width: 9.375rem !important;
@@ -2018,6 +2029,9 @@ footer .footerContent .footerCard .contactChip span {
 }
 footer .footerContent .footerCard .contactChip p,
 footer .footerContent .footerCard .contactChip a {
+  margin: 0;
+}
+footer .footerContent .footerCard ul {
   margin: 0;
 }
 footer .footerContent .footerCard ul li {

@@ -3,9 +3,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-6 col-md-6 col-lg-2 col-xl-2 col-xxl-2 mb-4">
-                    <div class="footerCard">
+                    <div class="footerCard logo">
                         <div class="footerLogo">
-                            <img src="assets/media/ellora-logo2.png" alt="Ellora Logo" class="img-fluid">
+                            <img src="assets/media/ellora-logo.png" alt="Ellora Logo" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -68,8 +68,8 @@
                             <div class="input-group mb-3">
                                 <input type="email" class="form-control" placeholder="your email..."
                                     aria-label="your email..." aria-describedby="subscribeBtn">
-                                <button class="btn btn-outline-secondary" type="button"
-                                    id="subscribeBtn">Subscribe</button>
+                                <button class="btn btn-primary" type="button"
+                                    id="subscribeBtn">Subscribe <i class="ph-duotone ph-envelope"></i></button>
                             </div>
                         </div>
                         <hr />
