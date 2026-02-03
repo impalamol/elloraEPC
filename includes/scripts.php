@@ -146,30 +146,30 @@
     });
 </script>
 <script>
-    $(document).ready(function () {
-        $('.popupGallery').magnificPopup({
-            c    delegate: 'a',
-            type: 'image',
-            gallery: {
-                enabled: true,
-                navigateByImgClick: true,
-                preload: [0, 1] // Preload 1 image before and after the current one
-            },
-            keyboard: {
-                enabled: true,
-                left: true,
-                right: true,
-                escKey: true,
-                up: false,
-                down: false
-            },
-            navigation: {
-                arrowEl: true
-            },
-            mainClass: 'mfp-fade', // Add a smooth fade transition between slides
-            removalDelay: 300, // Delay removal to allow the fade-out effect
-        });
-    });
+           /* Popup Gallery (keeps Magnific Popup jQuery plugin usage) */
+            (function () {
+                if (window.jQuery && $.fn && $.fn.magnificPopup) {
+                    $(function () {
+                        $('.popupGallery').magnificPopup({
+                            delegate: 'a',
+                            type: 'image',
+                            gallery: {
+                                enabled: true,
+                                navigateByImgClick: true,
+                                preload: [0, 1]
+                            },
+                            keyboard: {
+                                enabled: true,
+                                left: true,
+                                right: true,
+                                escKey: true
+                            },
+                            mainClass: 'mfp-fade',
+                            removalDelay: 300
+                        });
+                    });
+                }
+            })();
 </script>
 <script>
     function resizeGridItem(item) {
