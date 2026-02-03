@@ -816,7 +816,7 @@ section:not(.hero) .container {
   image-rendering: crisp-edges;
   flex-direction: column;
   height: 25rem;
-  margin-top: 5rem;
+  margin-top: 4.5rem;
   position: relative;
   overflow: hidden;
 }
@@ -989,6 +989,7 @@ section:not(.hero) .container {
 
 .hero {
   min-height: 100vh;
+  margin-top: 80px;
 }
 .hero .swiper-slide {
   width: 100% !important;
