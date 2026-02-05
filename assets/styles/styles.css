@@ -1209,10 +1209,13 @@ section:not(.hero) .container {
 .projects .projectCard .projectHeader a {
   font-size: 1.125rem;
   color: #0e0f17;
-  width: 3.125rem;
-  height: 3.125rem;
-  border-radius: 50%;
+  min-width: 3.125rem;
+  min-height: 3.125rem;
+  max-width: 3.125rem;
+  max-height: 3.125rem;
   background-color: #ffffff;
+  border-radius: 50%;
+  border: 0.0625rem solid #e4e4e4;
 }
 .projects .projectCard .projectMedia {
   border-radius: 1rem;
@@ -2095,8 +2098,11 @@ footer .copyright .copyrightContent .copyrightLinks {
   section:not(.hero) {
     padding: 1.5rem 0 !important;
   }
+  .pgHeader {
+    margin-bottom: 1.5rem;
+  }
   .pgHeader .pgTitle h2 {
-    font-size: 2rem;
+    font-size: 1.625rem;
   }
   .pgHeader .pgTitle h6 {
     font-size: 1.125rem;
@@ -2142,6 +2148,54 @@ footer .copyright .copyrightContent .copyrightLinks {
     padding: 0 1.5rem !important;
   }
   footer .copyright {
+    padding: 1.5rem !important;
+  }
+  .breadcrumbs {
+    height: 100%;
+  }
+  .breadcrumbs .breadcrumbContent h2 {
+    font-size: 1.25rem;
+  }
+  .cta .ctaCard {
+    padding: 1.5rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  #careerModal .modal-header h1 {
+    font-size: 1.125rem !important;
+  }
+  #careerModal .modal-body {
+    overflow: auto;
+  }
+  #careerModal .modal-body .careerForm,
+  #careerModal .modal-body .careerPopupContent {
+    padding: 1.5rem !important;
+    max-height: 100% !important;
+  }
+  .input-group {
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+  .input-group input,
+  .input-group button {
+    flex-grow: 1 !important;
+    width: 100% !important;
+    border-radius: 0.5rem !important;
+  }
+  .blogDetails h1 {
+    font-size: 1.625rem;
+  }
+  .blogDetails .pagination .next,
+  .blogDetails .pagination .previous {
+    text-align: center !important;
+  }
+  .contactUs .addressCard .addressHeader h6 {
+    font-size: 1.125rem;
+  }
+  .contactUs .addressCard .addressBody address {
+    font-size: 0.875rem;
+  }
+  .contactUs .contactCard.form {
     padding: 1.5rem !important;
   }
 }/*# sourceMappingURL=styles.css.map */
