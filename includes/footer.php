@@ -2,7 +2,7 @@
     <div class="footerContent">
         <div class="container">
             <div class="row">
-                <div class="col-6 col-md-6 col-lg-2 col-xl-2 col-xxl-2 mb-4">
+                <div class="col-12 col-md-6 col-lg-2 col-xl-2 col-xxl-2 mb-4">
                     <div class="footerCard logo">
                         <div class="footerLogo">
                             <img src="assets/media/ellora-logo.png" alt="Ellora Logo" class="img-fluid">
@@ -10,7 +10,7 @@
                     </div>
                 </div>
                 <!-- Contact Us -->
-                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-4">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-4">
                     <div class="footerCard">
                         <h5>Contact Us</h5>
                         <div class="contactChip">
@@ -44,7 +44,7 @@
                 </div>
 
                 <!-- Navigation -->
-                <div class="col-6 col-md-6 col-lg-2 col-xl-2 col-xxl-2 mb-4">
+                <div class="col-12 col-md-6 col-lg-2 col-xl-2 col-xxl-2 mb-4">
                     <div class="footerCard">
                         <h5>Navigation</h5>
                         <ul class="list-unstyled">
@@ -61,7 +61,7 @@
                 </div>
 
                 <!-- Support -->
-                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-4">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-4">
                     <div class="footerCard">
                         <div class="footerSubscribe">
                             <h5 class="footerHeading">Would you like to hear from us?</h5>

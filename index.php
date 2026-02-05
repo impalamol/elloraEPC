@@ -52,39 +52,56 @@ $currentPage = 'home';
                                 into operational reality</span></h2>
                         <p>We master the full EPC lifecycle, blending intelligent design with robust field execution,
                             ensuring your large-scale project vision becomes a stable reality.</p>
-                        <div class="swiper collaborationSwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <figure class="collaborationCard"> <img
-                                            src="assets/media/collaborations/client1.jpg" alt=""></figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="collaborationCard"> <img
-                                            src="assets/media/collaborations/client2.jpg" alt=""></figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="collaborationCard"> <img
-                                            src="assets/media/collaborations/client3.jpg" alt=""></figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="collaborationCard"> <img
-                                            src="assets/media/collaborations/client4.jpg" alt=""></figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="collaborationCard"> <img
-                                            src="assets/media/collaborations/client5.jpg" alt=""></figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="collaborationCard"> <img
-                                            src="assets/media/collaborations/client6.jpg" alt=""></figure>
-                                </div>
-                                <div class="swiper-slide">
-                                    <figure class="collaborationCard"> <img
-                                            src="assets/media/collaborations/client7.jpg" alt=""></figure>
-                                </div>
-                            </div>
-                        </div>
                     </div>
+                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
+                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client1.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
+                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client2.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
+                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client3.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
+                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client4.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
+                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client5.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
+                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client6.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
+                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client7.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
+                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client3.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
+                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client4.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
+                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client5.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
+                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client6.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
+                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client7.jpg" alt="">
+                        </figure>
+                    </div>
+
                     <div class="aboutVideo" style="background-image: url('assets/media/video-bg.jpg');">
                         <button class="videoBtn" data-bs-toggle="modal" data-bs-target="#aboutVideo">
                             <i class="ph-duotone ph-play"></i>
@@ -328,58 +345,78 @@ $currentPage = 'home';
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="testimonialCard">
-                                        <p>The fixed-price EPC contract was key. The team took ownership of the entire
-                                            process—from design changes to supply chain risks—and delivered the factory
-                                            precisely on budget. True single-point accountability.</p>
-                                        <div class="userInfo">
-                                            <small>CFO, National Logistics Park Development</small>
+                                        <div class="videoContainer">
+                                            <video class="testimonialVideo" controls>
+                                                <source src="assets/media/testimonials/testimonial.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                        </div>
+                                        <div class="testimonialContent">
+                                            <p>
+                                                The fixed-price EPC contract was key. The team took ownership
+                                                of the entire process—from design changes to supply chain risks—
+                                                and delivered the factory precisely on budget.
+                                            </p>
+                                            <div class="userInfo">
+                                                <small>CFO, National Logistics Park Development</small>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="testimonialCard">
-                                        <p>We needed this cold storage facility operational before peak season.
-                                            Webcipher’s
-                                            project management was flawless; they achieved Schedule Certainty and handed
-                                            over a fully commissioned plant weeks ahead of the deadline.</p>
-                                        <div class="userInfo">
-                                            <small>VP of Operations, Leading Food & Beverage Producer</small>
+                                        <div class="videoContainer">
+                                            <video class="testimonialVideo" controls>
+                                                <source src="assets/media/testimonials/testimonial.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                        </div>
+                                        <div class="testimonialContent">
+                                            <p>
+                                                We needed this cold storage facility operational before peak season.
+                                                Project management was flawless and handed over the plant early.
+                                            </p>
+                                            <div class="userInfo">
+                                                <small>VP of Operations, Food & Beverage Producer</small>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="testimonialCard">
-                                        <p>The quality of the final construction, particularly the structural steel
-                                            work,
-                                            exceeded international standards. Their in-house engineering team provided
-                                            solutions that greatly improved the long-term efficiency of our
-                                            manufacturing
-                                            line.</p>
-                                        <div class="userInfo">
-                                            <small>Director of Manufacturing, Global Auto Component Supplier</small>
+                                        <div class="videoContainer">
+                                            <video class="testimonialVideo" controls>
+                                                <source src="assets/media/testimonials/testimonial.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                        </div>
+                                        <div class="testimonialContent">
+                                            <p>
+                                                The quality of construction exceeded international standards.
+                                                Engineering team improved long-term efficiency.
+                                            </p>
+                                            <div class="userInfo">
+                                                <small>Director of Manufacturing</small>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="testimonialCard">
-                                        <p>Managing the complexities of a multi-phased warehouse campus is challenging,
-                                            but
-                                            Webcipher’s simplified it completely. Their integrated EPC model meant
-                                            seamless
-                                            coordination between civil, MEP, and automation contractors.</p>
-                                        <div class="userInfo">
-                                            <small>Project Head, India E-Commerce Distribution Center</small>
+                                        <div class="videoContainer">
+                                            <video class="testimonialVideo" controls>
+                                                <source src="assets/media/testimonials/testimonial.mp4"
+                                                    type="video/mp4">
+                                            </video>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testimonialCard">
-                                        <p>Safety is non-negotiable for our firm. Webcipher's maintained an impeccable
-                                            Zero-Incident safety record throughout the 18-month project. This commitment
-                                            to
-                                            site safety speaks volumes about their culture of excellence.</p>
-                                        <div class="userInfo">
-                                            <small>Head of Infrastructure, Pharmaceutical Major</small>
+                                        <div class="testimonialContent">
+                                            <p>
+                                                Integrated EPC model ensured seamless coordination between civil,
+                                                MEP and automation contractors.
+                                            </p>
+                                            <div class="userInfo">
+                                                <small>Project Head, Distribution Center</small>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -387,7 +424,6 @@ $currentPage = 'home';
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -405,7 +441,7 @@ $currentPage = 'home';
                         <a href="certificates" class="btn btn-link">View All <i
                                 class="ph-duotone ph-arrow-up-right"></i></a>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-3">
                         <a href="#" target="_blank" class="certificateCard">
                             <figure>
                                 <img src="assets/media/certificates/certificate1.jpg" alt="Certificates">
@@ -413,7 +449,7 @@ $currentPage = 'home';
                             <h6>Best Company 2025</h6>
                         </a>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-3">
                         <a href="#" target="_blank" class="certificateCard">
                             <figure>
                                 <img src="assets/media/certificates/certificate2.jpg" alt="Certificates">
@@ -421,7 +457,7 @@ $currentPage = 'home';
                             <h6>Certificate 2</h6>
                         </a>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-3">
                         <a href="#" target="_blank" class="certificateCard">
                             <figure>
                                 <img src="assets/media/certificates/certificate3.jpg" alt="Certificates">
@@ -429,7 +465,7 @@ $currentPage = 'home';
                             <h6>Certificate 3</h6>
                         </a>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-3">
                         <a href="#" target="_blank" class="certificateCard">
                             <figure>
                                 <img src="assets/media/certificates/certificate4.jpg" alt="Certificates">
@@ -450,10 +486,9 @@ $currentPage = 'home';
                             <p>Official recognition of our unwavering commitment to quality, safety, and project
                                 execution standards.</p>
                         </div>
-                        <a href="awards" class="btn btn-link">View All <i
-                                class="ph-duotone ph-arrow-up-right"></i></a>
+                        <a href="awards" class="btn btn-link">View All <i class="ph-duotone ph-arrow-up-right"></i></a>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-3">
                         <a href="#" target="_blank" class="certificateCard">
                             <figure>
                                 <img src="assets/media/certificates/certificate1.jpg" alt="Certificates">
@@ -461,7 +496,7 @@ $currentPage = 'home';
                             <h6>Best Company 2025</h6>
                         </a>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-3">
                         <a href="#" target="_blank" class="certificateCard">
                             <figure>
                                 <img src="assets/media/certificates/certificate2.jpg" alt="Certificates">
@@ -469,7 +504,7 @@ $currentPage = 'home';
                             <h6>Certificate 2</h6>
                         </a>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-3">
                         <a href="#" target="_blank" class="certificateCard">
                             <figure>
                                 <img src="assets/media/certificates/certificate3.jpg" alt="Certificates">
@@ -477,7 +512,7 @@ $currentPage = 'home';
                             <h6>Certificate 3</h6>
                         </a>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-3">
                         <a href="#" target="_blank" class="certificateCard">
                             <figure>
                                 <img src="assets/media/certificates/certificate4.jpg" alt="Certificates">
