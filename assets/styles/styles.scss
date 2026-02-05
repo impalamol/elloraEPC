@@ -7,7 +7,7 @@
         img {
             -o-object-fit: cover;
             object-fit: cover;
-            border-radius: $cardRadius / 2;
+            // border-radius: $cardRadius / 2;
             filter: grayscale(1);
             transition: all 0.6s linear;
         }
@@ -22,7 +22,7 @@
     &.collaborationSwiper {
         padding: 0;
         margin-bottom: $commonUnit;
-        border-radius: $commonUnit;
+        // border-radius: $commonUnit;
         overflow: hidden;
 
         .swiper-slide img {
@@ -125,7 +125,7 @@
 // Hero
 .hero {
     min-height: 100vh;
-    margin-top: 80px;
+    margin-top: 4.375rem;
     .swiper-slide {
         width: 100% !important;
 
@@ -454,26 +454,47 @@
         transition: all 0.6s linear;
         overflow: hidden;
         .testimonialCard {
-            max-width: 56.25rem;
+            @extend .flex-center-start;
+            gap: $commonUnit * 2;
             margin: 0 auto;
-            p {
-                font-size: $xLarge + 0.125rem;
-                text-align: center;
-            }
-            .userInfo {
-                text-align: center;
 
-                h6 {
-                    font-size: $h5;
-                    margin-bottom: 0;
-                }
-                small {
-                    font-size: $large;
-                    font-weight: 700;
+            .videoContainer {
+                max-width: 18.75rem;
+                width: 100%;
+                overflow: hidden;
+                border-radius: $cardRadius;
+
+                video {
+                    width: 100%;
+                    height: auto;
                     display: block;
+                    object-fit: cover; // किंवा contain वापरू शकतो
+                }
+            }
+
+            .testimonialContent {
+                @extend .flex-start;
+                flex-direction: column;
+                flex-grow: 1;
+                height: 100%;
+
+                p {
+                    font-size: $xLarge + 0.125rem;
+                }
+                .userInfo {
+                    h6 {
+                        font-size: $h5;
+                        margin-bottom: 0;
+                    }
+                    small {
+                        font-size: $large;
+                        font-weight: 700;
+                        display: block;
+                    }
                 }
             }
         }
+
         .swiper.testimonialThumbs .swiper-slide {
             opacity: 0.7;
             &.swiper-slide-thumb-active {
@@ -572,7 +593,7 @@
                 $wh: 4.375rem;
                 width: $wh;
                 height: $wh;
-                background: $dark;
+                background: $primary;
                 @extend .flex-center;
                 border-radius: 50%;
                 i {
@@ -857,7 +878,7 @@ img.mfp-img {
     #customSelect {
         min-width: 12.5rem;
         position: relative;
-        .dropdown-toggle::after  {
+        .dropdown-toggle::after {
             position: absolute;
             top: 50%;
             right: $commonUnit;
@@ -917,14 +938,14 @@ img.mfp-img {
         overflow-x: hidden;
 
         &::-webkit-scrollbar {
-            width: 6px;
+            width: 0.375rem;
         }
         &::-webkit-scrollbar-track {
             background: transparent;
         }
         &::-webkit-scrollbar-thumb {
             background: rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            border-radius: 0.625rem;
         }
     }
 
@@ -974,7 +995,7 @@ img.mfp-img {
 
     .careerForm {
         background-color: $light;
-        border-left: 1px solid $border;
+        border-left: $commonBorder;
 
         .form-floating {
             margin-bottom: 1rem;
@@ -989,7 +1010,7 @@ img.mfp-img {
             background: $white;
             padding: $commonUnit * 1.5;
             cursor: pointer;
-            border: 2px dashed $border;
+            border: 0.125rem dashed $border;
             border-radius: $cardRadius;
             transition: all 0.3s ease-in-out;
 
@@ -1014,7 +1035,7 @@ img.mfp-img {
             font-size: $xLarge;
             color: $primary;
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: $commonUnit / 2;
         }
 
         .zoneContent {
@@ -1064,7 +1085,7 @@ img.mfp-img {
 
         &::after {
             width: 85%;
-            height: 1px;
+            height: 0.0625rem;
             margin: 0 auto;
             left: -8%;
             right: 0;
@@ -1417,6 +1438,73 @@ footer {
                 flex-wrap: wrap;
                 gap: commonUnit / 2;
             }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    body {
+        font-size: $medium;
+    }
+    section:not(.hero) {
+        padding: $commonUnit 0 !important;
+    }
+    .pgHeader {
+        .pgTitle {
+            h2 {
+                font-size: $h3;
+            }
+            h6 {
+                font-size: $xLarge;
+            }
+            p {
+                font-size: $medium;
+            }
+        }
+    }
+    .hero {
+        min-height: 0;
+        .swiper-slide img {
+            height: 100% !important;
+        }
+        .paginationContainer {
+            bottom: $commonUnit !important;
+        }
+    }
+    .collaborationCard {
+        min-height: 0 !important;
+        aspect-ratio: unset !important;
+    }
+    .testimonials {
+        .testimonialContainer {
+            padding: $commonUnit;
+            .swiper-button-next,
+            .swiper-button-prev {
+                top: 35% !important;
+            }
+            .testimonialCard {
+                flex-direction: column;
+                gap: $commonUnit / 2;
+                text-align: center;
+
+                .videoContainer {
+                    max-width: 100%;
+                }
+                .testimonialContent {
+                    text-align: center;
+                    p {
+                        font-size: $medium;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .footerCard {
+            padding: 0 $commonUnit !important;
+        }
+        .copyright {
+            padding: $commonUnit !important;
         }
     }
 }

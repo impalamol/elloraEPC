@@ -94,7 +94,7 @@ textarea:not([rows]) {
   justify-content: space-around;
 }
 
-.flex-center-start, footer .copyright .copyrightContent .copyrightLinks, footer .footerContent .footerCard .social, .contactUs .contactCard .contactChip, .ventures .ventureCard, .career .vacancyCard .vacancyHeader .vacancyMeta, .projectDetails .projectContainer .projectThumb, .missionVision .mvCard .mvHeader, .about .aboutVideo, .searchModal .searchResult .resultItem a, .btnGroup {
+.flex-center-start, footer .copyright .copyrightContent .copyrightLinks, footer .footerContent .footerCard .social, .contactUs .contactCard .contactChip, .ventures .ventureCard, .career .vacancyCard .vacancyHeader .vacancyMeta, .projectDetails .projectContainer .projectThumb, .missionVision .mvCard .mvHeader, .testimonials .testimonialContainer .testimonialCard, .about .aboutVideo, .searchModal .searchResult .resultItem a, .btnGroup {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -124,7 +124,7 @@ textarea:not([rows]) {
   justify-content: flex-end;
 }
 
-.flex-start, .certificates .certificateCard figure, .whyUs .whyUsCard, .enquiryModal .modal-body form .btnGroup, .pgHeader .pgTitle {
+.flex-start, .certificates .certificateCard figure, .testimonials .testimonialContainer .testimonialCard .testimonialContent, .whyUs .whyUsCard, .enquiryModal .modal-body form .btnGroup, .pgHeader .pgTitle {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -879,7 +879,6 @@ section:not(.hero) .container {
 .swiper .swiper-slide img {
   -o-object-fit: cover;
   object-fit: cover;
-  border-radius: 0.5rem;
   filter: grayscale(1);
   transition: all 0.6s linear;
 }
@@ -889,7 +888,6 @@ section:not(.hero) .container {
 .swiper.projectGallery, .swiper.testimonialGallery, .swiper.collaborationSwiper {
   padding: 0;
   margin-bottom: 1.5rem;
-  border-radius: 1.5rem;
   overflow: hidden;
 }
 .swiper.projectGallery .swiper-slide img, .swiper.testimonialGallery .swiper-slide img, .swiper.collaborationSwiper .swiper-slide img {
@@ -989,7 +987,7 @@ section:not(.hero) .container {
 
 .hero {
   min-height: 100vh;
-  margin-top: 80px;
+  margin-top: 4.375rem;
 }
 .hero .swiper-slide {
   width: 100% !important;
@@ -1272,21 +1270,35 @@ section:not(.hero) .container {
   overflow: hidden;
 }
 .testimonials .testimonialContainer .testimonialCard {
-  max-width: 56.25rem;
+  gap: 3rem;
   margin: 0 auto;
 }
-.testimonials .testimonialContainer .testimonialCard p {
+.testimonials .testimonialContainer .testimonialCard .videoContainer {
+  max-width: 18.75rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.testimonials .testimonialContainer .testimonialCard .videoContainer video {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.testimonials .testimonialContainer .testimonialCard .testimonialContent {
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+}
+.testimonials .testimonialContainer .testimonialCard .testimonialContent p {
   font-size: 1.25rem;
-  text-align: center;
 }
-.testimonials .testimonialContainer .testimonialCard .userInfo {
-  text-align: center;
-}
-.testimonials .testimonialContainer .testimonialCard .userInfo h6 {
+.testimonials .testimonialContainer .testimonialCard .testimonialContent .userInfo h6 {
   font-size: 1.375rem;
   margin-bottom: 0;
 }
-.testimonials .testimonialContainer .testimonialCard .userInfo small {
+.testimonials .testimonialContainer .testimonialCard .testimonialContent .userInfo small {
   font-size: 1rem;
   font-weight: 700;
   display: block;
@@ -1377,7 +1389,7 @@ section:not(.hero) .container {
 .missionVision .mvCard .mvHeader .icon {
   width: 4.375rem;
   height: 4.375rem;
-  background: #0e0f17;
+  background: #444971;
   border-radius: 50%;
 }
 .missionVision .mvCard .mvHeader .icon i {
@@ -1667,7 +1679,7 @@ img.mfp-img {
 }
 #careerModal .careerForm::-webkit-scrollbar,
 #careerModal .careerPopupContent::-webkit-scrollbar {
-  width: 6px;
+  width: 0.375rem;
 }
 #careerModal .careerForm::-webkit-scrollbar-track,
 #careerModal .careerPopupContent::-webkit-scrollbar-track {
@@ -1676,7 +1688,7 @@ img.mfp-img {
 #careerModal .careerForm::-webkit-scrollbar-thumb,
 #careerModal .careerPopupContent::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 #careerModal .careerPopupContent {
   background-color: #ffffff;
@@ -1719,7 +1731,7 @@ img.mfp-img {
 }
 #careerModal .careerForm {
   background-color: #f6f8ff;
-  border-left: 1px solid #e4e4e4;
+  border-left: 0.0625rem solid #e4e4e4;
 }
 #careerModal .careerForm .form-floating {
   margin-bottom: 1rem;
@@ -1732,7 +1744,7 @@ img.mfp-img {
   background: #ffffff;
   padding: 2.25rem;
   cursor: pointer;
-  border: 2px dashed #e4e4e4;
+  border: 0.125rem dashed #e4e4e4;
   border-radius: 1rem;
   transition: all 0.3s ease-in-out;
 }
@@ -1753,7 +1765,7 @@ img.mfp-img {
   font-size: 1.125rem;
   color: #444971;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 0.75rem;
 }
 #careerModal .careerForm .zoneContent p {
   font-size: 1.125rem;
@@ -1790,7 +1802,7 @@ img.mfp-img {
 }
 .ventures .ventureCard::after {
   width: 85%;
-  height: 1px;
+  height: 0.0625rem;
   margin: 0 auto;
   left: -8%;
   right: 0;
@@ -2074,4 +2086,62 @@ footer .copyright .copyrightContent a:hover {
 footer .copyright .copyrightContent .copyrightLinks {
   flex-wrap: wrap;
   gap: commonUnit/2;
+}
+
+@media (max-width: 575.98px) {
+  body {
+    font-size: 0.875rem;
+  }
+  section:not(.hero) {
+    padding: 1.5rem 0 !important;
+  }
+  .pgHeader .pgTitle h2 {
+    font-size: 2rem;
+  }
+  .pgHeader .pgTitle h6 {
+    font-size: 1.125rem;
+  }
+  .pgHeader .pgTitle p {
+    font-size: 0.875rem;
+  }
+  .hero {
+    min-height: 0;
+  }
+  .hero .swiper-slide img {
+    height: 100% !important;
+  }
+  .hero .paginationContainer {
+    bottom: 1.5rem !important;
+  }
+  .collaborationCard {
+    min-height: 0 !important;
+    aspect-ratio: unset !important;
+  }
+  .testimonials .testimonialContainer {
+    padding: 1.5rem;
+  }
+  .testimonials .testimonialContainer .swiper-button-next,
+  .testimonials .testimonialContainer .swiper-button-prev {
+    top: 35% !important;
+  }
+  .testimonials .testimonialContainer .testimonialCard {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+  }
+  .testimonials .testimonialContainer .testimonialCard .videoContainer {
+    max-width: 100%;
+  }
+  .testimonials .testimonialContainer .testimonialCard .testimonialContent {
+    text-align: center;
+  }
+  .testimonials .testimonialContainer .testimonialCard .testimonialContent p {
+    font-size: 0.875rem;
+  }
+  footer .footerCard {
+    padding: 0 1.5rem !important;
+  }
+  footer .copyright {
+    padding: 1.5rem !important;
+  }
 }/*# sourceMappingURL=styles.css.map */

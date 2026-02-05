@@ -65,14 +65,66 @@
     });
 
     // === Testimonial Main ===
-    new Swiper(".testimonialGallery", {
-        loop: true,
-        spaceBetween: 20,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
+    document.addEventListener("DOMContentLoaded", function () {
+
+        let testimonialSwiper;
+
+        /* ===== Stop All Videos ===== */
+        function stopAllVideos() {
+
+            document.querySelectorAll(".testimonialVideo").forEach(video => {
+                video.pause();
+                video.currentTime = 0;
+            });
+
+        }
+
+
+        /* ===== Swiper Init ===== */
+        testimonialSwiper = new Swiper(".testimonialGallery", {
+
+            spaceBetween: 20,
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            on: {
+                slideChangeTransitionStart() {
+                    stopAllVideos();
+                }
+            }
+
+        });
+
+
+        /* ⭐ Stop Video When Buttons Click */
+        document.querySelector(".swiper-button-next")
+            .addEventListener("click", stopAllVideos);
+
+        document.querySelector(".swiper-button-prev")
+            .addEventListener("click", stopAllVideos);
+
+
+        /* ⭐ Only One Video Plays */
+        document.querySelectorAll(".testimonialVideo").forEach(video => {
+
+            video.addEventListener("play", () => {
+
+                document.querySelectorAll(".testimonialVideo").forEach(v => {
+                    if (v !== video) {
+                        v.pause();
+                        v.currentTime = 0;
+                    }
+                });
+
+            });
+
+        });
+
     });
+
 
 
     // === Project Thumbs ===
@@ -146,30 +198,30 @@
     });
 </script>
 <script>
-           /* Popup Gallery (keeps Magnific Popup jQuery plugin usage) */
-            (function () {
-                if (window.jQuery && $.fn && $.fn.magnificPopup) {
-                    $(function () {
-                        $('.popupGallery').magnificPopup({
-                            delegate: 'a',
-                            type: 'image',
-                            gallery: {
-                                enabled: true,
-                                navigateByImgClick: true,
-                                preload: [0, 1]
-                            },
-                            keyboard: {
-                                enabled: true,
-                                left: true,
-                                right: true,
-                                escKey: true
-                            },
-                            mainClass: 'mfp-fade',
-                            removalDelay: 300
-                        });
-                    });
-                }
-            })();
+    /* Popup Gallery (keeps Magnific Popup jQuery plugin usage) */
+    (function () {
+        if (window.jQuery && $.fn && $.fn.magnificPopup) {
+            $(function () {
+                $('.popupGallery').magnificPopup({
+                    delegate: 'a',
+                    type: 'image',
+                    gallery: {
+                        enabled: true,
+                        navigateByImgClick: true,
+                        preload: [0, 1]
+                    },
+                    keyboard: {
+                        enabled: true,
+                        left: true,
+                        right: true,
+                        escKey: true
+                    },
+                    mainClass: 'mfp-fade',
+                    removalDelay: 300
+                });
+            });
+        }
+    })();
 </script>
 <script>
     function resizeGridItem(item) {
