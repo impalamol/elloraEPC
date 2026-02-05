@@ -13,6 +13,76 @@
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 
 <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        const submenuLinks = document.querySelectorAll('.multilevel .dropdown-submenu > a');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+
+        /* ===============================
+           MOBILE SUBMENU TOGGLE
+        =============================== */
+        submenuLinks.forEach(link => {
+
+            link.addEventListener('click', function (e) {
+
+                if (window.innerWidth < 992) {
+
+                    const submenu = this.nextElementSibling;
+
+                    if (!submenu) return;
+
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    /* Close other open submenus */
+                    const parentMenu = this.closest('.dropdown-menu');
+
+                    parentMenu.querySelectorAll('.dropdown-menu.show')
+                        .forEach(menu => {
+                            if (menu !== submenu) {
+                                menu.classList.remove('show');
+                            }
+                        });
+
+                    /* Toggle current submenu */
+                    submenu.classList.toggle('show');
+                }
+
+            });
+
+        });
+
+        /* ===============================
+           CLOSE SUBMENU ON OUTSIDE CLICK
+        =============================== */
+        document.addEventListener('click', function () {
+
+            if (window.innerWidth < 992) {
+                document.querySelectorAll('.multilevel .dropdown-menu.show')
+                    .forEach(menu => menu.classList.remove('show'));
+            }
+
+        });
+
+        /* ===============================
+           RESET WHEN NAVBAR COLLAPSES
+        =============================== */
+        if (navbarCollapse) {
+
+            navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+
+                document.querySelectorAll('.multilevel .dropdown-menu.show')
+                    .forEach(menu => menu.classList.remove('show'));
+
+            });
+
+        }
+
+    });
+
+
+</script>
+<script>
     var swiper = new Swiper(".heroSwiper", {
         autoplay: {
             delay: 5000,

@@ -79,6 +79,10 @@
 .navbar {
     background-color: $white;
     box-shadow: 0 0.125rem 0.25rem rgba($color: $dark, $alpha: 0.1);
+
+    /* ===============================
+       NAV LINKS
+    =============================== */
     .nav-link,
     .dropdown-item {
         font-size: $medium;
@@ -91,6 +95,10 @@
             color: $dark;
         }
     }
+
+    /* ===============================
+       CIRCLE BUTTONS
+    =============================== */
     .circleLink,
     .circleBtn {
         @extend .flex-center;
@@ -100,6 +108,7 @@
         i {
             font-size: $xLarge + $xSmall / 2;
         }
+
         &:hover {
             background-color: $dark;
             color: $white !important;
@@ -116,12 +125,73 @@
         height: $wh;
         border-radius: 50%;
     }
+
     .circleBtn {
         border-radius: $cardRadius * 2;
         padding: $commonUnit / 2 $commonUnit !important;
         gap: $commonUnit / 3;
     }
+
+    /* ===============================
+       MULTILEVEL DROPDOWN
+    =============================== */
+
+    .multilevel {
+
+        .dropdown-submenu {
+            position: relative;
+
+            > a::after {
+                content: "›";
+                float: right;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* -------- Desktop -------- */
+        @media (min-width: 992px) {
+
+            .dropdown-menu .dropdown-menu {
+                position: absolute;
+                top: 0;
+                left: 100%;
+                margin-left: 0.25rem;
+                display: none;
+                min-width: 220px;
+                box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            }
+
+            .dropdown-submenu:hover > .dropdown-menu {
+                display: block;
+            }
+        }
+
+        /* -------- Mobile -------- */
+        @media (max-width: 991px) {
+
+            .dropdown-menu .dropdown-menu {
+                position: static;
+                margin-left: 1rem;
+                box-shadow: none;
+                display: none;
+            }
+
+            .dropdown-menu .dropdown-menu.show {
+                display: block;
+            }
+
+            .dropdown-submenu > a::after {
+                content: "+";
+            }
+        }
+    }
+
+    /* Smooth dropdown animation */
+    .dropdown-menu {
+        transition: all 0.25s ease;
+    }
 }
+
 // Hero
 .hero {
     min-height: 100vh;

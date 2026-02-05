@@ -53,53 +53,69 @@ $currentPage = 'home';
                         <p>We master the full EPC lifecycle, blending intelligent design with robust field execution,
                             ensuring your large-scale project vision becomes a stable reality.</p>
                     </div>
-                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
-                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client1.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
-                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client2.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
-                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client3.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
-                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client4.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
-                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client5.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
-                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client6.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
-                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client7.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
-                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client3.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
-                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client4.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
-                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client5.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
-                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client6.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2 mb-3">
-                        <figure class="collaborationCard"> <img src="assets/media/collaborations/client7.jpg" alt="">
-                        </figure>
+                    <div class="swiper collaborationSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <figure class="collaborationCard"> <img src="assets/media/collaborations/client1.jpg"
+                                        alt="">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure class="collaborationCard"> <img src="assets/media/collaborations/client2.jpg"
+                                        alt="">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure class="collaborationCard"> <img src="assets/media/collaborations/client3.jpg"
+                                        alt="">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure class="collaborationCard"> <img src="assets/media/collaborations/client4.jpg"
+                                        alt="">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure class="collaborationCard"> <img src="assets/media/collaborations/client5.jpg"
+                                        alt="">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure class="collaborationCard"> <img src="assets/media/collaborations/client6.jpg"
+                                        alt="">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure class="collaborationCard"> <img src="assets/media/collaborations/client7.jpg"
+                                        alt="">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure class="collaborationCard"> <img src="assets/media/collaborations/client3.jpg"
+                                        alt="">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure class="collaborationCard"> <img src="assets/media/collaborations/client4.jpg"
+                                        alt="">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure class="collaborationCard"> <img src="assets/media/collaborations/client5.jpg"
+                                        alt="">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure class="collaborationCard"> <img src="assets/media/collaborations/client6.jpg"
+                                        alt="">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure class="collaborationCard"> <img src="assets/media/collaborations/client7.jpg"
+                                        alt="">
+                                </figure>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="aboutVideo" style="background-image: url('assets/media/video-bg.jpg');">
