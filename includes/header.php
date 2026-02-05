@@ -27,6 +27,7 @@
                         <li><a class="dropdown-item" href="projects">Completed Projects</a></li>
                     </ul>
                 </li>
+               
                 <li class="nav-item">
                     <a class="nav-link <?php echo ($currentPage === 'blogs') ? 'active' : ''; ?>" href="blogs">Blogs</a>
                 </li>
