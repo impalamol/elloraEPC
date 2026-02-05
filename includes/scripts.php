@@ -251,20 +251,34 @@
     });
 </script>
 <script>
-    var swiper = new Swiper(".collaborationSwiper", {
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        loop: true,
-        slidesPerView: 6,
-        spaceBetween: 30,
-        breakpoints: {
-            0: { slidesPerView: 2 },
-            576: { slidesPerView: 3 },
-            768: { slidesPerView: 5 },
-            992: { slidesPerView: 6 }
-        }
+    ['.clientCarousel', '.clientCarousel2'].forEach(function (selector) {
+        new Swiper(selector, {
+            slidesPerView: 1,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            spaceBetween: 20,
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 6,
+                    spaceBetween: 20,
+                },
+                1440: {
+                    slidesPerView: 7,
+                    spaceBetween: 20,
+                },
+            },
+        });
     });
 </script>
 <script>
