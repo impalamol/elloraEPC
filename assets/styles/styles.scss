@@ -382,11 +382,14 @@
                 font-size: $xLarge;
                 color: $dark;
                 $wh: 3.125rem;
-                width: $wh;
-                height: $wh;
-                border-radius: 50%;
+                min-width: $wh;
+                min-height: $wh;
+                max-width: $wh;
+                max-height: $wh;
                 @extend .flex-center;
                 background-color: $white;
+                border-radius: 50%;
+                border: $commonBorder;
             }
         }
         .projectMedia {
@@ -1450,9 +1453,10 @@ footer {
         padding: $commonUnit 0 !important;
     }
     .pgHeader {
+        margin-bottom: $commonUnit;
         .pgTitle {
             h2 {
-                font-size: $h3;
+                font-size: $h4;
             }
             h6 {
                 font-size: $xLarge;
@@ -1504,6 +1508,69 @@ footer {
             padding: 0 $commonUnit !important;
         }
         .copyright {
+            padding: $commonUnit !important;
+        }
+    }
+    .breadcrumbs {
+        height: 100%;
+        .breadcrumbContent h2 {
+            font-size: $h6;
+        }
+    }
+    .cta {
+        .ctaCard {
+            padding: $commonUnit;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+    }
+    #careerModal {
+        .modal-header h1 {
+            font-size: $xLarge !important;
+        }
+        .modal-body {
+            overflow: auto;
+
+            .careerForm,
+            .careerPopupContent {
+                padding: $commonUnit !important;
+                max-height: 100% !important;
+            }
+        }
+    }
+    .input-group {
+        flex-direction: column;
+        gap: $commonUnit / 4;
+        input,
+        button {
+            flex-grow: 1 !important;
+            width: 100% !important;
+            border-radius: $cardRadius / 2 !important;
+        }
+        input {
+        }
+    }
+    .blogDetails {
+        h1 {
+            font-size: $h4;
+        }
+        .pagination {
+            .next,
+            .previous {
+                text-align: center !important;
+            }
+        }
+    }
+    .contactUs {
+        .addressCard {
+            .addressHeader h6 {
+                font-size: $xLarge;
+            }
+            .addressBody address {
+                font-size: $medium;
+            }
+        }
+        .contactCard.form {
             padding: $commonUnit !important;
         }
     }
