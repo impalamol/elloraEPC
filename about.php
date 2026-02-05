@@ -72,43 +72,82 @@ $currentPage = 'about';
                             </figure>
                         </div>
                     </div>
-                    <div class="swiper collaborationSwiper">
+
+                    <div class="swiper clientCarousel mb-4" id="clientCarousel">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><figure class="collaborationCard"> <img src="assets/media/collaborations/client1.jpg" alt="">
-                                </figure>
+                            <div class="swiper-slide">
+                                <div class="collaborationCard">
+                                    <img src="assets/media/collaborations/client1.jpg" alt="Client1">
+                                </div>
                             </div>
-                            <div class="swiper-slide"><figure class="collaborationCard"> <img src="assets/media/collaborations/client2.jpg" alt="">
-                                </figure>
+                            <div class="swiper-slide">
+                                <div class="collaborationCard">
+                                    <img src="assets/media/collaborations/client2.jpg" alt="Client2">
+                                </div>
                             </div>
-                            <div class="swiper-slide"><figure class="collaborationCard"> <img src="assets/media/collaborations/client3.jpg" alt="">
-                                </figure>
+                            <div class="swiper-slide">
+                                <div class="collaborationCard">
+                                    <img src="assets/media/collaborations/client3.jpg" alt="Client3">
+                                </div>
                             </div>
-                            <div class="swiper-slide"><figure class="collaborationCard"> <img src="assets/media/collaborations/client4.jpg" alt="">
-                                </figure>
+                            <div class="swiper-slide">
+                                <div class="collaborationCard">
+                                    <img src="assets/media/collaborations/client4.jpg" alt="Client4">
+                                </div>
                             </div>
-                            <div class="swiper-slide"><figure class="collaborationCard"> <img src="assets/media/collaborations/client5.jpg" alt="">
-                                </figure>
+                            <div class="swiper-slide">
+                                <div class="collaborationCard">
+                                    <img src="assets/media/collaborations/client5.jpg" alt="Client5">
+                                </div>
                             </div>
-                            <div class="swiper-slide"><figure class="collaborationCard"> <img src="assets/media/collaborations/client6.jpg" alt="">
-                                </figure>
+                            <div class="swiper-slide">
+                                <div class="collaborationCard">
+                                    <img src="assets/media/collaborations/client6.jpg" alt="Client6">
+                                </div>
                             </div>
-                            <div class="swiper-slide"><figure class="collaborationCard"> <img src="assets/media/collaborations/client7.jpg" alt="">
-                                </figure>
+                            <div class="swiper-slide">
+                                <div class="collaborationCard">
+                                    <img src="assets/media/collaborations/client7.jpg" alt="Client7">
+                                </div>
                             </div>
-                            <div class="swiper-slide"><figure class="collaborationCard"> <img src="assets/media/collaborations/client3.jpg" alt="">
-                                </figure>
+                        </div>
+                    </div>
+                    <div dir="rtl" class="swiper clientCarousel2" id="clientCarousel2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="collaborationCard">
+                                    <img src="assets/media/collaborations/client1.jpg" alt="Client1">
+                                </div>
                             </div>
-                            <div class="swiper-slide"><figure class="collaborationCard"> <img src="assets/media/collaborations/client4.jpg" alt="">
-                                </figure>
+                            <div class="swiper-slide">
+                                <div class="collaborationCard">
+                                    <img src="assets/media/collaborations/client2.jpg" alt="Client2">
+                                </div>
                             </div>
-                            <div class="swiper-slide"><figure class="collaborationCard"> <img src="assets/media/collaborations/client5.jpg" alt="">
-                                </figure>
+                            <div class="swiper-slide">
+                                <div class="collaborationCard">
+                                    <img src="assets/media/collaborations/client3.jpg" alt="Client3">
+                                </div>
                             </div>
-                            <div class="swiper-slide"><figure class="collaborationCard"> <img src="assets/media/collaborations/client6.jpg" alt="">
-                                </figure>
+                            <div class="swiper-slide">
+                                <div class="collaborationCard">
+                                    <img src="assets/media/collaborations/client4.jpg" alt="Client4">
+                                </div>
                             </div>
-                            <div class="swiper-slide"><figure class="collaborationCard"> <img src="assets/media/collaborations/client7.jpg" alt="">
-                                </figure>
+                            <div class="swiper-slide">
+                                <div class="collaborationCard">
+                                    <img src="assets/media/collaborations/client5.jpg" alt="Client5">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="collaborationCard">
+                                    <img src="assets/media/collaborations/client6.jpg" alt="Client6">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="collaborationCard">
+                                    <img src="assets/media/collaborations/client7.jpg" alt="Client7">
+                                </div>
                             </div>
                         </div>
                     </div>
