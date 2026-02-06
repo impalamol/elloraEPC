@@ -47,7 +47,7 @@ $currentPage = 'careers';
                             <h6>Connect with us to help you address your queries faster.</h6>
                         </div>
                         <form action="">
-                            <div class="dropdown w-100" id="customSelect">
+                            <div class="dropdown" id="customSelect">
                                 <button class="form-control text-start dropdown-toggle" type="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Select option
@@ -57,43 +57,39 @@ $currentPage = 'careers';
                                         <input type="text" class="form-control" placeholder="Search..."
                                             onkeyup="filterOptions(this)" />
                                     </div>
-                                    <div class="options" style="max-height: 220px; overflow-y: auto;">
-                                        <button class="dropdown-item" type="button">About</button>
-                                        <button class="dropdown-item" type="button">Base</button>
-                                        <button class="dropdown-item" type="button">Blog</button>
-                                        <button class="dropdown-item" type="button">Contact</button>
-                                        <button class="dropdown-item" type="button">Custom</button>
-                                        <button class="dropdown-item" type="button">Support</button>
-                                        <button class="dropdown-item" type="button">Tools</button>
+                                    <div class="options" style="max-height: 13.75rem; overflow-y: auto;">
+                                        <button type="button" class="dropdown-item">Senior Project Manager</button>
+                                        <button type="button" class="dropdown-item">Junior Project Manager</button>
                                     </div>
                                 </div>
                             </div>
-                        </form>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-4">
-                        <div class="vacancyCard">
-                            <figure class="vacancyMedia">
-                                <img src="assets/media/career/project-manager.jpg" alt="">
-                            </figure>
-                            <div class="vacancyHeader">
-                                <h3>Senior Project Manager</h3>
-                                <div class="vacancyMeta">
-                                    <small class="experience">Exp. 1-3 Yrs</small>
-                                    <small class="location">Nashik (MH), IND</small>
-                                </div>
-                            </div>
-                            <div class="vacancyBody">
-                                <p>Lead multi-million dollar EPC projects for manufacturing and logistics clients.
-                                    Responsible for schedule certainty, budget control, and seamless delivery from
-                                    contract signing to commissioning.</p>
-                                <a class="btn btn-primary stretched-link" href="#" data-bs-toggle="modal"
-                                    data-bs-target="#careerModal">Apply <i
-                                        class="ph-duotone ph-arrow-bend-right-up"></i></a>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-4">
+                    <div class="vacancyCard">
+                        <figure class="vacancyMedia">
+                            <img src="assets/media/career/project-manager.jpg" alt="">
+                        </figure>
+                        <div class="vacancyHeader">
+                            <h3>Senior Project Manager</h3>
+                            <div class="vacancyMeta">
+                                <small class="experience">Exp. 1-3 Yrs</small>
+                                <small class="location">Nashik (MH), IND</small>
                             </div>
                         </div>
+                        <div class="vacancyBody">
+                            <p>Lead multi-million dollar EPC projects for manufacturing and logistics clients.
+                                Responsible for schedule certainty, budget control, and seamless delivery from
+                                contract signing to commissioning.</p>
+                            <a class="btn btn-primary stretched-link" href="#" data-bs-toggle="modal"
+                                data-bs-target="#careerModal">Apply <i
+                                    class="ph-duotone ph-arrow-bend-right-up"></i></a>
+                        </div>
                     </div>
-
                 </div>
+
+            </div>
             </div>
         </section>
         <section class="cta">
