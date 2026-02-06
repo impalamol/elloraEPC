@@ -13,73 +13,35 @@
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+   document.addEventListener("DOMContentLoaded", function () {
 
-        const submenuLinks = document.querySelectorAll('.multilevel .dropdown-submenu > a');
-        const navbarCollapse = document.querySelector('.navbar-collapse');
+    document.querySelectorAll(".dropdown-submenu > a").forEach(function (element) {
 
-        /* ===============================
-           MOBILE SUBMENU TOGGLE
-        =============================== */
-        submenuLinks.forEach(link => {
+        element.addEventListener("click", function (e) {
 
-            link.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
 
-                if (window.innerWidth < 992) {
+            let parent = this.parentElement;
+            let submenu = this.nextElementSibling;
 
-                    const submenu = this.nextElementSibling;
-
-                    if (!submenu) return;
-
-                    e.preventDefault();
-                    e.stopPropagation();
-
-                    /* Close other open submenus */
-                    const parentMenu = this.closest('.dropdown-menu');
-
-                    parentMenu.querySelectorAll('.dropdown-menu.show')
-                        .forEach(menu => {
-                            if (menu !== submenu) {
-                                menu.classList.remove('show');
-                            }
-                        });
-
-                    /* Toggle current submenu */
-                    submenu.classList.toggle('show');
+            // Close other open submenu
+            parent.parentElement.querySelectorAll(".dropdown-submenu").forEach(function (el) {
+                if (el !== parent) {
+                    el.classList.remove("show");
+                    let child = el.querySelector(".dropdown-menu");
+                    if (child) child.classList.remove("show");
                 }
-
             });
 
-        });
-
-        /* ===============================
-           CLOSE SUBMENU ON OUTSIDE CLICK
-        =============================== */
-        document.addEventListener('click', function () {
-
-            if (window.innerWidth < 992) {
-                document.querySelectorAll('.multilevel .dropdown-menu.show')
-                    .forEach(menu => menu.classList.remove('show'));
-            }
+            parent.classList.toggle("show");
+            submenu.classList.toggle("show");
 
         });
-
-        /* ===============================
-           RESET WHEN NAVBAR COLLAPSES
-        =============================== */
-        if (navbarCollapse) {
-
-            navbarCollapse.addEventListener('hidden.bs.collapse', function () {
-
-                document.querySelectorAll('.multilevel .dropdown-menu.show')
-                    .forEach(menu => menu.classList.remove('show'));
-
-            });
-
-        }
 
     });
 
+});
 
 </script>
 <script>
