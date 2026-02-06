@@ -18,16 +18,32 @@
                         Us</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class=" nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Projects
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="projects">Ongoing Projects</a></li>
-                        <li><a class="dropdown-item" href="projects">Completed Projects</a></li>
+                        <li class="dropdown dropdown-submenu">
+                            <a href="#" class="dropdown-item">Completed Projects</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Industrial</a></li>
+                                <li><a href="#" class="dropdown-item">Commercial</a></li>
+                                <li><a href="#" class="dropdown-item">Infrastructure</a></li>
+                                <li><a href="#" class="dropdown-item">Interior</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu">
+                            <a href="#" class="dropdown-item">Ongoing Projects</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Industrial</a></li>
+                                <li><a href="#" class="dropdown-item">Commercial</a></li>
+                                <li><a href="#" class="dropdown-item">Infrastructure</a></li>
+                                <li><a href="#" class="dropdown-item">Interior</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
-               
+
                 <li class="nav-item">
                     <a class="nav-link <?php echo ($currentPage === 'blogs') ? 'active' : ''; ?>" href="blogs">Blogs</a>
                 </li>

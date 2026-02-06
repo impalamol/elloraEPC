@@ -7,7 +7,7 @@
         img {
             -o-object-fit: cover;
             object-fit: cover;
-           
+
             // filter: grayscale(1);
             transition: all 0.6s linear;
         }
@@ -43,7 +43,7 @@
                 width: 100% !important;
                 min-height: 5rem !important;
                 max-height: 5rem !important;
-                 border-radius: $cardRadius / 2;
+                border-radius: $cardRadius / 2;
             }
         }
     }
@@ -133,63 +133,60 @@
         gap: $commonUnit / 3;
     }
 
-    /* ===============================
-       MULTILEVEL DROPDOWN
-    =============================== */
-
-    .multilevel {
-
-        .dropdown-submenu {
-            position: relative;
-
-            > a::after {
-                content: "›";
-                float: right;
-                font-size: 0.9rem;
-            }
-        }
-
-        /* -------- Desktop -------- */
-        @media (min-width: 992px) {
-
-            .dropdown-menu .dropdown-menu {
-                position: absolute;
-                top: 0;
-                left: 100%;
-                margin-left: 0.25rem;
-                display: none;
-                min-width: 220px;
-                box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-            }
-
-            .dropdown-submenu:hover > .dropdown-menu {
-                display: block;
-            }
-        }
-
-        /* -------- Mobile -------- */
-        @media (max-width: 991px) {
-
-            .dropdown-menu .dropdown-menu {
-                position: static;
-                margin-left: 1rem;
-                box-shadow: none;
-                display: none;
-            }
-
-            .dropdown-menu .dropdown-menu.show {
-                display: block;
-            }
-
-            .dropdown-submenu > a::after {
-                content: "+";
-            }
-        }
+    .dropdown-menu {
+        width: max-content;
+        min-width: 15rem;
+        white-space: nowrap;
+        border-radius: 0.5rem;
     }
 
-    /* Smooth dropdown animation */
-    .dropdown-menu {
-        transition: all 0.25s ease;
+    /* Submenu styling */
+    .dropdown-submenu {
+        position: relative;
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            margin-top: 0;
+            margin-left: 0;
+            width: max-content;
+            min-width: 15rem;
+            white-space: nowrap;
+            border-radius: 0.5rem;
+        }
+
+        &:hover > .dropdown-menu,
+        &:focus-within > .dropdown-menu {
+            display: block;
+        }
+
+        > a::after {
+            position: absolute;
+            top: 50%;
+            right: $commonUnit / 2;
+            transform: translateY(-50%);
+            font-style: normal;
+            font-size: $medium;
+            -webkit-font-smoothing: antialiased;
+            content: "";
+            border-top: 0.3em solid transparent;
+            border-right: 0;
+            border-bottom: 0.3em solid transparent;
+            border-left: 0.3em solid;
+            margin-left: $commonUnit / 2;
+        }
+    }
+    /* Show dropdown on hover in the navigation */
+    .dropdown:hover > .dropdown-menu {
+        display: block;
+        margin-top: 0; /* Optional: adjust the dropdown position */
+    }
+
+    /* Disable automatic opening of submenu when main dropdown is hovered */
+    .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
     }
 }
 
@@ -1515,11 +1512,20 @@ footer {
         }
     }
 }
-
+@media (max-width: 991px) {
+    .dropdown-submenu .dropdown-menu {
+        left: 0;
+        right: 0;
+        width: 95% !important;
+        max-height: 15.625rem;
+        overflow-y: auto;
+    }
+}
 @media (max-width: 575.98px) {
     body {
         font-size: $medium;
     }
+
     section:not(.hero) {
         padding: $commonUnit 0 !important;
     }
@@ -1617,8 +1623,6 @@ footer {
             flex-grow: 1 !important;
             width: 100% !important;
             border-radius: $cardRadius / 2 !important;
-        }
-        input {
         }
     }
     .blogDetails {
