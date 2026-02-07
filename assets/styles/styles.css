@@ -1126,8 +1126,6 @@ section:not(.hero) .container {
 }
 
 .about h2 {
-  font-size: 2.75rem;
-  font-weight: 100;
   margin-bottom: 1.5rem;
 }
 .about h2 span {
@@ -1142,7 +1140,6 @@ section:not(.hero) .container {
   background-size: cover;
   background-position: center;
   position: relative;
-  margin-top: 4.5rem;
   border-radius: 2rem;
   overflow: hidden;
   border: 0.75rem solid #ffffff;
@@ -1342,7 +1339,7 @@ section:not(.hero) .container {
   border-radius: 1rem;
 }
 .testimonials .testimonialContainer .testimonialCard .videoContainer {
-  max-width: 31.25rem;
+  max-width: 40.625rem;
   width: 100%;
   overflow: hidden;
   border-radius: 1rem;
@@ -1360,7 +1357,7 @@ section:not(.hero) .container {
   height: 100%;
 }
 .testimonials .testimonialContainer .testimonialCard .testimonialContent p {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 .testimonials .testimonialContainer .testimonialCard .testimonialContent .userInfo h6 {
   font-size: 1.375rem;

@@ -291,8 +291,8 @@
 // about
 .about {
     h2 {
-        font-size: $h1;
-        font-weight: 100;
+        // font-size: $h1;
+        // font-weight: 100;
         margin-bottom: $commonUnit;
         span {
             font-weight: 500;
@@ -309,7 +309,7 @@
         background-size: cover;
         background-position: center;
         position: relative;
-        margin-top: $commonUnit * 3;
+        // margin-top: $commonUnit * 3;
         border-radius: $cardRadius * 2;
         overflow: hidden;
         border: $commonUnit / 2 solid $white;
@@ -542,7 +542,7 @@
             border-radius: $cardRadius;
 
             .videoContainer {
-                max-width: 31.25rem;
+                max-width: 40.625rem;
                 width: 100%;
                 overflow: hidden;
                 border-radius: $cardRadius;
@@ -551,7 +551,7 @@
                     width: 100%;
                     height: auto;
                     display: block;
-                    object-fit: cover; // किंवा contain वापरू शकतो
+                    object-fit: cover; 
                 }
             }
 
@@ -562,7 +562,7 @@
                 height: 100%;
 
                 p {
-                    font-size: $xLarge + 0.125rem;
+                    font-size: $xLarge;
                 }
                 .userInfo {
                     h6 {
