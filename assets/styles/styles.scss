@@ -91,12 +91,18 @@
         text-transform: uppercase;
         color: $gray;
         transition: color 0.3s ease;
-
+    }
+    .nav-link:hover {
         &:hover {
             color: $dark;
         }
     }
-
+    .dropdown-item {
+        &:hover {
+            background-color: $primary;
+            color: $white;
+        }
+    }
     /* ===============================
        CIRCLE BUTTONS
     =============================== */
@@ -954,6 +960,13 @@ img.mfp-img {
             top: 50%;
             right: $commonUnit;
             transform: translateY(-50%);
+        }
+        .dropdown-item {
+            white-space: normal;
+            &:hover {
+                background-color: $primary;
+                color: $white;
+            }
         }
     }
     .vacancyCard {
