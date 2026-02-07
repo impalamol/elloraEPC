@@ -13,35 +13,35 @@
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 
 <script>
-   document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function () {
 
-    document.querySelectorAll(".dropdown-submenu > a").forEach(function (element) {
+        document.querySelectorAll(".dropdown-submenu > a").forEach(function (element) {
 
-        element.addEventListener("click", function (e) {
+            element.addEventListener("click", function (e) {
 
-            e.preventDefault();
-            e.stopPropagation();
+                e.preventDefault();
+                e.stopPropagation();
 
-            let parent = this.parentElement;
-            let submenu = this.nextElementSibling;
+                let parent = this.parentElement;
+                let submenu = this.nextElementSibling;
 
-            // Close other open submenu
-            parent.parentElement.querySelectorAll(".dropdown-submenu").forEach(function (el) {
-                if (el !== parent) {
-                    el.classList.remove("show");
-                    let child = el.querySelector(".dropdown-menu");
-                    if (child) child.classList.remove("show");
-                }
+                // Close other open submenu
+                parent.parentElement.querySelectorAll(".dropdown-submenu").forEach(function (el) {
+                    if (el !== parent) {
+                        el.classList.remove("show");
+                        let child = el.querySelector(".dropdown-menu");
+                        if (child) child.classList.remove("show");
+                    }
+                });
+
+                parent.classList.toggle("show");
+                submenu.classList.toggle("show");
+
             });
-
-            parent.classList.toggle("show");
-            submenu.classList.toggle("show");
 
         });
 
     });
-
-});
 
 </script>
 <script>
@@ -114,8 +114,13 @@
 
         /* ===== Swiper Init ===== */
         testimonialSwiper = new Swiper(".testimonialGallery", {
-
+            slidesPerView: 1,
             spaceBetween: 20,
+
+            breakpoints: {
+                0: { slidesPerView: 1 },
+                992: { slidesPerView: 1 }
+            },
 
             navigation: {
                 nextEl: ".swiper-button-next",
@@ -127,8 +132,8 @@
                     stopAllVideos();
                 }
             }
-
         });
+
 
 
         /* ⭐ Stop Video When Buttons Click */

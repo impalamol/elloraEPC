@@ -40,7 +40,7 @@ $currentPage = 'about';
         </section>
         <section class="aboutUs">
             <div class="container">
-                <div class="row">
+                <div class="row mb-5">
                     <div class="col-12 col-lg-12 col-xl-7 col-xxl-7">
                         <div class="pgHeader">
                             <div class="pgTitle">
@@ -65,14 +65,20 @@ $currentPage = 'about';
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-12 col-xl-5 col-xxl-5 mb-3">
+                    <div class="col-12 col-lg-12 col-xl-5 col-xxl-5">
                         <div class="aboutImgContainer">
                             <figure>
                                 <img src="assets/media/about.jpg" alt="About" class="aboutImg">
                             </figure>
                         </div>
                     </div>
-
+                </div>
+                <div class="row">
+                    <div class="pgHeader">
+                        <div class="pgTitle">
+                            <h2>Our Clients</h2>
+                        </div>
+                    </div>
                     <div class="swiper clientCarousel mb-4" id="clientCarousel">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">

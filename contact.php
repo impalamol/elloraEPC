@@ -85,13 +85,15 @@ $currentPage = 'contact';
                 <div class="row">
                     <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 mb-4">
                         <div class="contactInfo">
-                            <figure>
-                                <img src="assets/media/contact.png" alt="Contact Us">
-                            </figure>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13570.83619104296!2d73.70239908715818!3d20.005763900000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb7e7b6645f5%3A0x4edfb222686f52d8!2sRishabh%20Instruments%20Limited%20-%20Head%20office!5e1!3m2!1sen!2sin!4v1757908978013!5m2!1sen!2sin"
+                                width="100%" height="565" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 mb-4">
                         <div class="contactCard form">
+                            <h3>Get In Touch</h3>
                             <form action="" method="post">
                                 <div class="row">
                                     <div class="col-12 col-lg-12 col-xl-12 col-xxl-12 mb-4">
@@ -140,12 +142,6 @@ $currentPage = 'contact';
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13570.83619104296!2d73.70239908715818!3d20.005763900000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb7e7b6645f5%3A0x4edfb222686f52d8!2sRishabh%20Instruments%20Limited%20-%20Head%20office!5e1!3m2!1sen!2sin!4v1757908978013!5m2!1sen!2sin"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
 

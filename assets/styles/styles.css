@@ -73,7 +73,7 @@ textarea:not([rows]) {
   display: flex;
 }
 
-.flex-center, footer .footerContent .footerCard .social a, footer .footerContent .footerCard .footerLogo, footer .footerContent .footerCard.logo, .contactUs .contactCard .contactChip .icon, .cta .ctaCard .ctaContent .roundedBtn .icon, .cta .ctaCard .ctaContent .roundedBtn, .missionVision .mvCard .mvHeader .icon, .projects .projectCard .projectHeader a, .stats .statCard, .whyUs .whyUsCard .icon, .collaborationCard, .hero .paginationContainer .navigation .swiper-button-next,
+.flex-center, footer .footerContent .footerCard .social a, .contactUs .contactCard .contactChip .icon, .cta .ctaCard .ctaContent .roundedBtn .icon, .cta .ctaCard .ctaContent .roundedBtn, .missionVision .mvCard .mvHeader .icon, .projects .projectCard .projectHeader a, .stats .statCard, .whyUs .whyUsCard .icon, .collaborationCard, .hero .paginationContainer .navigation .swiper-button-next,
 .hero .paginationContainer .navigation .swiper-button-prev, .hero .paginationContainer .navigation, .hero .heroSlide, .navbar .circleLink,
 .navbar .circleBtn, .searchModal .nrs, .searchModal .searchResult .resultItem a .productIcon img, .videoBtn, .pgHeader.centered .pgTitle,
 .pgHeader.centered .pgSection, .pgHeader.centered {
@@ -94,7 +94,7 @@ textarea:not([rows]) {
   justify-content: space-around;
 }
 
-.flex-center-start, footer .copyright .copyrightContent .copyrightLinks, footer .footerContent .footerCard .social, .contactUs .contactCard .contactChip, .ventures .ventureCard, .career .vacancyCard .vacancyHeader .vacancyMeta, .projectDetails .projectContainer .projectThumb, .missionVision .mvCard .mvHeader, .testimonials .testimonialContainer .testimonialCard, .about .aboutVideo, .searchModal .searchResult .resultItem a, .btnGroup {
+.flex-center-start, footer .copyright .copyrightContent .copyrightLinks, footer .footerContent .footerCard .social, footer .footerContent .footerCard .footerLogo, .contactUs .contactCard .contactChip, .ventures .ventureCard, .career .vacancyCard .vacancyHeader .vacancyMeta, .projectDetails .projectContainer .projectThumb, .missionVision .mvCard .mvHeader, .testimonials .testimonialContainer .testimonialCard, .about .aboutVideo, .searchModal .searchResult .resultItem a, .btnGroup {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -124,7 +124,7 @@ textarea:not([rows]) {
   justify-content: flex-end;
 }
 
-.flex-start, .certificates .certificateCard figure, .testimonials .testimonialContainer .testimonialCard .testimonialContent, .whyUs .whyUsCard, .enquiryModal .modal-body form .btnGroup, .pgHeader .pgTitle {
+.flex-start, footer .footerContent .footerCard.logo, .certificates .certificateCard figure, .testimonials .testimonialContainer .testimonialCard .testimonialContent, .whyUs .whyUsCard, .enquiryModal .modal-body form .btnGroup, .pgHeader .pgTitle {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -1170,7 +1170,7 @@ section:not(.hero) .container {
   left: 0;
   width: 100%;
   height: 30%;
-  background-color: #ffffff;
+  background-color: #f6f8ff;
   content: "";
   z-index: 1;
 }
@@ -1324,20 +1324,25 @@ section:not(.hero) .container {
 }
 
 .testimonials .testimonialContainer {
-  position: relative;
-  background: #ffffff;
-  padding: 3rem;
-  border: 0.0625rem solid #e4e4e4;
-  border-radius: 1rem;
-  transition: all 0.6s linear;
   overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+.testimonials .testimonialContainer .swiper-slide {
+  height: 100%;
 }
 .testimonials .testimonialContainer .testimonialCard {
+  background: #ffffff;
   gap: 3rem;
   margin: 0 auto;
+  height: 100%;
+  border: 0.0625rem solid #e4e4e4;
+  transition: all 0.6s linear;
+  padding: 3rem;
+  border-radius: 1rem;
 }
 .testimonials .testimonialContainer .testimonialCard .videoContainer {
-  max-width: 18.75rem;
+  max-width: 31.25rem;
   width: 100%;
   overflow: hidden;
   border-radius: 1rem;
@@ -1403,9 +1408,6 @@ section:not(.hero) .container {
   box-shadow: rgba(14, 15, 23, 0.1) 0rem 0.4375rem 1.8125rem 0rem;
 }
 
-.aboutUs .pgHeader {
-  margin: 0;
-}
 .aboutUs .aboutImgContainer {
   border-radius: 2rem;
   overflow: hidden;
@@ -1480,11 +1482,15 @@ section:not(.hero) .container {
   overflow: hidden;
   position: relative;
   margin: 0 !important;
+  padding: 1.5rem;
+  border: 0.0625rem solid #e4e4e4;
+  border-radius: 1rem;
 }
 .gridGallery figure img {
   opacity: 1;
   transition: linear 1s;
   width: 100% !important;
+  border-radius: 0.5rem;
 }
 .gridGallery figure img[data-src] {
   opacity: 0;
@@ -1925,7 +1931,7 @@ img.mfp-img {
   padding: 1.5rem;
 }
 .contactUs .addressCard .addressBody address {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #0e0f17;
   margin: 0;
 }
@@ -2016,7 +2022,7 @@ footer .footerContent .footerCard .footerLogo {
   border-radius: 1rem;
 }
 footer .footerContent .footerCard .footerLogo img {
-  max-width: 9.375rem !important;
+  max-width: 7.5rem !important;
 }
 footer .footerContent .footerCard .social {
   flex-wrap: wrap;
