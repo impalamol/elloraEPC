@@ -413,12 +413,6 @@ $currentPage = 'home';
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="testimonialCard">
-                                        <div class="videoContainer">
-                                            <video class="testimonialVideo" controls>
-                                                <source src="assets/media/testimonials/testimonial.mp4"
-                                                    type="video/mp4">
-                                            </video>
-                                        </div>
                                         <div class="testimonialContent">
                                             <p>
                                                 The quality of construction exceeded international standards.
@@ -432,12 +426,6 @@ $currentPage = 'home';
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="testimonialCard">
-                                        <div class="videoContainer">
-                                            <video class="testimonialVideo" controls>
-                                                <source src="assets/media/testimonials/testimonial.mp4"
-                                                    type="video/mp4">
-                                            </video>
-                                        </div>
                                         <div class="testimonialContent">
                                             <p>
                                                 Integrated EPC model ensured seamless coordination between civil,
