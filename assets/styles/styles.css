@@ -961,9 +961,12 @@ section:not(.hero) .container {
   color: #6a6d83;
   transition: color 0.3s ease;
 }
-.navbar .nav-link:hover,
-.navbar .dropdown-item:hover {
+.navbar .nav-link:hover:hover {
   color: #0e0f17;
+}
+.navbar .dropdown-item:hover {
+  background-color: #444971;
+  color: #ffffff;
 }
 .navbar .circleLink,
 .navbar .circleBtn {
@@ -1691,6 +1694,13 @@ img.mfp-img {
   top: 50%;
   right: 1.5rem;
   transform: translateY(-50%);
+}
+.career #customSelect .dropdown-item {
+  white-space: normal;
+}
+.career #customSelect .dropdown-item:hover {
+  background-color: #444971;
+  color: #ffffff;
 }
 .career .vacancyCard {
   position: relative;
