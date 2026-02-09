@@ -1339,6 +1339,7 @@ section:not(.hero) .container {
   border-radius: 1rem;
 }
 .testimonials .testimonialContainer .testimonialCard .videoContainer {
+  min-width: 40.625rem;
   max-width: 40.625rem;
   width: 100%;
   overflow: hidden;
@@ -2216,6 +2217,8 @@ footer .copyright .copyrightContent .copyrightLinks {
   }
   .testimonials .testimonialContainer .testimonialCard .videoContainer {
     max-width: 100%;
+    min-width: auto !important;
+    max-width: 100% !important;
   }
   .testimonials .testimonialContainer .testimonialCard .testimonialContent {
     text-align: center;

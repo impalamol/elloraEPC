@@ -542,6 +542,7 @@
             border-radius: $cardRadius;
 
             .videoContainer {
+                min-width: 40.625rem;
                 max-width: 40.625rem;
                 width: 100%;
                 overflow: hidden;
@@ -1593,6 +1594,8 @@ footer {
 
                 .videoContainer {
                     max-width: 100%;
+                    min-width:auto !important;
+                    max-width: 100% !important;
                 }
                 .testimonialContent {
                     text-align: center;
