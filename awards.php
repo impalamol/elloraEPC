@@ -22,7 +22,7 @@ $currentPage = 'awards';
     <?php include 'includes/header.php'; ?>
 
     <main>
-        <section class="breadcrumbs" style="background: url(assets/media/breadcrumbs/awards.jpg)">
+        <section class="breadcrumbs">
             <div class="container">
                 <div class="row">
                     <div class="breadcrumbContent">
@@ -37,6 +37,7 @@ $currentPage = 'awards';
                     </div>
                 </div>
             </div>
+             <img src="assets/media/breadcrumbs/awards.jpg" alt="Awards">
         </section>
         <section class="awards certificates">
             <div class="container">
