@@ -38,12 +38,12 @@
         .swiper-slide {
             border: $commonBorder;
             padding: $commonUnit / 4;
-            border-radius: $cardRadius;
+            border-radius: 0;
             img {
                 width: 100% !important;
                 min-height: 5rem !important;
                 max-height: 5rem !important;
-                border-radius: $cardRadius / 2;
+                border-radius: 0;
             }
         }
     }
@@ -143,7 +143,7 @@
         width: max-content;
         min-width: 15rem;
         white-space: nowrap;
-        border-radius: 0.5rem;
+       border-radius: 0;
     }
 
     /* Submenu styling */
@@ -160,7 +160,7 @@
             width: max-content;
             min-width: 15rem;
             white-space: nowrap;
-            border-radius: 0.5rem;
+           border-radius: 0;
         }
 
         &:hover > .dropdown-menu,
@@ -240,7 +240,7 @@
             h6 {
                 background: $dark;
                 padding: $commonUnit / 2 $commonUnit;
-                border-radius: $cardRadius / 3;
+                border-radius: 0;
                 display: inline-block;
             }
             h1 {
@@ -349,7 +349,7 @@
     background-color: $white;
     padding: $commonUnit / 2;
     border: $commonBorder;
-    border-radius: $cardRadius / 2;
+    border-radius: 0;
     aspect-ratio: 1 / 1;
     min-height: 10rem;
     @extend .flex-center;
@@ -372,7 +372,7 @@
         padding: $commonUnit;
         height: 100%;
         border: $commonBorder;
-        border-radius: $commonUnit / 2;
+        border-radius: 0;
 
         .icon {
             $wh: 5rem;
@@ -410,7 +410,7 @@
         gap: $commonUnit / 2;
         padding: $commonUnit;
         border: $commonBorder;
-        border-radius: $cardRadius;
+        border-radius: 0;
 
         i {
             font-size: $h1 + $small;
@@ -442,7 +442,7 @@
         background: $glossy;
         padding: $commonUnit;
         border: $commonBorder;
-        border-radius: $cardRadius;
+        border-radius: 0;
         transition: all 0.6s linear;
         height: 100%;
 
@@ -467,7 +467,7 @@
             }
         }
         .projectMedia {
-            border-radius: $cardRadius;
+            border-radius: 0;
             overflow: hidden;
 
             img {
@@ -494,10 +494,10 @@
         background: $glossy;
         padding: $commonUnit;
         border: $commonBorder;
-        border-radius: $cardRadius;
+        border-radius: 0;
         transition: all 0.6s linear;
         .blogMedia {
-            border-radius: $cardRadius;
+            border-radius: 0;
             overflow: hidden;
             margin-bottom: $commonUnit;
 
@@ -539,14 +539,14 @@
             border: $commonBorder;
             transition: all 0.6s linear;
             padding: $commonUnit * 2;
-            border-radius: $cardRadius;
+            border-radius: 0;
 
             .videoContainer {
                 min-width: 40.625rem;
                 max-width: 40.625rem;
                 width: 100%;
                 overflow: hidden;
-                border-radius: $cardRadius;
+                border-radius: 0;
 
                 video {
                     width: 100%;
@@ -595,7 +595,7 @@
         display: block;
         padding: $commonUnit;
         border: $commonBorder;
-        border-radius: $cardRadius;
+        border-radius: 0;
 
         figure {
             @extend .flex-start;
@@ -608,7 +608,7 @@
                 // display: block;
                 margin: 0 auto;
                 transition: transform 0.8s ease;
-                border-radius: $cardRadius;
+                border-radius: 0;
             }
         }
 
@@ -629,7 +629,6 @@
     //     margin: 0;
     // }
     .aboutImgContainer {
-        border-radius: $cardRadius * 2;
         overflow: hidden;
         border: $commonUnit / 2 solid $white;
 
@@ -666,7 +665,7 @@
         padding: $commonUnit * 2;
         height: 100%;
         border: 0.0625rem solid rgba($color: $white, $alpha: 0.1);
-        border-radius: $cardRadius;
+        border-radius: 0;
 
         .mvHeader {
             @extend .flex-center-start;
@@ -712,13 +711,13 @@
         margin: 0 !important;
         padding: $commonUnit;
         border: $commonBorder;
-        border-radius: $cardRadius;
+        border-radius: 0;
 
         img {
             opacity: 1;
             transition: linear 1s;
             width: 100% !important;
-            border-radius: $cardRadius / 2;
+            border-radius: 0;
         }
 
         img[data-src] {
@@ -768,7 +767,7 @@ img.mfp-img {
 .cta {
     .ctaCard {
         background-color: $primary;
-        border-radius: $cardRadius;
+        border-radius: 0;
         overflow: hidden;
         position: relative;
         padding: $commonUnit * 2;
@@ -804,7 +803,7 @@ img.mfp-img {
                 flex-wrap: nowrap;
                 gap: $commonUnit / 3;
                 background-color: $white;
-                border-radius: $cardRadius * 4;
+                border-radius: 0;
                 .icon {
                     $wh: 2.5rem;
                     width: $wh;
@@ -838,7 +837,7 @@ img.mfp-img {
             background-color: $white;
             cursor: pointer;
             border: $commonBorder;
-            border-radius: $cardRadius / 2;
+            border-radius: 0;
 
             .projectImg {
                 $wh: 4.375rem;
@@ -848,7 +847,7 @@ img.mfp-img {
                 display: block;
                 overflow: hidden;
                 border: $commonBorder;
-                border-radius: $cardRadius / 3;
+                border-radius: 0;
 
                 img {
                     width: 100%;
@@ -922,13 +921,13 @@ img.mfp-img {
         background-color: $white;
         padding: $commonUnit;
         margin-top: $commonUnit;
-        border-radius: $cardRadius;
+        border-radius: 0;
         .next,
         .previous {
             background-color: $light;
             padding: $commonUnit;
             flex-grow: 1;
-            border-radius: $cardRadius / 2;
+            border-radius: 0;
         }
 
         .previous {
@@ -985,12 +984,12 @@ img.mfp-img {
         background-color: $white;
         padding: $commonUnit;
         border: $commonBorder;
-        border-radius: $cardRadius / 2;
+        border-radius: 0;
 
         .vacancyMedia {
             margin-bottom: $commonUnit;
             overflow: hidden;
-            border-radius: $cardRadius;
+            border-radius: 0;
         }
         .vacancyHeader {
             margin-bottom: $commonUnit / 2;
@@ -1106,7 +1105,7 @@ img.mfp-img {
             padding: $commonUnit * 1.5;
             cursor: pointer;
             border: 0.125rem dashed $border;
-            border-radius: $cardRadius;
+            border-radius: 0;
             transition: all 0.3s ease-in-out;
 
             &:hover {
@@ -1235,7 +1234,7 @@ img.mfp-img {
         background-color: $light;
         height: 100%;
         border: $commonBorder;
-        border-radius: $cardRadius / 2;
+        border-radius: 0;
         overflow: hidden;
         .addressHeader {
             padding: $commonUnit / 2 $commonUnit;
@@ -1260,7 +1259,7 @@ img.mfp-img {
         background-color: $white;
         height: 100%;
         padding: $commonUnit * 2;
-        border-radius: $cardRadius;
+        border-radius: 0;
 
         .pgHeader {
             margin-bottom: $commonUnit;
@@ -1279,7 +1278,7 @@ img.mfp-img {
             gap: $commonUnit;
             padding: $commonUnit;
             margin-bottom: $commonUnit;
-            border-radius: $cardRadius;
+            border-radius: 0;
 
             .icon {
                 $wh: 4.375rem;
@@ -1287,7 +1286,7 @@ img.mfp-img {
                 min-height: $wh;
                 @extend .flex-center;
                 background-color: $primary;
-                border-radius: $cardRadius;
+                border-radius: 0;
 
                 i {
                     font-size: $h3 - 0.4rem;
@@ -1350,7 +1349,7 @@ footer {
                 @extend .flex-center-start;
                 flex-direction: column;
                 padding: $commonUnit;
-                border-radius: $cardRadius;
+                border-radius: 0;
                 img {
                     max-width: 7.5rem !important;
                 }
@@ -1492,7 +1491,7 @@ footer {
                             display: inline-block;
                             margin-right: 0.5rem;
                             border: 0.0625rem solid rgba($color: $white, $alpha: 0.1);
-                            border-radius: $cardRadius / 4;
+                            border-radius: 0;
                         }
                     }
                 }

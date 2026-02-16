@@ -240,7 +240,7 @@ textarea:not([rows]) {
 ::-webkit-scrollbar-thumb {
   background: #f6f8ff;
   border: 0.0625rem solid #e4e4e4;
-  border-radius: 0.25rem;
+  border-radius: 0;
   max-height: 3.125rem;
 }
 
@@ -355,6 +355,7 @@ input[type=number] {
 .form-select {
   background-color: #ffffff;
   border-color: #e4e4e4 !important;
+  border-radius: 0 !important;
 }
 
 .btn {
@@ -364,7 +365,7 @@ input[type=number] {
   text-transform: uppercase;
   padding: 0.75rem 1.5rem;
   transition: all 0.3s ease;
-  border-radius: 0.2rem;
+  border-radius: 0;
   transition: all 0.6s ease-in-out;
 }
 .btn.btn-primary {
@@ -702,7 +703,7 @@ section:not(.hero) .container {
   height: 3.125rem !important;
   padding: 0.25rem;
   border: 0.0625rem solid #e4e4e4;
-  border-radius: 0.25rem;
+  border-radius: 0;
 }
 .searchModal .searchResult .resultItem a .productIcon img img {
   -o-object-fit: cover;
@@ -801,10 +802,9 @@ section:not(.hero) .container {
 .glossyCard {
   background: linear-gradient(139.46deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%);
   box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.007);
-  -webkit-backdrop-filter: blur(0.5rem);
   backdrop-filter: blur(0.5rem);
   border: 0.0625rem solid #ffffff;
-  border-radius: 1rem;
+  border-radius: 0;
 }
 
 .breadcrumbs {
@@ -870,7 +870,7 @@ section:not(.hero) .container {
   color: #6a6d83;
   background-color: #ffffff;
   border: 0.0625rem solid #e4e4e4;
-  border-radius: 0.5rem;
+  border-radius: 0;
   transition: all 0.6s ease-in-out;
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-link:hover {
@@ -908,13 +908,13 @@ section:not(.hero) .container {
 .swiper.projectThumbs .swiper-slide {
   border: 0.0625rem solid #e4e4e4;
   padding: 0.375rem;
-  border-radius: 1rem;
+  border-radius: 0;
 }
 .swiper.projectThumbs .swiper-slide img {
   width: 100% !important;
   min-height: 5rem !important;
   max-height: 5rem !important;
-  border-radius: 0.5rem;
+  border-radius: 0;
 }
 .swiper.testimonialThumbs .swiper-slide {
   width: 6.25rem;
@@ -952,12 +952,6 @@ section:not(.hero) .container {
   /* ===============================
      NAV LINKS
   =============================== */
-  /* ===============================
-     CIRCLE BUTTONS
-  =============================== */
-  /* Submenu styling */
-  /* Show dropdown on hover in the navigation */
-  /* Disable automatic opening of submenu when main dropdown is hovered */
 }
 .navbar .nav-link,
 .navbar .dropdown-item {
@@ -973,6 +967,11 @@ section:not(.hero) .container {
 .navbar .dropdown-item:hover {
   background-color: #444971;
   color: #ffffff;
+}
+.navbar {
+  /* ===============================
+     CIRCLE BUTTONS
+  =============================== */
 }
 .navbar .circleLink,
 .navbar .circleBtn {
@@ -1007,7 +1006,10 @@ section:not(.hero) .container {
   width: max-content;
   min-width: 15rem;
   white-space: nowrap;
-  border-radius: 0.5rem;
+  border-radius: 0;
+}
+.navbar {
+  /* Submenu styling */
 }
 .navbar .dropdown-submenu {
   position: relative;
@@ -1023,7 +1025,7 @@ section:not(.hero) .container {
   width: max-content;
   min-width: 15rem;
   white-space: nowrap;
-  border-radius: 0.5rem;
+  border-radius: 0;
 }
 .navbar .dropdown-submenu:hover > .dropdown-menu, .navbar .dropdown-submenu:focus-within > .dropdown-menu {
   display: block;
@@ -1043,9 +1045,15 @@ section:not(.hero) .container {
   border-left: 0.3em solid;
   margin-left: 0.75rem;
 }
+.navbar {
+  /* Show dropdown on hover in the navigation */
+}
 .navbar .dropdown:hover > .dropdown-menu {
   display: block;
   margin-top: 0; /* Optional: adjust the dropdown position */
+}
+.navbar {
+  /* Disable automatic opening of submenu when main dropdown is hovered */
 }
 .navbar .dropdown-submenu:hover > .dropdown-menu {
   display: block;
@@ -1092,7 +1100,7 @@ section:not(.hero) .container {
 .hero .heroSlide .heroContent h6 {
   background: #0e0f17;
   padding: 0.75rem 1.5rem;
-  border-radius: 0.3333333333rem;
+  border-radius: 0;
   display: inline-block;
 }
 .hero .heroSlide .heroContent h1 {
@@ -1182,7 +1190,7 @@ section:not(.hero) .container {
   background-color: #ffffff;
   padding: 0.75rem;
   border: 0.0625rem solid #e4e4e4;
-  border-radius: 0.5rem;
+  border-radius: 0;
   aspect-ratio: 1/1;
   min-height: 10rem;
 }
@@ -1202,7 +1210,7 @@ section:not(.hero) .container {
   padding: 1.5rem;
   height: 100%;
   border: 0.0625rem solid #e4e4e4;
-  border-radius: 0.75rem;
+  border-radius: 0;
 }
 .whyUs .whyUsCard .icon {
   min-width: 5rem;
@@ -1231,7 +1239,7 @@ section:not(.hero) .container {
   gap: 0.75rem;
   padding: 1.5rem;
   border: 0.0625rem solid #e4e4e4;
-  border-radius: 1rem;
+  border-radius: 0;
 }
 .stats .statCard i {
   font-size: 3.5rem;
@@ -1259,7 +1267,7 @@ section:not(.hero) .container {
   background: linear-gradient(142deg, rgba(255, 255, 255, 0) 0%, white 100%);
   padding: 1.5rem;
   border: 0.0625rem solid #e4e4e4;
-  border-radius: 1rem;
+  border-radius: 0;
   transition: all 0.6s linear;
   height: 100%;
 }
@@ -1281,7 +1289,7 @@ section:not(.hero) .container {
   border: 0.0625rem solid #e4e4e4;
 }
 .projects .projectCard .projectMedia {
-  border-radius: 1rem;
+  border-radius: 0;
   overflow: hidden;
 }
 .projects .projectCard .projectMedia img {
@@ -1304,11 +1312,11 @@ section:not(.hero) .container {
   background: linear-gradient(142deg, rgba(255, 255, 255, 0) 0%, white 100%);
   padding: 1.5rem;
   border: 0.0625rem solid #e4e4e4;
-  border-radius: 1rem;
+  border-radius: 0;
   transition: all 0.6s linear;
 }
 .blogs .blogCard .blogMedia {
-  border-radius: 1rem;
+  border-radius: 0;
   overflow: hidden;
   margin-bottom: 1.5rem;
 }
@@ -1342,14 +1350,14 @@ section:not(.hero) .container {
   border: 0.0625rem solid #e4e4e4;
   transition: all 0.6s linear;
   padding: 3rem;
-  border-radius: 1rem;
+  border-radius: 0;
 }
 .testimonials .testimonialContainer .testimonialCard .videoContainer {
   min-width: 40.625rem;
   max-width: 40.625rem;
   width: 100%;
   overflow: hidden;
-  border-radius: 1rem;
+  border-radius: 0;
 }
 .testimonials .testimonialContainer .testimonialCard .videoContainer video {
   width: 100%;
@@ -1388,7 +1396,7 @@ section:not(.hero) .container {
   display: block;
   padding: 1.5rem;
   border: 0.0625rem solid #e4e4e4;
-  border-radius: 1rem;
+  border-radius: 0;
 }
 .certificates .certificateCard figure {
   margin-bottom: 0.75rem;
@@ -1401,7 +1409,7 @@ section:not(.hero) .container {
      object-fit: contain;
   margin: 0 auto;
   transition: transform 0.8s ease;
-  border-radius: 1rem;
+  border-radius: 0;
 }
 .certificates .certificateCard h6 {
   font-size: 1rem;
@@ -1413,7 +1421,6 @@ section:not(.hero) .container {
 }
 
 .aboutUs .aboutImgContainer {
-  border-radius: 2rem;
   overflow: hidden;
   border: 0.75rem solid #ffffff;
 }
@@ -1444,12 +1451,11 @@ section:not(.hero) .container {
 }
 .missionVision .mvCard {
   background: linear-gradient(142deg, rgba(14, 15, 23, 0.02) 24%, rgba(14, 15, 23, 0.05) 100%);
-  -webkit-backdrop-filter: blur(0.3125rem);
   backdrop-filter: blur(0.3125rem);
   padding: 3rem;
   height: 100%;
   border: 0.0625rem solid rgba(255, 255, 255, 0.1);
-  border-radius: 1rem;
+  border-radius: 0;
 }
 .missionVision .mvCard .mvHeader {
   gap: 0.75rem;
@@ -1488,13 +1494,13 @@ section:not(.hero) .container {
   margin: 0 !important;
   padding: 1.5rem;
   border: 0.0625rem solid #e4e4e4;
-  border-radius: 1rem;
+  border-radius: 0;
 }
 .gridGallery figure img {
   opacity: 1;
   transition: linear 1s;
   width: 100% !important;
-  border-radius: 0.5rem;
+  border-radius: 0;
 }
 .gridGallery figure img[data-src] {
   opacity: 0;
@@ -1534,7 +1540,7 @@ img.mfp-img {
 
 .cta .ctaCard {
   background-color: #444971;
-  border-radius: 1rem;
+  border-radius: 0;
   overflow: hidden;
   position: relative;
   padding: 3rem;
@@ -1566,7 +1572,7 @@ img.mfp-img {
   flex-wrap: nowrap;
   gap: 0.5rem;
   background-color: #ffffff;
-  border-radius: 4rem;
+  border-radius: 0;
 }
 .cta .ctaCard .ctaContent .roundedBtn .icon {
   width: 2.5rem;
@@ -1592,7 +1598,7 @@ img.mfp-img {
   background-color: #ffffff;
   cursor: pointer;
   border: 0.0625rem solid #e4e4e4;
-  border-radius: 0.5rem;
+  border-radius: 0;
 }
 .projectDetails .projectContainer .projectThumb .projectImg {
   min-width: 4.375rem;
@@ -1601,7 +1607,7 @@ img.mfp-img {
   display: block;
   overflow: hidden;
   border: 0.0625rem solid #e4e4e4;
-  border-radius: 0.3333333333rem;
+  border-radius: 0;
 }
 .projectDetails .projectContainer .projectThumb .projectImg img {
   width: 100%;
@@ -1662,14 +1668,14 @@ img.mfp-img {
   background-color: #ffffff;
   padding: 1.5rem;
   margin-top: 1.5rem;
-  border-radius: 1rem;
+  border-radius: 0;
 }
 .blogDetails .pagination .next,
 .blogDetails .pagination .previous {
   background-color: #f6f8ff;
   padding: 1.5rem;
   flex-grow: 1;
-  border-radius: 0.5rem;
+  border-radius: 0;
 }
 .blogDetails .pagination .previous {
   text-align: left;
@@ -1717,12 +1723,12 @@ img.mfp-img {
   background-color: #ffffff;
   padding: 1.5rem;
   border: 0.0625rem solid #e4e4e4;
-  border-radius: 0.5rem;
+  border-radius: 0;
 }
 .career .vacancyCard .vacancyMedia {
   margin-bottom: 1.5rem;
   overflow: hidden;
-  border-radius: 1rem;
+  border-radius: 0;
 }
 .career .vacancyCard .vacancyHeader {
   margin-bottom: 0.75rem;
@@ -1825,7 +1831,7 @@ img.mfp-img {
   padding: 2.25rem;
   cursor: pointer;
   border: 0.125rem dashed #e4e4e4;
-  border-radius: 1rem;
+  border-radius: 0;
   transition: all 0.3s ease-in-out;
 }
 #careerModal .careerForm .dropZone:hover {
@@ -1919,7 +1925,7 @@ img.mfp-img {
   background-color: #f6f8ff;
   height: 100%;
   border: 0.0625rem solid #e4e4e4;
-  border-radius: 0.5rem;
+  border-radius: 0;
   overflow: hidden;
 }
 .contactUs .addressCard .addressHeader {
@@ -1943,7 +1949,7 @@ img.mfp-img {
   background-color: #ffffff;
   height: 100%;
   padding: 3rem;
-  border-radius: 1rem;
+  border-radius: 0;
 }
 .contactUs .contactCard .pgHeader {
   margin-bottom: 1.5rem;
@@ -1961,13 +1967,13 @@ img.mfp-img {
   gap: 1.5rem;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  border-radius: 1rem;
+  border-radius: 0;
 }
 .contactUs .contactCard .contactChip .icon {
   min-width: 4.375rem;
   min-height: 4.375rem;
   background-color: #444971;
-  border-radius: 1rem;
+  border-radius: 0;
 }
 .contactUs .contactCard .contactChip .icon i {
   font-size: 1.6rem;
@@ -2023,7 +2029,7 @@ footer .footerContent .footerCard .footerLogo {
   background-color: #ffffff;
   flex-direction: column;
   padding: 1.5rem;
-  border-radius: 1rem;
+  border-radius: 0;
 }
 footer .footerContent .footerCard .footerLogo img {
   max-width: 7.5rem !important;
@@ -2136,7 +2142,7 @@ footer .footerContent .footerCard ul li .socialIcon i {
   display: inline-block;
   margin-right: 0.5rem;
   border: 0.0625rem solid rgba(255, 255, 255, 0.1);
-  border-radius: 0.25rem;
+  border-radius: 0;
 }
 footer .copyright {
   font-size: 0.875rem;
@@ -2144,7 +2150,6 @@ footer .copyright {
   position: relative;
   z-index: 4;
   background: linear-gradient(132.78deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.02) 100%);
-  -webkit-backdrop-filter: blur(commonUnit/2);
   backdrop-filter: blur(commonUnit/2);
   padding: 1.5rem;
   border-top: 0.0625rem solid rgba(255, 255, 255, 0.1);

@@ -62,7 +62,7 @@
                             class="ph-duotone ph-users-three"></i></a>
                 </li> -->
                 <li class="nav-item">
-                    <a class="nav-link circleBtn" href="contact" title="Contact Us"><i class="ph-duotone ph-phone"></i>
+                    <a class=" btn btn-light" href="contact" title="Contact Us"><i class="ph-duotone ph-phone"></i>
                         Contact Us</a>
                 </li>
             </ul>
