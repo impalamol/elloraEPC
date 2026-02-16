@@ -21,7 +21,7 @@ $cardShadow: rgba($dark, 0.1) 0rem 0.4375rem 1.8125rem 0rem;
 ::-webkit-scrollbar-thumb {
     background: $light;
     border: $commonBorder;
-    border-radius: 0.25rem;
+    border-radius: 0;
     max-height: 3.125rem;
 }
 
@@ -136,6 +136,7 @@ input[type="number"] {
 .form-select {
     background-color: $white;
     border-color: $border !important;
+    border-radius: 0 !important;
 }
 .btn {
     font-size: $medium;
@@ -144,7 +145,7 @@ input[type="number"] {
     text-transform: uppercase;
     padding: 0.75rem 1.5rem;
     transition: all 0.3s ease;
-    border-radius: $cardRadius / 5;
+    border-radius: 0;
     transition: all 0.6s ease-in-out;
 
     // ----- SOLID BUTTONS -----
@@ -560,7 +561,7 @@ section:not(.hero) {
                     height: $wh !important;
                     padding: 0.25rem;
                     border: $commonBorder;
-                    border-radius: 0.25rem;
+                    border-radius: 0;
                     @extend .flex-center;
                     img {
                         object-fit: cover;
@@ -680,7 +681,7 @@ section:not(.hero) {
     -webkit-backdrop-filter: blur(0.5rem);
     backdrop-filter: blur(0.5rem);
     border: 0.0625rem solid $white;
-    border-radius: $cardRadius;
+    border-radius: 0;
 }
 
 // Breadcrumbs {
@@ -761,7 +762,7 @@ section:not(.hero) {
         color: $gray;
         background-color: $white;
         border: $commonBorder;
-        border-radius: $cardRadius / 2;
+        border-radius: 0;
         transition: all 0.6s ease-in-out;
         &.active,
         &:hover {
