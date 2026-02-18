@@ -124,7 +124,7 @@ textarea:not([rows]) {
   justify-content: flex-end;
 }
 
-.flex-start, footer .footerContent .footerCard.logo, .certificates .certificateCard figure, .testimonials .testimonialContainer .testimonialCard .testimonialContent, .whyUs .whyUsCard, .enquiryModal .modal-body form .btnGroup, .pgHeader .pgTitle {
+.flex-start, footer .footerContent .footerCard .contactChip .contactList span, footer .footerContent .footerCard .contactChip .contactList, footer .footerContent .footerCard.logo, .certificates .certificateCard figure, .testimonials .testimonialContainer .testimonialCard .testimonialContent, .whyUs .whyUsCard, .enquiryModal .modal-body form .btnGroup, .pgHeader .pgTitle {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -2125,6 +2125,13 @@ footer .footerContent .footerCard .contactChip span {
 footer .footerContent .footerCard .contactChip p,
 footer .footerContent .footerCard .contactChip a {
   margin: 0;
+}
+footer .footerContent .footerCard .contactChip .contactList {
+  flex-direction: column;
+  gap: 0.375rem;
+}
+footer .footerContent .footerCard .contactChip .contactList span {
+  gap: 0.75rem;
 }
 footer .footerContent .footerCard ul {
   margin: 0;

@@ -27,9 +27,12 @@
                                 <i class="ph-duotone ph-phone"></i>
                                 Phone
                             </h6>
-                            <span>
-                                <a href="tel:+919561458667">+91 9561458667</a>
-                            </span>
+                            <div class="contactList">
+                                <span>General Enquiries : - <a href="tel:+919561458667">+91 9561458667</a></span>
+                                <span>Purchase Contact : - <a href="tel:+919922596081">+91 99225 96081</a></span>
+                                <span>Tendering Contact : - <a href="tel:+919923498667">+91 99234 98667</a></span>
+                                <span>HR Contact : - <a href="tel:+919927300594"> +91 99273 00594</a></span>
+                            </div>
                         </div>
                         <div class="contactChip">
                             <h6>
@@ -68,8 +71,8 @@
                             <div class="input-group mb-3">
                                 <input type="email" class="form-control" placeholder="your email..."
                                     aria-label="your email..." aria-describedby="subscribeBtn">
-                                <button class="btn btn-primary" type="button"
-                                    id="subscribeBtn">Subscribe <i class="ph-duotone ph-envelope"></i></button>
+                                <button class="btn btn-primary" type="button" id="subscribeBtn">Subscribe <i
+                                        class="ph-duotone ph-envelope"></i></button>
                             </div>
                         </div>
                         <hr />
