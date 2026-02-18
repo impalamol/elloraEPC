@@ -131,12 +131,29 @@ $currentPage = 'home';
                             </div>
                         </div>
                     </div>
-                    <div class="aboutVideo" style="background-image: url('assets/media/video-bg.jpg');">
-                        <button class="videoBtn" data-bs-toggle="modal" data-bs-target="#aboutVideo">
-                            <i class="ph-duotone ph-play"></i>
-                        </button>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 col-lg-7 col-xl-7 col-xxl-7 mb-4">
+                        <div class="aboutVideo" style="background-image: url('assets/media/video-bg.jpg');">
+                            <button class="videoBtn" data-bs-toggle="modal" data-bs-target="#aboutVideo">
+                                <i class="ph-duotone ph-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 col-xl-5 col-xxl-5">
+                        <div class="pgHeader verticallyCentered">
+                            <div class="pgTitle">
+                                <h2>Our Story</h2>
+                                <ol>
+                                    <li>One of the Top 10 EPC Contractors in India for Industrial Construction</li>
+                                    <li>Famous Brands Award 2025</li>
+                                    <li>Only company in India to Receive 4 Consecutive GSS Awards</li>
+                                </ol>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
         <section class="whyUs">
