@@ -143,7 +143,7 @@
         width: max-content;
         min-width: 15rem;
         white-space: nowrap;
-       border-radius: 0;
+        border-radius: 0;
     }
 
     /* Submenu styling */
@@ -160,7 +160,7 @@
             width: max-content;
             min-width: 15rem;
             white-space: nowrap;
-           border-radius: 0;
+            border-radius: 0;
         }
 
         &:hover > .dropdown-menu,
@@ -560,7 +560,7 @@
                     width: 100%;
                     height: auto;
                     display: block;
-                    object-fit: cover; 
+                    object-fit: cover;
                 }
             }
 
@@ -1485,6 +1485,15 @@ footer {
                 a {
                     margin: 0;
                 }
+                .contactList {
+                    @extend .flex-start;
+                    flex-direction: column;
+                    gap: $commonUnit / 4;
+                    span {
+                        @extend .flex-start;
+                        gap: $commonUnit / 2;
+                    }
+                }
             }
             ul {
                 margin: 0;
@@ -1601,7 +1610,7 @@ footer {
 
                 .videoContainer {
                     max-width: 100%;
-                    min-width:auto !important;
+                    min-width: auto !important;
                     max-width: 100% !important;
                 }
                 .testimonialContent {
