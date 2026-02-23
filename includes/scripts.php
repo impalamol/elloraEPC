@@ -380,6 +380,39 @@
     }
 </script>
 <script>
+    var swiper = new Swiper(".customerSwiper", {
+        slidesPerView: 1,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        spaceBetween: 20,
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2.1,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 3.5,
+                spaceBetween: 0,
+            },
+            1440: {
+                slidesPerView: 3.5,
+                spaceBetween: 0,
+            },
+        },
+    });
+</script>
+<script>
     var currentYear = new Date().getFullYear();
     document.getElementById("year").textContent = currentYear;
 </script>

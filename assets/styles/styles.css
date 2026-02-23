@@ -100,7 +100,7 @@ textarea:not([rows]) {
   justify-content: flex-start;
 }
 
-.flex-center-end {
+.flex-center-end, .customers .customerCard::before {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -1228,6 +1228,68 @@ section:not(.hero) .container {
 .whyUs .whyUsCard .whyUsContent p {
   font-size: 0.875rem;
   margin-bottom: 0;
+}
+
+.customers {
+  position: relative;
+  padding-top: 100px !important;
+}
+.customers::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 50%;
+  background-color: #0e0f17;
+  z-index: 0;
+}
+.customers .customerSwiper {
+  border: 5px solid #0e0f17;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+.customers .customerCard {
+  overflow: hidden;
+  position: relative;
+}
+.customers .customerCard::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(14, 15, 23, 0.05), #0e0f17 100%);
+  z-index: 1;
+}
+.customers .customerCard img {
+  display: block;
+  margin: auto;
+  transition: all 1s linear;
+}
+.customers .customerCard .customerInfo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  padding: 1.5rem;
+}
+.customers .customerCard .customerInfo h3 {
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+.customers .customerCard .customerInfo h3 span {
+  font-size: 1.625rem;
+  font-weight: 600;
+  line-height: normal;
+  display: block;
+}
+.customers .customerCard:hover img {
+  transform: scale(1.1);
 }
 
 .stats .statCard {
