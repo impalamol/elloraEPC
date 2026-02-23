@@ -235,6 +235,59 @@ $currentPage = 'home';
                 </div>
             </div>
         </section>
+        <section class="customers">
+            <div class="container">
+                <div class="row">
+                    <div class="swiper customerSwiper" aria-label="Customer Sectors">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="customerCard">
+                                    <img src="assets/media/customer/government.jpg" alt="Government Sector">
+                                    <div class="customerInfo">
+                                        <h3><span>Government</span> Sector</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="customerCard">
+                                    <img src="assets/media/customer/public.jpg" alt="Public Sector">
+                                    <div class="customerInfo">
+                                        <h3><span>Public</span> Sector</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="customerCard">
+                                    <img src="assets/media/customer/research.jpg" alt="Research Institutes">
+                                    <div class="customerInfo">
+                                        <h3><span>Research</span> Institutes</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="customerCard">
+                                    <img src="assets/media/customer/defence.jpg" alt="Defence Forces">
+                                    <div class="customerInfo">
+                                        <h3><span>Defence</span> Forces</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="customerCard">
+                                    <img src="assets/media/customer/private-healthcare.jpg" alt="Private Healthcare">
+                                    <div class="customerInfo">
+                                        <h3><span>Private</span> Healthcare</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="stats">
             <div class="container">
                 <div class="row stat">
