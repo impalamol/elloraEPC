@@ -42,7 +42,7 @@ $currentPage = 'projects';
         <section class="projectDetails">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-12 col-xl-8 col-xxl-8 mb-3 mb-lg-0">
+                    <div class="col-12 col-lg-12 col-xl-7 col-xxl-7 mb-3 mb-lg-0">
                         <div class="projectShowcase active">
                             <div class="swiper projectGallery">
                                 <div class="swiper-wrapper">
@@ -128,8 +128,12 @@ $currentPage = 'projects';
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-12 col-xl-4 col-xxl-4">
+                    <div class="col-12 col-lg-12 col-xl-5 col-xxl-5">
                         <div class="projectInfo">
+                            <div class="clientLogo">
+                                <img src="assets/media/collaborations/client2.jpg" alt="Reliance" title="Reliance" width="100">
+                            </div>
+                            <h2>Reliance Consumer Products Ltd</h2>
                             <p>Explore the breadth of our expertise through our diverse portfolio of ongoing projects.
                                 Ellora EPC, one of the leading commercial, industrial , and civil contractors in India,
                                 is currently engaged in a wide range of challenging and rewarding initiatives across

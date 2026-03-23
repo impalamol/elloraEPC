@@ -71,7 +71,7 @@
                             <div class="input-group mb-3">
                                 <input type="email" class="form-control" placeholder="your email..."
                                     aria-label="your email..." aria-describedby="subscribeBtn">
-                                <button class="btn btn-primary" type="button" id="subscribeBtn">Subscribe <i
+                                <button class="btn btn-secondary" type="button" id="subscribeBtn">Subscribe <i
                                         class="ph-duotone ph-envelope"></i></button>
                             </div>
                         </div>
