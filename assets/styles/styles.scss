@@ -480,7 +480,7 @@
     }
     .customerSwiper {
         border: 5px solid $dark;
-        border-radius: $commonUnit $commonUnit 0 0;
+        // border-radius: $commonUnit $commonUnit 0 0;
     }
     .customerCard {
         overflow: hidden;
@@ -520,6 +520,12 @@
                     font-weight: 600;
                     line-height: normal;
                     display: block;
+                }
+            }
+            ul, ol {
+                padding-left: 0;
+                li {
+                    margin-bottom: $commonUnit / 2;
                 }
             }
         }
