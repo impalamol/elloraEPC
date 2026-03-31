@@ -22,11 +22,10 @@ $currentPage = 'projects';
     <?php include 'includes/header.php'; ?>
 
     <main>
-        <section class="breadcrumbs">
-            <div class="container">
-                <div class="row">
-                    <div class="breadcrumbContent">
-                        <h2>Ongoing Projects</h2>
+        <section class="breadcrumbs" style="background: url(assets/media/breadcrumbs/projects.jpg)">
+            <div class="breadcrumbContent">
+                <div class="container">
+                    <div class="row">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index"><i
@@ -37,7 +36,6 @@ $currentPage = 'projects';
                     </div>
                 </div>
             </div>
-            <img src="assets/media/breadcrumbs/projects.jpg" alt="Projects">
         </section>
         <section class="projectDetails">
             <div class="container">
@@ -131,7 +129,8 @@ $currentPage = 'projects';
                     <div class="col-12 col-lg-12 col-xl-5 col-xxl-5">
                         <div class="projectInfo">
                             <div class="clientLogo">
-                                <img src="assets/media/collaborations/client2.jpg" alt="Reliance" title="Reliance" width="100">
+                                <img src="assets/media/collaborations/client2.jpg" alt="Reliance" title="Reliance"
+                                    width="100">
                             </div>
                             <h2>Reliance Consumer Products Ltd</h2>
                             <p>Explore the breadth of our expertise through our diverse portfolio of ongoing projects.

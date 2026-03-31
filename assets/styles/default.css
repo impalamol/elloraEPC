@@ -295,7 +295,7 @@ h6 {
   letter-spacing: -0.0187rem;
   color: #0e0f17;
   position: relative;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.625rem;
 }
 
 h1 {
@@ -323,7 +323,7 @@ h6 {
 }
 
 p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 ol,
@@ -534,7 +534,7 @@ input[type=number] {
 }
 
 .btnGroup {
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 section:not(.hero) {
@@ -554,8 +554,8 @@ section:not(.hero) .container {
 
 .pgHeader {
   flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-bottom: 3rem;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
   position: relative;
   z-index: 2;
 }
@@ -661,8 +661,8 @@ section:not(.hero) .container {
   padding: 0;
 }
 .searchModal .searchBar {
-  gap: 1.5rem;
-  padding: 1.5rem;
+  gap: 1.25rem;
+  padding: 1.25rem;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -683,8 +683,8 @@ section:not(.hero) .container {
 }
 .searchModal .searchResult .resultItem {
   background-color: #ffffff;
-  padding: 0.75rem 1.5rem;
-  gap: 1.5rem;
+  padding: 0.625rem 1.25rem;
+  gap: 1.25rem;
   cursor: pointer;
   border-bottom: 0.0625rem solid #e4e4e4;
   margin: 0;
@@ -693,7 +693,7 @@ section:not(.hero) .container {
   background-color: #f6f8ff;
 }
 .searchModal .searchResult .resultItem a {
-  gap: 0.75rem;
+  gap: 0.625rem;
 }
 .searchModal .searchResult .resultItem a .productIcon img {
   width: 3.125rem !important;
@@ -722,7 +722,7 @@ section:not(.hero) .container {
 }
 .searchModal .nrs {
   flex-direction: column;
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 .searchModal .nrs i {
   font-size: 2rem;
@@ -738,7 +738,7 @@ section:not(.hero) .container {
 
 .enquiryModal .modal-header {
   background-color: #0e0f17 !important;
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 .enquiryModal .modal-header h5 {
   font-size: 1.375rem;
@@ -762,12 +762,12 @@ section:not(.hero) .container {
 .enquiryModal .modal-body form .formElements {
   flex: 1 1 auto;
   overflow-y: auto;
-  padding: 3rem 3rem 0;
+  padding: 2.5rem 2.5rem 0;
   width: 100%;
   max-height: none;
 }
 .enquiryModal .modal-body form .formElements .formGroup {
-  margin-bottom: 0.75rem !important;
+  margin-bottom: 0.625rem !important;
 }
 .enquiryModal .modal-body form .formElements .flag-icon {
   width: 1.25rem;
@@ -792,8 +792,8 @@ section:not(.hero) .container {
 .enquiryModal .modal-body form .btnGroup {
   flex-shrink: 0;
   width: 100%;
-  gap: 0.75rem;
-  padding: 1.5rem 5rem;
+  gap: 0.625rem;
+  padding: 1.25rem 4.5rem;
 }
 
 .glossyCard {
@@ -805,30 +805,27 @@ section:not(.hero) .container {
 }
 
 .breadcrumbs {
+  background-position: top !important;
+  background-size: cover !important;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
   flex-direction: column;
-  height: 25rem;
-  margin-top: 4.5rem;
-  position: relative;
-  overflow: hidden;
-}
-.breadcrumbs::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  width: 100%;
   height: 100%;
-  background: linear-gradient(93.88deg, #0e0f17 0%, transparent 100%);
+  min-height: 40.625rem;
+  padding: 0 !important;
 }
 .breadcrumbs .breadcrumbContent {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   z-index: 2;
+  content: "";
+  background-color: #0e0f17;
+  padding: 1.25rem;
+  width: 100%;
 }
-.breadcrumbs .breadcrumbContent h2 {
-  font-size: 1.625rem;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 0;
+.breadcrumbs .breadcrumbContent .breadcrumb {
+  margin: 0 !important;
 }
 .breadcrumbs .breadcrumbContent .breadcrumb .breadcrumb-item.active {
   color: #ffffff;
@@ -837,22 +834,10 @@ section:not(.hero) .container {
   color: #ffffff;
 }
 .breadcrumbs .breadcrumbContent .breadcrumb .breadcrumb-item a {
-  color: #415791;
+  color: #e2ca06;
 }
 .breadcrumbs .breadcrumbContent .breadcrumb .breadcrumb-item.active {
   color: #ffffff;
-}
-.breadcrumbs img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
-  image-rendering: -webkit-optimize-contrast;
-  -webkit-image-rendering: crisp-edges;
-  image-rendering: crisp-edges;
 }
 
 .nav-tabs {

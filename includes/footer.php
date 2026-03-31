@@ -5,7 +5,7 @@
                 <div class="col-12 col-md-6 col-lg-2 col-xl-2 col-xxl-2 mb-4">
                     <div class="footerCard logo">
                         <div class="footerLogo">
-                            <img src="assets/media/ellora-logo.png" alt="Ellora Logo" class="img-fluid">
+                            <img src="assets/media/ellora-logo2.png" alt="Ellora Logo" class="img-fluid">
                         </div>
                     </div>
                 </div>

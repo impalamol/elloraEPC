@@ -44,6 +44,13 @@ $currentPage = 'home';
                 </div>
             </div>
         </section>
+        <section class="sentence">
+            <div class="container">
+                <div class="row">
+                    <h2><span>Ellora</span> <br/> Top 10 EPC Contractors in India</h2>
+                </div>
+            </div>
+        </section>
         <section class="about">
             <div class="container">
                 <div class="row">

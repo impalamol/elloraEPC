@@ -22,11 +22,10 @@ $currentPage = 'ventures';
     <?php include 'includes/header.php'; ?>
 
     <main>
-        <section class="breadcrumbs">
-            <div class="container">
-                <div class="row">
-                    <div class="breadcrumbContent">
-                        <h2>Ventures</h2>
+        <section class="breadcrumbs" style="background: url(assets/media/breadcrumbs/ventures.jpg)">
+            <div class="breadcrumbContent">
+                <div class="container">
+                    <div class="row">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index"><i
@@ -37,7 +36,6 @@ $currentPage = 'ventures';
                     </div>
                 </div>
             </div>
-            <img src="assets/media/breadcrumbs/ventures.jpg" alt="Ventures">
         </section>
         <section class="ventures">
             <div class="container">
@@ -50,63 +48,84 @@ $currentPage = 'ventures';
                                 technology, logistics, and workspace solutions.</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-5">
-                        <div class="ventureCard">
+                    <div class="ventureCard">
+                        <figure>
                             <img src="assets/media/ventures/ellora-group.webp" alt="Ellora Group">
-                            <p>Ellora prefab is a leading manufacturer of Pre Engineering Buildings & Steel Structures
+                        </figure>
+                        <div class="ventureContent">
+                            <h3>Ellora Group</h3>
+                            <p>Ellora prefab is a leading manufacturer of Pre Engineering Buildings & Steel
+                                Structures
                                 in INDIA. The team comprised of skilled professionals and technical experts boasts a
                                 renowned reputation for stead fast dedication to excellence.
                             </p>
                         </div>
                     </div>
-
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-5">
-                        <div class="ventureCard">
+                    <div class="ventureCard">
+                        <figure>
                             <img src="assets/media/ventures/ellora-infotech.webp" alt="Ellora Infotech">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </figure>
+                        <div class="ventureContent">
+                            <h3>Ellora Infotech</h3>
+                            <p>Ellora prefab is a leading manufacturer of Pre Engineering Buildings & Steel
+                                Structures
+                                in INDIA. The team comprised of skilled professionals and technical experts boasts a
+                                renowned reputation for stead fast dedication to excellence.
                             </p>
                         </div>
                     </div>
-
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-5">
-                        <div class="ventureCard">
+                    <div class="ventureCard">
+                        <figure>
                             <img src="assets/media/ventures/ellora-lifespace.webp" alt="Ellora Lifespace">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </figure>
+                        <div class="ventureContent">
+                            <h3>Ellora Infotech</h3>
+                            <p>Ellora prefab is a leading manufacturer of Pre Engineering Buildings & Steel
+                                Structures
+                                in INDIA. The team comprised of skilled professionals and technical experts boasts a
+                                renowned reputation for stead fast dedication to excellence.
                             </p>
                         </div>
                     </div>
-
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-5">
-                        <div class="ventureCard">
+                    <div class="ventureCard">
+                        <figure>
                             <img src="assets/media/ventures/ellora-logistics.webp" alt="Ellora Logistics">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </figure>
+                        <div class="ventureContent">
+                            <h3>Ellora Infotech</h3>
+                            <p>Ellora prefab is a leading manufacturer of Pre Engineering Buildings & Steel
+                                Structures
+                                in INDIA. The team comprised of skilled professionals and technical experts boasts a
+                                renowned reputation for stead fast dedication to excellence.
                             </p>
                         </div>
                     </div>
-
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-5">
-                        <div class="ventureCard">
-                            <img src="assets/media/ventures/ellora-workspace.webp" alt="Ellora Workspace">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-5">
-                        <div class="ventureCard">
+                    <div class="ventureCard">
+                        <figure>
                             <img src="assets/media/ventures/palmasia.webp" alt="Palmasia Industries">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </figure>
+                        <div class="ventureContent">
+                            <h3>Ellora Infotech</h3>
+                            <p>Ellora prefab is a leading manufacturer of Pre Engineering Buildings & Steel
+                                Structures
+                                in INDIA. The team comprised of skilled professionals and technical experts boasts a
+                                renowned reputation for stead fast dedication to excellence.
                             </p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-5">
-                        <div class="ventureCard">
+                    <div class="ventureCard">
+                        <figure>
                             <img src="assets/media/ventures/elr.webp" alt="ELR">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </figure>
+                        <div class="ventureContent">
+                            <h3>Ellora Infotech</h3>
+                            <p>Ellora prefab is a leading manufacturer of Pre Engineering Buildings & Steel
+                                Structures
+                                in INDIA. The team comprised of skilled professionals and technical experts boasts a
+                                renowned reputation for stead fast dedication to excellence.
                             </p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
