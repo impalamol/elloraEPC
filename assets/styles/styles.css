@@ -94,7 +94,7 @@ textarea:not([rows]) {
   justify-content: space-around;
 }
 
-.flex-center-start, footer .copyright .copyrightContent .copyrightLinks, footer .footerContent .footerCard .social, footer .footerContent .footerCard .footerLogo, .contactUs .contactCard .contactChip, .ventures .ventureCard, .career .vacancyCard .vacancyHeader .vacancyMeta, .projectDetails .projectContainer .projectThumb, .missionVision .mvCard .mvHeader, .testimonials .testimonialContainer .testimonialCard, .about .aboutVideo, .searchModal .searchResult .resultItem a, .btnGroup {
+.flex-center-start, footer .copyright .copyrightContent .copyrightLinks, footer .footerContent .footerCard .social, footer .footerContent .footerCard .footerLogo, .contactUs .contactCard .contactChip, .ventures .ventureCard, .career .vacancyCard .vacancyHeader .vacancyMeta, .projectDetails .projectContainer .projectThumb, .missionVision .mvCard .mvHeader, .testimonials .testimonialContainer .testimonialCard, .companyPresentation .presentationVideo, .searchModal .searchResult .resultItem a, .btnGroup {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -1148,17 +1148,27 @@ section:not(.hero) .container {
 .about p {
   max-width: 52rem;
 }
-.about .aboutVideo {
+.about .pgHeader .pgTitle {
+  justify-content: center;
+  height: 100%;
+}
+.about .pgHeader .pgTitle h2 {
+  margin-bottom: 1.5rem;
+}
+
+.companyPresentation .pgHeader {
+  margin-bottom: 1.5rem;
+}
+.companyPresentation .presentationVideo {
   min-height: 60vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
-  border-radius: 2rem;
   overflow: hidden;
   border: 0.75rem solid #ffffff;
 }
-.about .aboutVideo::before {
+.companyPresentation .presentationVideo::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -1168,19 +1178,17 @@ section:not(.hero) .container {
   content: "";
   z-index: 1;
 }
-.about .aboutVideo .videoBtn {
+.companyPresentation .presentationVideo .videoBtn {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
 }
-.about .pgHeader .pgTitle {
-  justify-content: center;
-  height: 100%;
-}
-.about .pgHeader .pgTitle h2 {
-  margin-bottom: 1.5rem;
+.companyPresentation form {
+  background: rgba(68, 73, 113, 0.06);
+  padding: 3rem;
+  border: 0.75rem solid #ffffff;
 }
 
 .collaborationCard {
@@ -1551,7 +1559,6 @@ section:not(.hero) .container {
   overflow: hidden;
   position: relative;
   margin: 0 !important;
-  padding: 1.5rem;
   border: 0.0625rem solid #e4e4e4;
   border-radius: 0;
 }

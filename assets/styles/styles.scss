@@ -302,37 +302,6 @@
         max-width: 52rem;
     }
 
-    .aboutVideo {
-        @extend .flex-center-start;
-        min-height: 60vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        // margin-top: $commonUnit * 3;
-        border-radius: $cardRadius * 2;
-        overflow: hidden;
-        border: $commonUnit / 2 solid $white;
-
-        &::before {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba($color: $dark, $alpha: 0.5);
-            content: "";
-            z-index: 1;
-        }
-
-        .videoBtn {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-        }
-    }
     // &::after {
     //     position: absolute;
     //     bottom: 0;
@@ -350,6 +319,48 @@
         h2 {
             margin-bottom: $commonUnit;
         }
+    }
+}
+// Company Presentation
+.companyPresentation {
+    .pgHeader {
+        margin-bottom: $commonUnit;
+    }
+    .presentationVideo {
+        @extend .flex-center-start;
+        min-height: 60vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        // margin-top: $commonUnit * 3;
+        overflow: hidden;
+        border: $commonUnit / 2 solid $white;
+        // border-radius: $cardRadius * 2;
+        
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: $dark, $alpha: 0.5);
+            content: "";
+            z-index: 1;
+        }
+        
+        .videoBtn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+    }
+    form {
+        background: rgba($color: $primary, $alpha: 0.06);
+        padding: $commonUnit * 2;
+        border: $commonUnit / 2 solid $white;
     }
 }
 // Collaboration Card
@@ -782,7 +793,7 @@
         overflow: hidden;
         position: relative;
         margin: 0 !important;
-        padding: $commonUnit;
+        // padding: $commonUnit;
         border: $commonBorder;
         border-radius: 0;
 
