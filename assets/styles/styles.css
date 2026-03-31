@@ -814,7 +814,7 @@ section:not(.hero) .container {
   image-rendering: crisp-edges;
   flex-direction: column;
   height: 100%;
-  min-height: 40.625rem;
+  min-height: 32.8125rem;
   padding: 0 !important;
 }
 .breadcrumbs .breadcrumbContent {
@@ -1272,7 +1272,6 @@ section:not(.hero) .container {
 }
 .customers .customerSwiper {
   border: 5px solid #0e0f17;
-  border-radius: 1.25rem 1.25rem 0 0;
 }
 .customers .customerCard {
   overflow: hidden;
@@ -1313,6 +1312,12 @@ section:not(.hero) .container {
   font-weight: 600;
   line-height: normal;
   display: block;
+}
+.customers .customerCard .customerInfo ul, .customers .customerCard .customerInfo ol {
+  padding-left: 0;
+}
+.customers .customerCard .customerInfo ul li, .customers .customerCard .customerInfo ol li {
+  margin-bottom: 0.625rem;
 }
 .customers .customerCard:hover img {
   transform: scale(1.1);
