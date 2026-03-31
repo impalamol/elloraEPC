@@ -22,11 +22,10 @@ $currentPage = 'about';
     <?php include 'includes/header.php'; ?>
 
     <main>
-        <section class="breadcrumbs">
-            <div class="container">
-                <div class="row">
-                    <div class="breadcrumbContent">
-                        <h2>About Us</h2>
+        <section class="breadcrumbs" style="background: url(assets/media/breadcrumbs/about.jpg)">
+            <div class="breadcrumbContent">
+                <div class="container">
+                    <div class="row">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index"><i
@@ -37,7 +36,6 @@ $currentPage = 'about';
                     </div>
                 </div>
             </div>
-            <img src="assets/media/breadcrumbs/about.jpg" alt="About Us">
         </section>
         <section class="aboutUs">
             <div class="container">

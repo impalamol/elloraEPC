@@ -4,7 +4,7 @@
 @import "flex.scss";
 @import "animations.scss";
 
-$commonUnit: 1.5rem;
+$commonUnit: 1.25rem;
 $commonBorder: 0.0625rem solid $border;
 $cardRadius: 1rem;
 $cardShadow: rgba($dark, 0.1) 0rem 0.4375rem 1.8125rem 0rem;
@@ -686,41 +686,29 @@ section:not(.hero) {
 
 // Breadcrumbs {
 .breadcrumbs {
-    // background-repeat: no-repeat !important;
-    // // background-attachment: fixed !important;
-    // background-position: top !important;
-    // background-size: cover !important;
-    // image-rendering: -webkit-optimize-contrast;
-    // -webkit-image-rendering: crisp-edges;
-    // image-rendering: crisp-edges;
+    background-position: top !important;
+    // background-attachment: fixed !important;
+    background-size: cover !important;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
     @extend .flex-start-center;
     flex-direction: column;
-    height: 25rem;
-    margin-top: 4.5rem;
-    position: relative;
-    overflow: hidden;
+    height: 100%;
+    min-height: 40.625rem;
+    padding: 0 !important;
 
-    &::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        content: "";
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(93.88deg, $dark 0%, transparent 100%);
-    }
     .breadcrumbContent {
-        position: relative;
+        position: absolute;
+        bottom: 0;
+        left: 0;
         z-index: 2;
-
-        h2 {
-            font-size: $h4;
-            text-transform: uppercase;
-            color: $white;
-            margin-bottom: 0;
-        }
+        content: "";
+        background-color: $dark;
+        padding: $commonUnit;
+        width: 100%;
 
         .breadcrumb {
+            margin: 0 !important;
             .breadcrumb-item {
                 &.active {
                     color: $white;
@@ -729,24 +717,13 @@ section:not(.hero) {
                     color: $white;
                 }
                 a {
-                    color: $secondary;
+                    color: $warning;
                 }
                 &.active {
                     color: $white;
                 }
             }
         }
-    }
-    img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: fill;
-        image-rendering: -webkit-optimize-contrast;
-        -webkit-image-rendering: crisp-edges;
-        image-rendering: crisp-edges;
     }
 }
 
@@ -771,5 +748,3 @@ section:not(.hero) {
         }
     }
 }
-
-

@@ -73,7 +73,7 @@ textarea:not([rows]) {
   display: flex;
 }
 
-.flex-center, footer .footerContent .footerCard .social a, .contactUs .contactCard .contactChip .icon, .cta .ctaCard .ctaContent .roundedBtn .icon, .cta .ctaCard .ctaContent .roundedBtn, .missionVision .mvCard .mvHeader .icon, .projects .projectCard .projectHeader a, .stats .statCard, .whyUs .whyUsCard .icon, .collaborationCard, .hero .paginationContainer .navigation .swiper-button-next,
+.flex-center, footer .footerContent .footerCard .social a, .contactUs .contactCard .contactChip .icon, .ventures .ventureCard figure, .cta .ctaCard .ctaContent .roundedBtn .icon, .cta .ctaCard .ctaContent .roundedBtn, .missionVision .mvCard .mvHeader .icon, .projects .projectCard .projectHeader a, .stats .statCard, .whyUs .whyUsCard .icon, .collaborationCard, .hero .paginationContainer .navigation .swiper-button-next,
 .hero .paginationContainer .navigation .swiper-button-prev, .hero .paginationContainer .navigation, .hero .heroSlide, .navbar .circleLink,
 .navbar .circleBtn, .searchModal .nrs, .searchModal .searchResult .resultItem a .productIcon img, .videoBtn, .pgHeader.centered .pgTitle,
 .pgHeader.centered .pgSection, .pgHeader.centered {
@@ -94,7 +94,7 @@ textarea:not([rows]) {
   justify-content: space-around;
 }
 
-.flex-center-start, footer .copyright .copyrightContent .copyrightLinks, footer .footerContent .footerCard .social, footer .footerContent .footerCard .footerLogo, .contactUs .contactCard .contactChip, .ventures .ventureCard, .career .vacancyCard .vacancyHeader .vacancyMeta, .projectDetails .projectContainer .projectThumb, .missionVision .mvCard .mvHeader, .testimonials .testimonialContainer .testimonialCard, .companyPresentation .presentationVideo, .searchModal .searchResult .resultItem a, .btnGroup {
+.flex-center-start, footer .copyright .copyrightContent .copyrightLinks, footer .footerContent .footerCard .social, footer .footerContent .footerCard .footerLogo, .contactUs .contactCard .contactChip, .career .vacancyCard .vacancyHeader .vacancyMeta, .projectDetails .projectContainer .projectThumb, .missionVision .mvCard .mvHeader, .testimonials .testimonialContainer .testimonialCard, .companyPresentation .presentationVideo, .searchModal .searchResult .resultItem a, .btnGroup {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -124,7 +124,7 @@ textarea:not([rows]) {
   justify-content: flex-end;
 }
 
-.flex-start, footer .footerContent .footerCard .contactChip .contactList span, footer .footerContent .footerCard .contactChip .contactList, footer .footerContent .footerCard.logo, .certificates .certificateCard figure, .testimonials .testimonialContainer .testimonialCard .testimonialContent, .whyUs .whyUsCard, .enquiryModal .modal-body form .btnGroup, .pgHeader .pgTitle {
+.flex-start, footer .footerContent .footerCard .contactChip .contactList span, footer .footerContent .footerCard .contactChip .contactList, footer .footerContent .footerCard.logo, .ventures .ventureCard, .certificates .certificateCard figure, .testimonials .testimonialContainer .testimonialCard .testimonialContent, .whyUs .whyUsCard, .enquiryModal .modal-body form .btnGroup, .pgHeader .pgTitle {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -298,7 +298,7 @@ h6 {
   letter-spacing: -0.0187rem;
   color: #0e0f17;
   position: relative;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.625rem;
 }
 
 h1 {
@@ -326,7 +326,7 @@ h6 {
 }
 
 p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 ol,
@@ -537,7 +537,7 @@ input[type=number] {
 }
 
 .btnGroup {
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 section:not(.hero) {
@@ -557,8 +557,8 @@ section:not(.hero) .container {
 
 .pgHeader {
   flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-bottom: 3rem;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
   position: relative;
   z-index: 2;
 }
@@ -664,8 +664,8 @@ section:not(.hero) .container {
   padding: 0;
 }
 .searchModal .searchBar {
-  gap: 1.5rem;
-  padding: 1.5rem;
+  gap: 1.25rem;
+  padding: 1.25rem;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -686,8 +686,8 @@ section:not(.hero) .container {
 }
 .searchModal .searchResult .resultItem {
   background-color: #ffffff;
-  padding: 0.75rem 1.5rem;
-  gap: 1.5rem;
+  padding: 0.625rem 1.25rem;
+  gap: 1.25rem;
   cursor: pointer;
   border-bottom: 0.0625rem solid #e4e4e4;
   margin: 0;
@@ -696,7 +696,7 @@ section:not(.hero) .container {
   background-color: #f6f8ff;
 }
 .searchModal .searchResult .resultItem a {
-  gap: 0.75rem;
+  gap: 0.625rem;
 }
 .searchModal .searchResult .resultItem a .productIcon img {
   width: 3.125rem !important;
@@ -725,7 +725,7 @@ section:not(.hero) .container {
 }
 .searchModal .nrs {
   flex-direction: column;
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 .searchModal .nrs i {
   font-size: 2rem;
@@ -741,7 +741,7 @@ section:not(.hero) .container {
 
 .enquiryModal .modal-header {
   background-color: #0e0f17 !important;
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 .enquiryModal .modal-header h5 {
   font-size: 1.375rem;
@@ -765,12 +765,12 @@ section:not(.hero) .container {
 .enquiryModal .modal-body form .formElements {
   flex: 1 1 auto;
   overflow-y: auto;
-  padding: 3rem 3rem 0;
+  padding: 2.5rem 2.5rem 0;
   width: 100%;
   max-height: none;
 }
 .enquiryModal .modal-body form .formElements .formGroup {
-  margin-bottom: 0.75rem !important;
+  margin-bottom: 0.625rem !important;
 }
 .enquiryModal .modal-body form .formElements .flag-icon {
   width: 1.25rem;
@@ -795,8 +795,8 @@ section:not(.hero) .container {
 .enquiryModal .modal-body form .btnGroup {
   flex-shrink: 0;
   width: 100%;
-  gap: 0.75rem;
-  padding: 1.5rem 5rem;
+  gap: 0.625rem;
+  padding: 1.25rem 4.5rem;
 }
 
 .glossyCard {
@@ -808,30 +808,27 @@ section:not(.hero) .container {
 }
 
 .breadcrumbs {
+  background-position: top !important;
+  background-size: cover !important;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
   flex-direction: column;
-  height: 25rem;
-  margin-top: 4.5rem;
-  position: relative;
-  overflow: hidden;
-}
-.breadcrumbs::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  width: 100%;
   height: 100%;
-  background: linear-gradient(93.88deg, #0e0f17 0%, transparent 100%);
+  min-height: 40.625rem;
+  padding: 0 !important;
 }
 .breadcrumbs .breadcrumbContent {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   z-index: 2;
+  content: "";
+  background-color: #0e0f17;
+  padding: 1.25rem;
+  width: 100%;
 }
-.breadcrumbs .breadcrumbContent h2 {
-  font-size: 1.625rem;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 0;
+.breadcrumbs .breadcrumbContent .breadcrumb {
+  margin: 0 !important;
 }
 .breadcrumbs .breadcrumbContent .breadcrumb .breadcrumb-item.active {
   color: #ffffff;
@@ -840,22 +837,10 @@ section:not(.hero) .container {
   color: #ffffff;
 }
 .breadcrumbs .breadcrumbContent .breadcrumb .breadcrumb-item a {
-  color: #415791;
+  color: #e2ca06;
 }
 .breadcrumbs .breadcrumbContent .breadcrumb .breadcrumb-item.active {
   color: #ffffff;
-}
-.breadcrumbs img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
-  image-rendering: -webkit-optimize-contrast;
-  -webkit-image-rendering: crisp-edges;
-  image-rendering: crisp-edges;
 }
 
 .nav-tabs {
@@ -892,7 +877,7 @@ section:not(.hero) .container {
 }
 .swiper.projectGallery, .swiper.testimonialGallery, .swiper.collaborationSwiper {
   padding: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   overflow: hidden;
 }
 .swiper.projectGallery .swiper-slide img, .swiper.testimonialGallery .swiper-slide img, .swiper.collaborationSwiper .swiper-slide img {
@@ -907,7 +892,7 @@ section:not(.hero) .container {
 }
 .swiper.projectThumbs .swiper-slide {
   border: 0.0625rem solid #e4e4e4;
-  padding: 0.375rem;
+  padding: 0.3125rem;
   border-radius: 0;
 }
 .swiper.projectThumbs .swiper-slide img {
@@ -922,8 +907,8 @@ section:not(.hero) .container {
 .swiper .swiper-button-next,
 .swiper .swiper-button-prev {
   background-color: rgba(14, 15, 23, 0.5);
-  width: 3rem !important;
-  height: 3rem !important;
+  width: 2.5rem !important;
+  height: 2.5rem !important;
   border-radius: 50%;
   transition: background 1s linear;
 }
@@ -998,8 +983,8 @@ section:not(.hero) .container {
 }
 .navbar .circleBtn {
   border-radius: 2rem;
-  padding: 0.75rem 1.5rem !important;
-  gap: 0.5rem;
+  padding: 0.625rem 1.25rem !important;
+  gap: 0.4166666667rem;
 }
 .navbar .dropdown-menu {
   width: -moz-max-content;
@@ -1033,7 +1018,7 @@ section:not(.hero) .container {
 .navbar .dropdown-submenu > a::after {
   position: absolute;
   top: 50%;
-  right: 0.75rem;
+  right: 0.625rem;
   transform: translateY(-50%);
   font-style: normal;
   font-size: 0.875rem;
@@ -1043,7 +1028,7 @@ section:not(.hero) .container {
   border-right: 0;
   border-bottom: 0.3em solid transparent;
   border-left: 0.3em solid;
-  margin-left: 0.75rem;
+  margin-left: 0.625rem;
 }
 .navbar {
   /* Show dropdown on hover in the navigation */
@@ -1099,7 +1084,7 @@ section:not(.hero) .container {
 }
 .hero .heroSlide .heroContent h6 {
   background: #0e0f17;
-  padding: 0.75rem 1.5rem;
+  padding: 0.625rem 1.25rem;
   border-radius: 0;
   display: inline-block;
 }
@@ -1123,7 +1108,7 @@ section:not(.hero) .container {
   background-color: #415791;
 }
 .hero .paginationContainer .navigation {
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 .hero .paginationContainer .navigation .swiper-button-next,
 .hero .paginationContainer .navigation .swiper-button-prev {
@@ -1139,8 +1124,41 @@ section:not(.hero) .container {
   font-weight: 600;
 }
 
+.sentence {
+  background: url(../media/white-abstract.jpg) no-repeat center/cover fixed;
+}
+.sentence h2 {
+  font-size: 2.375rem;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  background-size: 200% 200%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(-45deg, #141622 0%, #1b1d2d 15%, #2c2c44 30%, #4e5ab4 48%, #30334f 62%, #363a5a 75%, #813cda 87%, #3f0091 100%);
+  animation: gradient 20s ease 0s alternate infinite none running;
+}
+.sentence span {
+  font-size: 8.25rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .about h2 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 .about h2 span {
   font-weight: 500;
@@ -1153,11 +1171,11 @@ section:not(.hero) .container {
   height: 100%;
 }
 .about .pgHeader .pgTitle h2 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .companyPresentation .pgHeader {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 .companyPresentation .presentationVideo {
   min-height: 60vh;
@@ -1166,7 +1184,7 @@ section:not(.hero) .container {
   background-position: center;
   position: relative;
   overflow: hidden;
-  border: 0.75rem solid #ffffff;
+  border: 0.625rem solid #ffffff;
 }
 .companyPresentation .presentationVideo::before {
   position: absolute;
@@ -1187,13 +1205,13 @@ section:not(.hero) .container {
 }
 .companyPresentation form {
   background: rgba(68, 73, 113, 0.06);
-  padding: 3rem;
-  border: 0.75rem solid #ffffff;
+  padding: 2.5rem;
+  border: 0.625rem solid #ffffff;
 }
 
 .collaborationCard {
   background-color: #ffffff;
-  padding: 0.75rem;
+  padding: 0.625rem;
   border: 0.0625rem solid #e4e4e4;
   border-radius: 0;
   aspect-ratio: 1/1;
@@ -1210,9 +1228,9 @@ section:not(.hero) .container {
 .whyUs .whyUsCard {
   background-color: #ffffff;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
   background: #ffffff;
-  padding: 1.5rem;
+  padding: 1.25rem;
   height: 100%;
   border: 0.0625rem solid #e4e4e4;
   border-radius: 0;
@@ -1231,7 +1249,7 @@ section:not(.hero) .container {
   font-size: 1.25rem;
   font-weight: 600;
   color: #0e0f17;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4166666667rem;
 }
 .whyUs .whyUsCard .whyUsContent p {
   font-size: 0.875rem;
@@ -1254,7 +1272,7 @@ section:not(.hero) .container {
 }
 .customers .customerSwiper {
   border: 5px solid #0e0f17;
-  border-radius: 1.5rem 1.5rem 0 0;
+  border-radius: 1.25rem 1.25rem 0 0;
 }
 .customers .customerCard {
   overflow: hidden;
@@ -1281,7 +1299,7 @@ section:not(.hero) .container {
   left: 0;
   z-index: 3;
   width: 100%;
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 .customers .customerCard .customerInfo h3 {
   font-size: 0.875rem;
@@ -1303,8 +1321,8 @@ section:not(.hero) .container {
 .stats .statCard {
   background-color: #ffffff;
   flex-direction: column;
-  gap: 0.75rem;
-  padding: 1.5rem;
+  gap: 0.625rem;
+  padding: 1.25rem;
   border: 0.0625rem solid #e4e4e4;
   border-radius: 0;
 }
@@ -1332,14 +1350,14 @@ section:not(.hero) .container {
 .projects .projectCard {
   position: relative;
   background: linear-gradient(142deg, rgba(255, 255, 255, 0) 0%, white 100%);
-  padding: 1.5rem;
+  padding: 1.25rem;
   border: 0.0625rem solid #e4e4e4;
   border-radius: 0;
   transition: all 0.6s linear;
   height: 100%;
 }
 .projects .projectCard .projectHeader {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 .projects .projectCard .projectHeader h3 {
   font-size: 1.25rem;
@@ -1377,7 +1395,7 @@ section:not(.hero) .container {
 .blogs .blogCard {
   position: relative;
   background: linear-gradient(142deg, rgba(255, 255, 255, 0) 0%, white 100%);
-  padding: 1.5rem;
+  padding: 1.25rem;
   border: 0.0625rem solid #e4e4e4;
   border-radius: 0;
   transition: all 0.6s linear;
@@ -1385,7 +1403,7 @@ section:not(.hero) .container {
 .blogs .blogCard .blogMedia {
   border-radius: 0;
   overflow: hidden;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 .blogs .blogCard .blogMedia img {
   display: block;
@@ -1411,12 +1429,12 @@ section:not(.hero) .container {
 }
 .testimonials .testimonialContainer .testimonialCard {
   background: #ffffff;
-  gap: 3rem;
+  gap: 2.5rem;
   margin: 0 auto;
   height: 100%;
   border: 0.0625rem solid #e4e4e4;
   transition: all 0.6s linear;
-  padding: 3rem;
+  padding: 2.5rem;
   border-radius: 0;
 }
 .testimonials .testimonialContainer .testimonialCard .videoContainer {
@@ -1461,12 +1479,12 @@ section:not(.hero) .container {
   background-color: #ffffff;
   height: 100%;
   display: block;
-  padding: 1.5rem;
+  padding: 1.25rem;
   border: 0.0625rem solid #e4e4e4;
   border-radius: 0;
 }
 .certificates .certificateCard figure {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.625rem;
   min-height: 18.75rem;
 }
 .certificates .certificateCard figure img {
@@ -1489,7 +1507,7 @@ section:not(.hero) .container {
 
 .aboutUs .aboutImgContainer {
   overflow: hidden;
-  border: 0.75rem solid #ffffff;
+  border: 0.625rem solid #ffffff;
 }
 .aboutUs .aboutImgContainer img {
   display: block;
@@ -1519,14 +1537,14 @@ section:not(.hero) .container {
 .missionVision .mvCard {
   background: linear-gradient(142deg, rgba(14, 15, 23, 0.02) 24%, rgba(14, 15, 23, 0.05) 100%);
   backdrop-filter: blur(0.3125rem);
-  padding: 3rem;
+  padding: 2.5rem;
   height: 100%;
   border: 0.0625rem solid rgba(255, 255, 255, 0.1);
   border-radius: 0;
 }
 .missionVision .mvCard .mvHeader {
-  gap: 0.75rem;
-  margin-bottom: 1.5rem;
+  gap: 0.625rem;
+  margin-bottom: 1.25rem;
 }
 .missionVision .mvCard .mvHeader .icon {
   width: 4.375rem;
@@ -1609,7 +1627,7 @@ img.mfp-img {
   border-radius: 0;
   overflow: hidden;
   position: relative;
-  padding: 3rem;
+  padding: 2.5rem;
 }
 .cta .ctaCard::after {
   position: absolute;
@@ -1625,7 +1643,7 @@ img.mfp-img {
   position: relative;
   z-index: 1;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 .cta .ctaCard .ctaContent .ctaText h2 {
   color: #ffffff;
@@ -1636,7 +1654,7 @@ img.mfp-img {
 }
 .cta .ctaCard .ctaContent .roundedBtn {
   flex-wrap: nowrap;
-  gap: 0.5rem;
+  gap: 0.4166666667rem;
   background-color: #ffffff;
   border-radius: 0;
 }
@@ -1651,16 +1669,20 @@ img.mfp-img {
   color: #ffffff;
 }
 
+.projectDetails .projectShowcase {
+  position: sticky;
+  top: 6.25rem;
+}
 .projectDetails .projectContainer {
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.625rem;
   height: 100%;
 }
 .projectDetails .projectContainer .projectThumb {
-  gap: 0.75rem;
+  gap: 0.625rem;
   flex-grow: 1;
   width: 100%;
-  padding: 0.75rem;
+  padding: 0.625rem;
   background-color: #ffffff;
   cursor: pointer;
   border: 0.0625rem solid #e4e4e4;
@@ -1701,7 +1723,7 @@ img.mfp-img {
   font-weight: 700;
 }
 .blogDetails .blogHero {
-  margin: 3rem 0;
+  margin: 2.5rem 0;
   overflow: hidden;
 }
 .blogDetails .blogHero img {
@@ -1729,17 +1751,17 @@ img.mfp-img {
   margin-bottom: 0;
 }
 .blogDetails .pagination {
-  gap: 1.5rem;
+  gap: 1.25rem;
   flex-wrap: wrap;
   background-color: #ffffff;
-  padding: 1.5rem;
-  margin-top: 1.5rem;
+  padding: 1.25rem;
+  margin-top: 1.25rem;
   border-radius: 0;
 }
 .blogDetails .pagination .next,
 .blogDetails .pagination .previous {
   background-color: #f6f8ff;
-  padding: 1.5rem;
+  padding: 1.25rem;
   flex-grow: 1;
   border-radius: 0;
 }
@@ -1761,7 +1783,7 @@ img.mfp-img {
   font-size: 0.875rem;
   font-weight: 600;
   color: #0e0f17;
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
 }
 .blogDetails .pagination .titleLink:hover {
   color: #0e0f17;
@@ -1774,7 +1796,7 @@ img.mfp-img {
 .career #customSelect .dropdown-toggle::after {
   position: absolute;
   top: 50%;
-  right: 1.5rem;
+  right: 1.25rem;
   transform: translateY(-50%);
 }
 .career #customSelect .dropdown-item {
@@ -1787,24 +1809,24 @@ img.mfp-img {
 .career .vacancyCard {
   position: relative;
   background-color: #ffffff;
-  padding: 1.5rem;
+  padding: 1.25rem;
   border: 0.0625rem solid #e4e4e4;
   border-radius: 0;
 }
 .career .vacancyCard .vacancyMedia {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   overflow: hidden;
   border-radius: 0;
 }
 .career .vacancyCard .vacancyHeader {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.625rem;
 }
 .career .vacancyCard .vacancyHeader h3 {
   font-size: 1.25rem;
   margin: 0;
 }
 .career .vacancyCard .vacancyHeader .vacancyMeta {
-  gap: 0.75rem;
+  gap: 0.625rem;
 }
 .career .vacancyCard .vacancyBody p {
   font-size: 0.875rem;
@@ -1851,7 +1873,7 @@ img.mfp-img {
 #careerModal .careerPopupContent h4,
 #careerModal .careerPopupContent h5,
 #careerModal .careerPopupContent h6 {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.625rem;
 }
 #careerModal .careerPopupContent h1 {
   font-size: 1.8333333333rem;
@@ -1889,12 +1911,12 @@ img.mfp-img {
   margin-bottom: 1rem;
 }
 #careerModal .careerForm .uploadWrapper {
-  margin: 1.5rem 0;
+  margin: 1.25rem 0;
 }
 #careerModal .careerForm .dropZone {
   text-align: center;
   background: #ffffff;
-  padding: 2.25rem;
+  padding: 1.875rem;
   cursor: pointer;
   border: 0.125rem dashed #e4e4e4;
   border-radius: 0;
@@ -1917,7 +1939,7 @@ img.mfp-img {
   font-size: 1.125rem;
   color: #444971;
   display: block;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.625rem;
 }
 #careerModal .careerForm .zoneContent p {
   font-size: 1.125rem;
@@ -1933,7 +1955,7 @@ img.mfp-img {
   font-weight: 500;
   text-align: center;
   color: #444971;
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
 }
 
 .modal .modal-header .modal-title {
@@ -1943,35 +1965,36 @@ img.mfp-img {
 }
 
 .ventures .ventureCard {
-  flex-direction: column;
   position: relative;
   height: 100%;
   padding: 0;
-  border: none;
+  margin-bottom: 1.25rem;
+  border: 0.0625rem solid #e4e4e4;
+}
+.ventures .ventureCard figure {
+  background: #f6f8ff;
+  flex-direction: column;
+  padding: 0;
+  align-self: stretch;
+  max-width: 25rem;
+  min-height: 100%;
   border-right: 0.0625rem solid #e4e4e4;
-  border-radius: 0;
-  box-shadow: none;
 }
-.ventures .ventureCard::after {
-  width: 85%;
-  height: 0.0625rem;
-  margin: 0 auto;
-  left: -8%;
-  right: 0;
-  bottom: -1.625rem;
+.ventures .ventureCard figure img {
+  max-width: 50% !important;
   display: block;
-  position: absolute;
-  content: "";
-  background: #e4e4e4;
+  margin: 0 auto 1.25rem;
 }
-.ventures .ventureCard img {
-  max-width: 70% !important;
-  display: block;
-  margin: 0 auto 1.5rem;
+.ventures .ventureCard .ventureContent {
+  flex-grow: 1;
+  padding: 1.25rem;
 }
-.ventures .ventureCard p {
-  text-align: center;
-  max-width: 85%;
+.ventures .ventureCard .ventureContent h3 {
+  font-weight: 600;
+  color: #0e0f17;
+  margin: 0 0 0.625rem;
+}
+.ventures .ventureCard .ventureContent p {
   margin: 0 auto;
 }
 .ventures > [class^=col-]:nth-child(5n) .ventureCard,
@@ -1995,7 +2018,7 @@ img.mfp-img {
   overflow: hidden;
 }
 .contactUs .addressCard .addressHeader {
-  padding: 0.75rem 1.5rem;
+  padding: 0.625rem 1.25rem;
   background-color: #444971;
 }
 .contactUs .addressCard .addressHeader h5 {
@@ -2004,7 +2027,7 @@ img.mfp-img {
   margin: 0;
 }
 .contactUs .addressCard .addressBody {
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 .contactUs .addressCard .addressBody address {
   font-size: 1rem;
@@ -2014,11 +2037,11 @@ img.mfp-img {
 .contactUs .contactCard {
   background-color: #ffffff;
   height: 100%;
-  padding: 3rem;
+  padding: 2.5rem;
   border-radius: 0;
 }
 .contactUs .contactCard .pgHeader {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 .contactUs .contactCard.form {
   background-color: #ffffff;
@@ -2026,13 +2049,13 @@ img.mfp-img {
   box-shadow: rgba(14, 15, 23, 0.1) 0rem 0.4375rem 1.8125rem 0rem;
 }
 .contactUs .contactCard h3 {
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 .contactUs .contactCard .contactChip {
   background-color: #f6f8ff;
-  gap: 1.5rem;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
   border-radius: 0;
 }
 .contactUs .contactCard .contactChip .icon {
@@ -2049,7 +2072,7 @@ img.mfp-img {
   font-size: 1.375rem;
   color: #0e0f17;
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4166666667rem;
 }
 .contactUs .contactCard .contactChip .contactDetail span,
 .contactUs .contactCard .contactChip .contactDetail a {
@@ -2092,24 +2115,21 @@ footer .footerContent .footerCard.logo {
   height: 100%;
 }
 footer .footerContent .footerCard .footerLogo {
-  background-color: #ffffff;
   flex-direction: column;
-  padding: 1.5rem;
-  border-radius: 0;
 }
 footer .footerContent .footerCard .footerLogo img {
-  max-width: 7.5rem !important;
+  max-width: 11.25rem !important;
 }
 footer .footerContent .footerCard .social {
   flex-wrap: wrap;
-  gap: 0.75rem !important;
+  gap: 0.625rem !important;
 }
 footer .footerContent .footerCard .social a {
   font-size: 1.125rem;
-  min-width: 2rem;
-  min-height: 2rem;
-  max-width: 2rem;
-  max-height: 2rem;
+  min-width: 1.6666666667rem;
+  min-height: 1.6666666667rem;
+  max-width: 1.6666666667rem;
+  max-height: 1.6666666667rem;
   margin: 0 !important;
   border-radius: 50%;
   margin: 0;
@@ -2152,12 +2172,12 @@ footer .footerContent .footerCard h5 {
   font-size: 1.25rem;
   text-transform: capitalize;
   color: #ffffff;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   display: inline-block;
 }
 footer .footerContent .footerCard h5::after {
   position: absolute;
-  bottom: -1.5rem;
+  bottom: -1.25rem;
   left: 0;
   width: 100%;
   height: 0.125rem;
@@ -2177,14 +2197,14 @@ footer .footerContent .footerCard a:hover {
   color: #f1c143;
 }
 footer .footerContent .footerCard .contactChip {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 footer .footerContent .footerCard .contactChip h6 {
   font-size: 1.125rem;
   font-weight: 600;
   color: #ffffff;
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4166666667rem;
 }
 footer .footerContent .footerCard .contactChip span {
   color: #ffffff;
@@ -2197,21 +2217,21 @@ footer .footerContent .footerCard .contactChip a {
 }
 footer .footerContent .footerCard .contactChip .contactList {
   flex-direction: column;
-  gap: 0.375rem;
+  gap: 0.3125rem;
 }
 footer .footerContent .footerCard .contactChip .contactList span {
-  gap: 0.75rem;
+  gap: 0.625rem;
 }
 footer .footerContent .footerCard ul {
   margin: 0;
 }
 footer .footerContent .footerCard ul li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4166666667rem;
 }
 footer .footerContent .footerCard ul li .socialIcon i {
   font-size: 1.125rem;
   background: linear-gradient(142deg, rgba(255, 255, 255, 0) 0%, white 100%);
-  padding: 0.75rem;
+  padding: 0.625rem;
   display: inline-block;
   margin-right: 0.5rem;
   border: 0.0625rem solid rgba(255, 255, 255, 0.1);
@@ -2224,7 +2244,7 @@ footer .copyright {
   z-index: 4;
   background: linear-gradient(132.78deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.02) 100%);
   backdrop-filter: blur(commonUnit/2);
-  padding: 1.5rem;
+  padding: 1.25rem;
   border-top: 0.0625rem solid rgba(255, 255, 255, 0.1);
 }
 footer .copyright .copyrightContent {
@@ -2260,10 +2280,10 @@ footer .copyright .copyrightContent .copyrightLinks {
     font-size: 0.875rem;
   }
   section:not(.hero) {
-    padding: 1.5rem 0 !important;
+    padding: 1.25rem 0 !important;
   }
   .pgHeader {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
   }
   .pgHeader .pgTitle h2 {
     font-size: 1.625rem;
@@ -2281,14 +2301,14 @@ footer .copyright .copyrightContent .copyrightLinks {
     height: 100% !important;
   }
   .hero .paginationContainer {
-    bottom: 1.5rem !important;
+    bottom: 1.25rem !important;
   }
   .collaborationCard {
     min-height: 0 !important;
     aspect-ratio: unset !important;
   }
   .testimonials .testimonialContainer {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
   .testimonials .testimonialContainer .swiper-button-next,
   .testimonials .testimonialContainer .swiper-button-prev {
@@ -2296,7 +2316,7 @@ footer .copyright .copyrightContent .copyrightLinks {
   }
   .testimonials .testimonialContainer .testimonialCard {
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.625rem;
     text-align: center;
   }
   .testimonials .testimonialContainer .testimonialCard .videoContainer {
@@ -2311,10 +2331,10 @@ footer .copyright .copyrightContent .copyrightLinks {
     font-size: 0.875rem;
   }
   footer .footerCard {
-    padding: 0 1.5rem !important;
+    padding: 0 1.25rem !important;
   }
   footer .copyright {
-    padding: 1.5rem !important;
+    padding: 1.25rem !important;
   }
   .breadcrumbs {
     height: 100%;
@@ -2323,7 +2343,7 @@ footer .copyright .copyrightContent .copyrightLinks {
     font-size: 1.25rem;
   }
   .cta .ctaCard {
-    padding: 1.5rem;
+    padding: 1.25rem;
     max-width: 90%;
     margin: 0 auto;
   }
@@ -2335,12 +2355,12 @@ footer .copyright .copyrightContent .copyrightLinks {
   }
   #careerModal .modal-body .careerForm,
   #careerModal .modal-body .careerPopupContent {
-    padding: 1.5rem !important;
+    padding: 1.25rem !important;
     max-height: 100% !important;
   }
   .input-group {
     flex-direction: column;
-    gap: 0.375rem;
+    gap: 0.3125rem;
   }
   .input-group input,
   .input-group button {
@@ -2362,6 +2382,6 @@ footer .copyright .copyrightContent .copyrightLinks {
     font-size: 0.875rem;
   }
   .contactUs .contactCard.form {
-    padding: 1.5rem !important;
+    padding: 1.25rem !important;
   }
 }/*# sourceMappingURL=styles.css.map */

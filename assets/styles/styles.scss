@@ -288,6 +288,49 @@
         }
     }
 }
+// Sentence
+.sentence {
+    background: url(../media/white-abstract.jpg) no-repeat center/cover fixed;
+    h2 {
+        font-size: $h2;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        background-size: 200% 200%;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(
+            -45deg,
+            #141622 0%,
+            #1b1d2d 15%,
+            #2c2c44 30%,
+            #4e5ab4 48%,
+            #30334f 62%,
+            #363a5a 75%,
+            #813cda 87%,
+            #3f0091 100%
+        );
+        animation: gradient 20s ease 0s alternate infinite none running;
+    }
+    span {
+        font-size: $h1 * 3;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}
 // about
 .about {
     h2 {
@@ -337,7 +380,7 @@
         overflow: hidden;
         border: $commonUnit / 2 solid $white;
         // border-radius: $cardRadius * 2;
-        
+
         &::before {
             position: absolute;
             top: 0;
@@ -348,7 +391,7 @@
             content: "";
             z-index: 1;
         }
-        
+
         .videoBtn {
             position: absolute;
             top: 50%;
@@ -906,6 +949,11 @@ img.mfp-img {
 }
 // Projects
 .projectDetails {
+    .projectShowcase {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 6.25rem;
+    }
     .projectContainer {
         @extend .flex-start-center;
         flex-direction: column;
@@ -1251,44 +1299,40 @@ img.mfp-img {
 // Ventures
 .ventures {
     .ventureCard {
-        @extend .flex-center-start;
-        flex-direction: column;
+        @extend .flex-start;
         position: relative;
         height: 100%;
         padding: 0;
-        border: none;
-        border-right: $commonBorder;
-        border-radius: 0;
-        box-shadow: none;
+        margin-bottom: $commonUnit;
+        border: $commonBorder;
 
-        &::after {
-            width: 85%;
-            height: 0.0625rem;
-            margin: 0 auto;
-            left: -8%;
-            right: 0;
-            bottom: -1.625rem;
-            display: block;
-            position: absolute;
-            content: "";
-            background: $border;
+        figure {
+            background: $light;
+            @extend .flex-center;
+            flex-direction: column;
+            padding: 0;
+            align-self: stretch;
+            max-width: 25rem;
+            min-height: 100%;
+            border-right: $commonBorder;
+            img {
+                max-width: 50% !important;
+                display: block;
+                margin: 0 auto $commonUnit;
+            }
         }
-
-        img {
-            max-width: 70% !important;
-            display: block;
-            margin: 0 auto $commonUnit;
-        }
-        // h3 {
-        //     font-size: $large;
-        //     font-weight: 600;
-        //     color: $dark;
-        //     margin: $commonUnit 0 0;
-        // }
-        p {
-            text-align: center;
-            max-width: 85%;
-            margin: 0 auto;
+        .ventureContent {
+            flex-grow: 1;
+            padding: $commonUnit;
+            h3 {
+                // font-size: $large;
+                font-weight: 600;
+                color: $dark;
+                margin: 0 0 $commonUnit / 2;
+            }
+            p {
+                margin: 0 auto;
+            }
         }
     }
 
@@ -1429,13 +1473,10 @@ footer {
             }
 
             .footerLogo {
-                background-color: $white;
                 @extend .flex-center-start;
                 flex-direction: column;
-                padding: $commonUnit;
-                border-radius: 0;
                 img {
-                    max-width: 7.5rem !important;
+                    max-width: 11.25rem !important;
                 }
             } // Social
             .social {
