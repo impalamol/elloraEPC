@@ -331,14 +331,14 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
 
-        const aboutVideo = document.getElementById('aboutVideo');
+        const presentationVideo = document.getElementById('presentationVideo');
         const youtubeIframe = document.getElementById('youtube-video');
 
         // Store original video URL
         const defaultSrc = youtubeIframe.getAttribute('src');
 
         // When modal closes → stop video
-        aboutVideo.addEventListener('hidden.bs.modal', function () {
+        presentationVideo.addEventListener('hidden.bs.modal', function () {
             youtubeIframe.setAttribute('src', '');      // stop the video immediately
             youtubeIframe.setAttribute('src', defaultSrc); // reload for next open
         });

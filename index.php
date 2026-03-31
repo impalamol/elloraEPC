@@ -132,28 +132,60 @@ $currentPage = 'home';
                         </div>
                     </div>
                 </div>
-                <div class="row mt-5">
+            </div>
+        </section>
+        <section class="about companyPresentation">
+            <div class="container">
+                <div class="row">
+                    <div class="pgHeader">
+                        <div class="pgTitle">
+                            <h2>Company Presentation</h2>
+                            <h6>Company Profile</h6>
+                            <ol>
+                                <li>One of the Top 10 EPC Contractors in India for Industrial Construction</li>
+                                <li>Famous Brands Award 2025</li>
+                                <li>Only company in India to Receive 4 Consecutive GSS Awards</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-12 col-lg-7 col-xl-7 col-xxl-7 mb-4">
-                        <div class="aboutVideo" style="background-image: url('assets/media/video-bg.jpg');">
-                            <button class="videoBtn" data-bs-toggle="modal" data-bs-target="#aboutVideo">
+                        <div class="presentationVideo" style="background-image: url('assets/media/video-bg.jpg');">
+                            <button class="videoBtn" data-bs-toggle="modal" data-bs-target="#presentationVideo">
                                 <i class="ph-duotone ph-play"></i>
                             </button>
                         </div>
                     </div>
                     <div class="col-12 col-lg-5 col-xl-5 col-xxl-5">
-                        <div class="pgHeader verticallyCentered">
-                            <div class="pgTitle">
-                                <h2>Our Story</h2>
-                                <ol>
-                                    <li>One of the Top 10 EPC Contractors in India for Industrial Construction</li>
-                                    <li>Famous Brands Award 2025</li>
-                                    <li>Only company in India to Receive 4 Consecutive GSS Awards</li>
-                                </ol>
+                        <form action="">
+                            <h6>Download Company Profile</h6>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Name">
+                                <label for="name">Name</label>
                             </div>
-                        </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="tel" class="form-control" id="mobile" placeholder="Mobile">
+                                <label for="mobile">Mobile</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="company" placeholder="Company">
+                                <label for="company">Company</label>
+                            </div>
+                            <div class="formGroup mb-3">
+                                <input class="form-check-input" type="checkbox" id="terms">
+                                <label class="form-check-label" for="terms">
+                                    I agree to the terms and conditions
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
         <section class="whyUs">
@@ -625,11 +657,12 @@ $currentPage = 'home';
             </div>
         </div>
     </div>
-    <div class="modal fade" id="aboutVideo" tabindex="-1" aria-labelledby="aboutVideoLabel" aria-hidden="true">
+    <div class="modal fade" id="presentationVideo" tabindex="-1" aria-labelledby="presentationVideoLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="aboutVideoLabel">Video Title</h5>
+                    <h5 class="modal-title" id="presentationVideoLabel">Video Title</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-0">
