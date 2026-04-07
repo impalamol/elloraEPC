@@ -1141,19 +1141,19 @@ section:not(.hero) .container {
   animation: gradient 20s ease 0s alternate infinite none running;
 }
 .sentence .gradient-image-mask {
-  width: 400px;
-  height: 200px;
+  width: 37.5rem;
+  height: 18.75rem;
   margin: 0 auto;
   position: relative;
   z-index: 2;
   background-size: 200% 200%;
   background-image: linear-gradient(-45deg, #141622 0%, #1b1d2d 15%, #2c2c44 30%, #4e5ab4 48%, #30334f 62%, #363a5a 75%, #813cda 87%, #3f0091 100%);
   animation: gradient 20s ease 0s alternate infinite none running;
-  -webkit-mask-image: url("../media/ellora-logo.png");
+  -webkit-mask-image: url("../media/ellora-logo3.png");
   -webkit-mask-size: contain;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
-  mask-image: url("../media/ellora-logo.png");
+  mask-image: url("../media/ellora-logo3.png");
   mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center;

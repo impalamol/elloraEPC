@@ -55,6 +55,7 @@ $currentPage = 'home';
             <div class="container">
                 <div class="row">
                     <div class="gradient-image-mask"></div>
+                    <h2>Top 10 EPC Contractors in India</h2>
                 </div>
             </div>
         </section>
