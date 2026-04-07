@@ -51,6 +51,13 @@ $currentPage = 'home';
                 </div>
             </div>
         </section>
+        <section class="sentence">
+            <div class="container">
+                <div class="row">
+                    <div class="gradient-image-mask"></div>
+                </div>
+            </div>
+        </section>
         <section class="about">
             <div class="container">
                 <div class="row">
