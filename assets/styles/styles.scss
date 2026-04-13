@@ -315,8 +315,8 @@
         animation: gradient 20s ease 0s alternate infinite none running;
     }
     .gradient-image-mask {
-        width: 37.5rem; 
-        height: 18.75rem; 
+        width: 37.5rem;
+        height: 18.75rem;
         margin: 0 auto;
         position: relative;
         z-index: 2;
@@ -333,11 +333,11 @@
             #3f0091 100%
         );
         animation: gradient 20s ease 0s alternate infinite none running;
-        -webkit-mask-image: url('../media/ellora-logo3.png');
+        -webkit-mask-image: url("../media/ellora-logo3.png");
         -webkit-mask-size: contain;
         -webkit-mask-repeat: no-repeat;
         -webkit-mask-position: center;
-        mask-image: url('../media/ellora-logo3.png');
+        mask-image: url("../media/ellora-logo3.png");
         mask-size: contain;
         mask-repeat: no-repeat;
         mask-position: center;
@@ -503,11 +503,11 @@
         content: "";
         width: 100%;
         height: 50%;
-        background-color: $dark;
+        background-color: $primary;
         z-index: 0;
     }
     .customerSwiper {
-        border: 5px solid $dark;
+        border: 5px solid $primary;
         // border-radius: $commonUnit $commonUnit 0 0;
     }
     .customerCard {
@@ -550,7 +550,8 @@
                     display: block;
                 }
             }
-            ul, ol {
+            ul,
+            ol {
                 padding-left: 0;
                 li {
                     margin-bottom: $commonUnit / 2;
@@ -748,6 +749,36 @@
         }
     }
 }
+// special Awards
+.specialAwards {
+background-color: $dark;
+    border-radius: 0;
+        &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../media/award-bg.jpg) no-repeat center/cover fixed;
+        opacity: 0.5;
+    }
+
+    .awardCard {
+        padding: $commonUnit;
+        background-color: rgba($color: $white, $alpha: 0.01);
+        -webkit-backdrop-filter: blur(0.3125rem);
+        backdrop-filter: blur(0.3125rem);
+        border: 1px solid rgba($color: $white, $alpha: 0.1);
+
+        h6 {
+            font-size: $h5;
+            text-align: center;
+            color: $white;
+        }
+    }
+}
 // Certificates
 .certificates {
     .certificateCard {
@@ -813,7 +844,7 @@
         width: 100%;
         height: 100%;
         background: url(../media/mission-bg.jpg) no-repeat center/cover fixed;
-        // mix-blend-mode: overlay;
+        mix-blend-mode: overlay;
     }
     .container {
         position: relative;
@@ -837,7 +868,7 @@
                 $wh: 4.375rem;
                 width: $wh;
                 height: $wh;
-                background: $primary;
+                background: $dark;
                 @extend .flex-center;
                 border-radius: 50%;
                 i {
@@ -941,7 +972,7 @@ img.mfp-img {
             width: 100%;
             height: 100%;
             background: url(../media/cta-bg.jpg) no-repeat center/cover fixed;
-            // mix-blend-mode: overlay;
+            mix-blend-mode: overlay;
         }
         .ctaContent {
             position: relative;
@@ -1493,6 +1524,7 @@ footer {
         height: 100%;
         background: url(../media/footer-bg.jpg) no-repeat fixed center/cover;
         opacity: 0.1;
+        mix-blend-mode: overlay;
     }
     .footerContent {
         padding: 3.125rem 0 0;
