@@ -47,7 +47,7 @@ $currentPage = 'home';
         <section class="sentence">
             <div class="container">
                 <div class="row">
-                    <h2><span>Ellora</span> <br/> Top 10 EPC Contractors in India</h2>
+                    <h2><span>Ellora</span> <br /> Top 10 EPC Contractors in India</h2>
                 </div>
             </div>
         </section>
@@ -606,6 +606,53 @@ $currentPage = 'home';
                             </figure>
                             <h6>Certificate 4</h6>
                         </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="specialAwards">
+            <div class="container">
+                <div class="row">
+                    <div class="pgHeader centered darkSection">
+                        <div class="pgTitle">
+                            <h2>Only company in India to Achieve these Special Awards </h2>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
+                        <div class="awardCard">
+                            <figure>
+                                <img src="https://webcipher.co.in/ellora/assets/uploads/1770624529_gss2021.png"
+                                    alt="Global Safety Award (2021 -2022)">
+                            </figure>
+                            <h6>Global Safety Award (2021 -2022)</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
+                        <div class="awardCard">
+                            <figure>
+                                <img src="https://webcipher.co.in/ellora/assets/uploads/1770623784_gss2022.png"
+                                    alt="Global Safety Award (2022 -2023)">
+                            </figure>
+                            <h6>Global Safety Award (2022 -2023)</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
+                        <div class="awardCard">
+                            <figure>
+                                <img src="https://webcipher.co.in/ellora/assets/uploads/1770622574_gss2023.png"
+                                    alt="Global Safety Award (2023 -2024)">
+                            </figure>
+                            <h6>Global Safety Award (2023 -2024)</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
+                        <div class="awardCard">
+                            <figure>
+                                <img src="https://webcipher.co.in/ellora/assets/uploads/1770622574_gss2024.png"
+                                    alt="Global Safety Award (2024 -2025)">
+                            </figure>
+                            <h6>Global Safety Award (2024 -2025)</h6>
+                        </div>
                     </div>
                 </div>
             </div>

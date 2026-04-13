@@ -159,6 +159,19 @@ $currentPage = 'about';
                 </div>
             </div>
         </section>
+        <section class="strength">
+            <div class="container">
+                <div class="row">
+                    <div class="pgHeader">
+                        <div class="pgTitle">
+                            <h2>Our Strengths & USPs</h2>
+                            <p>Delivering excellence through expertise, innovation, and unwavering commitment to quality
+                                and timely execution.</p>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </section>
         <section class="stats">
             <div class="container">
                 <div class="row stat">
