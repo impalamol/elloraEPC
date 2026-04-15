@@ -47,15 +47,15 @@ $currentPage = 'home';
         <section class="sentence">
             <div class="container">
                 <div class="row">
-                    <h2><span>Ellora</span> <br /> Top 10 EPC Contractors in India</h2>
+                    <div class="gradient-image-mask"></div>
+                    <h2>Top 10 EPC Contractors in India</h2>
                 </div>
             </div>
         </section>
         <section class="sentence">
             <div class="container">
                 <div class="row">
-                    <div class="gradient-image-mask"></div>
-                    <h2>Top 10 EPC Contractors in India</h2>
+                    <div class="gradient-image-mask gradient-image-mask2"></div>
                 </div>
             </div>
         </section>
@@ -611,6 +611,10 @@ $currentPage = 'home';
             </div>
         </section>
         <section class="specialAwards">
+            <video autoplay muted loop playsinline preload="auto">
+                <source src="assets/media/award-bg.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
             <div class="container">
                 <div class="row">
                     <div class="pgHeader centered darkSection">
@@ -618,37 +622,37 @@ $currentPage = 'home';
                             <h2>Only company in India to Achieve these Special Awards </h2>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
+                    <div class="col-6 col-md-4 col-lg-6 col-xl-6 col-xxl-6 mb-3">
                         <div class="awardCard">
                             <figure>
-                                <img src="https://webcipher.co.in/ellora/assets/uploads/1770624529_gss2021.png"
+                                <img src="https://webcipher.co.in/ellora/assets/uploads/1776149373_award1.png"
                                     alt="Global Safety Award (2021 -2022)">
                             </figure>
                             <h6>Global Safety Award (2021 -2022)</h6>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
+                    <div class="col-6 col-md-4 col-lg-6 col-xl-6 col-xxl-6 mb-3">
                         <div class="awardCard">
                             <figure>
-                                <img src="https://webcipher.co.in/ellora/assets/uploads/1770623784_gss2022.png"
+                                <img src="https://webcipher.co.in/ellora/assets/uploads/1776149373_award2.png"
                                     alt="Global Safety Award (2022 -2023)">
                             </figure>
                             <h6>Global Safety Award (2022 -2023)</h6>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
+                    <div class="col-6 col-md-4 col-lg-6 col-xl-6 col-xxl-6 mb-3">
                         <div class="awardCard">
                             <figure>
-                                <img src="https://webcipher.co.in/ellora/assets/uploads/1770622574_gss2023.png"
+                                <img src="https://webcipher.co.in/ellora/assets/uploads/1776149373_award3.png"
                                     alt="Global Safety Award (2023 -2024)">
                             </figure>
                             <h6>Global Safety Award (2023 -2024)</h6>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
+                    <div class="col-6 col-md-4 col-lg-6 col-xl-6 col-xxl-6 mb-3">
                         <div class="awardCard">
                             <figure>
-                                <img src="https://webcipher.co.in/ellora/assets/uploads/1770622574_gss2024.png"
+                                <img src="https://webcipher.co.in/ellora/assets/uploads/1776149373_award4.png"
                                     alt="Global Safety Award (2024 -2025)">
                             </figure>
                             <h6>Global Safety Award (2024 -2025)</h6>

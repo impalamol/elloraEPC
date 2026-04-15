@@ -73,7 +73,7 @@ textarea:not([rows]) {
   display: flex;
 }
 
-.flex-center, footer .footerContent .footerCard .social a, .contactUs .contactCard .contactChip .icon, .ventures .ventureCard figure, .cta .ctaCard .ctaContent .roundedBtn .icon, .cta .ctaCard .ctaContent .roundedBtn, .missionVision .mvCard .mvHeader .icon, .projects .projectCard .projectHeader a, .stats .statCard, .whyUs .whyUsCard .icon, .collaborationCard, .hero .paginationContainer .navigation .swiper-button-next,
+.flex-center, footer .footerContent .footerCard .social a, .contactUs .contactCard .contactChip .icon, .ventures .ventureCard figure, .cta .ctaCard .ctaContent .roundedBtn .icon, .cta .ctaCard .ctaContent .roundedBtn, .missionVision .mvCard .mvHeader .icon, .specialAwards, .projects .projectCard .projectHeader a, .stats .statCard, .whyUs .whyUsCard .icon, .collaborationCard, .hero .paginationContainer .navigation .swiper-button-next,
 .hero .paginationContainer .navigation .swiper-button-prev, .hero .paginationContainer .navigation, .hero .heroSlide, .navbar .circleLink,
 .navbar .circleBtn, .searchModal .nrs, .searchModal .searchResult .resultItem a .productIcon img, .videoBtn, .pgHeader.centered .pgTitle,
 .pgHeader.centered .pgSection, .pgHeader.centered {
@@ -94,7 +94,7 @@ textarea:not([rows]) {
   justify-content: space-around;
 }
 
-.flex-center-start, footer .copyright .copyrightContent .copyrightLinks, footer .footerContent .footerCard .social, footer .footerContent .footerCard .footerLogo, .contactUs .contactCard .contactChip, .career .vacancyCard .vacancyHeader .vacancyMeta, .projectDetails .projectContainer .projectThumb, .missionVision .mvCard .mvHeader, .testimonials .testimonialContainer .testimonialCard, .companyPresentation .presentationVideo, .searchModal .searchResult .resultItem a, .btnGroup {
+.flex-center-start, footer .copyright .copyrightContent .copyrightLinks, footer .footerContent .footerCard .social, footer .footerContent .footerCard .footerLogo, .contactUs .contactCard .contactChip, .career .vacancyCard .vacancyHeader .vacancyMeta, .projectDetails .projectContainer .projectThumb, .missionVision .mvCard .mvHeader, .specialAwards .awardCard, .testimonials .testimonialContainer .testimonialCard, .companyPresentation .presentationVideo, .searchModal .searchResult .resultItem a, .btnGroup {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -245,7 +245,7 @@ textarea:not([rows]) {
 }
 
 + ::-webkit-scrollbar-thumb:hover {
-  background: rgb(36.4361702128, 54.6542553191, 100.5638297872);
+  background: rgb(48.8397790055, 52.4309392265, 81.1602209945);
 }
 
 html {
@@ -269,7 +269,7 @@ body {
 a {
   font-size: inherit;
   text-decoration: none !important;
-  color: #324b8a;
+  color: #444971;
   transition: color 1s ease;
   cursor: pointer !important;
 }
@@ -282,7 +282,7 @@ a:hover {
   text-decoration: none;
 }
 a.link {
-  color: #324b8a !important;
+  color: #444971 !important;
 }
 
 h1,
@@ -370,21 +370,21 @@ input[type=number] {
 }
 .btn.btn-primary {
   color: #ffffff !important;
-  background-color: #324b8a;
-  border-color: rgba(50, 75, 138, 0.3);
+  background-color: #444971;
+  border-color: rgba(68, 73, 113, 0.3);
 }
 .btn.btn-primary:hover {
-  background-color: rgb(36.4361702128, 54.6542553191, 100.5638297872);
-  border-color: rgb(29.6542553191, 44.4813829787, 81.8457446809);
+  background-color: rgb(48.8397790055, 52.4309392265, 81.1602209945);
+  border-color: rgb(39.2596685083, 42.1464088398, 65.2403314917);
 }
 .btn.btn-secondary {
   color: #ffffff !important;
-  background-color: #415791;
-  border-color: rgba(65, 87, 145, 0.3);
+  background-color: #324b8a;
+  border-color: rgba(50, 75, 138, 0.3);
 }
 .btn.btn-secondary:hover {
-  background-color: rgb(49.2142857143, 65.8714285714, 109.7857142857);
-  border-color: rgb(41.3214285714, 55.3071428571, 92.1785714286);
+  background-color: rgb(36.4361702128, 54.6542553191, 100.5638297872);
+  border-color: rgb(29.6542553191, 44.4813829787, 81.8457446809);
 }
 .btn.btn-tertiary {
   color: #ffffff !important;
@@ -451,19 +451,19 @@ input[type=number] {
   border-color: rgb(218.4, 224.5, 230.6);
 }
 .btn.btn-outline-primary {
-  color: #324b8a;
-  border-color: #324b8a;
+  color: #444971;
+  border-color: #444971;
 }
 .btn.btn-outline-primary:hover {
-  background-color: #324b8a;
+  background-color: #444971;
   color: #ffffff !important;
 }
 .btn.btn-outline-secondary {
-  color: #415791;
-  border-color: #415791;
+  color: #324b8a;
+  border-color: #324b8a;
 }
 .btn.btn-outline-secondary:hover {
-  background-color: #415791;
+  background-color: #324b8a;
   color: #ffffff !important;
 }
 .btn.btn-outline-tertiary {
@@ -523,14 +523,14 @@ input[type=number] {
   color: #05070e !important;
 }
 .btn.btn-link {
-  color: #324b8a;
+  color: #444971;
   border: none;
   background: none;
   padding: 0 !important;
 }
 .btn.btn-link:hover {
   text-decoration: underline;
-  color: rgb(36.4361702128, 54.6542553191, 100.5638297872);
+  color: rgb(48.8397790055, 52.4309392265, 81.1602209945);
 }
 .btn i {
   font-weight: normal !important;
@@ -570,7 +570,7 @@ section:not(.hero) .container {
 }
 .pgHeader .pgTitle h2 {
   font-size: 2.375rem;
-  color: #324b8a !important;
+  color: #444971 !important;
   margin: 0;
 }
 .pgHeader .pgTitle h2 span {
@@ -579,7 +579,7 @@ section:not(.hero) .container {
 .pgHeader .pgTitle h6 {
   font-weight: 400 !important;
   font-size: 1.375rem;
-  color: #324b8a;
+  color: #444971;
 }
 .pgHeader.centered {
   margin-left: auto;
@@ -675,8 +675,8 @@ section:not(.hero) .container {
   box-shadow: 0 0 1.25rem rgba(5, 7, 14, 0.1);
 }
 .searchModal .searchBar .form-control {
-  background-color: rgba(50, 75, 138, 0.06);
-  border: 0.0625rem solid #324b8a;
+  background-color: rgba(68, 73, 113, 0.06);
+  border: 0.0625rem solid #444971;
 }
 .searchModal .searchResult {
   list-style-type: none;
@@ -719,7 +719,7 @@ section:not(.hero) .container {
   cursor: pointer;
 }
 .searchModal .searchResult .resultItem:hover {
-  background-color: #324b8a;
+  background-color: #444971;
 }
 .searchModal .searchResult .resultItem:hover span,
 .searchModal .searchResult .resultItem:hover .deleteItem {
@@ -736,7 +736,7 @@ section:not(.hero) .container {
 }
 .searchModal .nrs h6 {
   font-size: 1.25rem;
-  color: #324b8a;
+  color: #444971;
   text-align: center;
   display: block;
 }
@@ -828,7 +828,7 @@ section:not(.hero) .container {
   left: 0;
   z-index: 2;
   content: "";
-  background-color: #324b8a;
+  background-color: #444971;
   padding: 1.25rem;
   width: 100%;
 }
@@ -865,7 +865,7 @@ section:not(.hero) .container {
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-link:hover {
   color: #ffffff;
-  background-color: #324b8a;
+  background-color: #444971;
 }
 
 .swiper {
@@ -955,7 +955,7 @@ section:not(.hero) .container {
   color: #05070e;
 }
 .navbar .dropdown-item:hover {
-  background-color: #324b8a;
+  background-color: #444971;
   color: #ffffff;
 }
 .navbar {
@@ -1110,7 +1110,7 @@ section:not(.hero) .container {
   background-color: #ffffff;
 }
 .hero .paginationContainer .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #415791;
+  background-color: #324b8a;
 }
 .hero .paginationContainer .navigation {
   gap: 1.25rem;
@@ -1162,6 +1162,13 @@ section:not(.hero) .container {
   mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center;
+}
+.sentence .gradient-image-mask.gradient-image-mask2 {
+  -webkit-mask-image: url("../media/ellora-logo.png");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url("../media/ellora-logo.png");
 }
 .sentence span {
   font-size: 8.25rem;
@@ -1227,7 +1234,7 @@ section:not(.hero) .container {
   z-index: 2;
 }
 .companyPresentation form {
-  background: rgba(50, 75, 138, 0.06);
+  background: rgba(68, 73, 113, 0.06);
   padding: 2.5rem;
   border: 0.625rem solid #ffffff;
 }
@@ -1261,7 +1268,7 @@ section:not(.hero) .container {
 .whyUs .whyUsCard .icon {
   min-width: 5rem;
   min-height: 5rem;
-  background: #324b8a;
+  background: #444971;
   border-radius: 50%;
 }
 .whyUs .whyUsCard .icon i {
@@ -1290,11 +1297,11 @@ section:not(.hero) .container {
   content: "";
   width: 100%;
   height: 50%;
-  background-color: #324b8a;
+  background-color: #444971;
   z-index: 0;
 }
 .customers .customerSwiper {
-  border: 5px solid #324b8a;
+  border: 5px solid #444971;
 }
 .customers .customerCard {
   overflow: hidden;
@@ -1358,7 +1365,7 @@ section:not(.hero) .container {
 }
 .stats .statCard i {
   font-size: 3.5rem;
-  color: #324b8a;
+  color: #444971;
 }
 .stats .statCard .statContent {
   text-align: center;
@@ -1506,30 +1513,47 @@ section:not(.hero) .container {
 }
 
 .specialAwards {
-  background-color: #05070e;
-  border-radius: 0;
+  background-color: #05070e !important;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.specialAwards video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 .specialAwards::after {
   position: absolute;
   top: 0;
   left: 0;
   content: "";
-  z-index: 0;
+  z-index: 1;
   width: 100%;
   height: 100%;
-  background: url(../media/award-bg.jpg) no-repeat center/cover fixed;
-  opacity: 0.5;
+  background: #444971;
+  mix-blend-mode: color;
 }
 .specialAwards .awardCard {
   padding: 1.25rem;
   background-color: rgba(255, 255, 255, 0.01);
-  backdrop-filter: blur(0.3125rem);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0.625rem);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.specialAwards .awardCard figure {
+  max-width: 12.5rem;
+  box-shadow: 0 20px 40px 0 rgba(226, 202, 6, 0.05);
 }
 .specialAwards .awardCard h6 {
   font-size: 1.375rem;
-  text-align: center;
   color: #ffffff;
+  max-width: 25rem;
 }
 
 .certificates .certificateCard {
@@ -1665,7 +1689,7 @@ section:not(.hero) .container {
   display: none;
 }
 .gridGallery figure .projectCaption span {
-  color: #324b8a;
+  color: #444971;
 }
 .gridGallery figure .projectCaption h4 {
   font-size: 1.25rem;
@@ -1836,7 +1860,7 @@ img.mfp-img {
 .blogDetails .pagination .paginationLink {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #324b8a;
+  color: #444971;
 }
 .blogDetails .pagination .titleLink {
   font-size: 0.875rem;
@@ -1862,7 +1886,7 @@ img.mfp-img {
   white-space: normal;
 }
 .career #customSelect .dropdown-item:hover {
-  background-color: #324b8a;
+  background-color: #444971;
   color: #ffffff;
 }
 .career .vacancyCard {
@@ -1982,12 +2006,12 @@ img.mfp-img {
   transition: all 0.3s ease-in-out;
 }
 #careerModal .careerForm .dropZone:hover {
-  border-color: #324b8a;
-  background: rgb(198.3319148936, 208.5978723404, 234.4680851064);
+  border-color: #444971;
+  background: rgb(202.4331491713, 204.7591160221, 223.3668508287);
 }
 #careerModal .careerForm .dropZone.active {
-  border-color: #324b8a;
-  background: rgb(187.1010638298, 199.4015957447, 230.3989361702);
+  border-color: #444971;
+  background: rgb(192.8812154696, 195.6298342541, 217.6187845304);
   transform: scale(0.99);
 }
 #careerModal .careerForm .dropZone.error {
@@ -1996,7 +2020,7 @@ img.mfp-img {
 }
 #careerModal .careerForm .zoneIcon {
   font-size: 1.125rem;
-  color: #324b8a;
+  color: #444971;
   display: block;
   margin-bottom: 0.625rem;
 }
@@ -2013,7 +2037,7 @@ img.mfp-img {
   font-size: 0.875rem;
   font-weight: 500;
   text-align: center;
-  color: #324b8a;
+  color: #444971;
   margin-top: 1.25rem;
 }
 
@@ -2078,7 +2102,7 @@ img.mfp-img {
 }
 .contactUs .addressCard .addressHeader {
   padding: 0.625rem 1.25rem;
-  background-color: #324b8a;
+  background-color: #444971;
 }
 .contactUs .addressCard .addressHeader h5 {
   font-size: 1.25rem;
@@ -2120,7 +2144,7 @@ img.mfp-img {
 .contactUs .contactCard .contactChip .icon {
   min-width: 4.375rem;
   min-height: 4.375rem;
-  background-color: #324b8a;
+  background-color: #444971;
   border-radius: 0;
 }
 .contactUs .contactCard .contactChip .icon i {
@@ -2147,7 +2171,7 @@ img.mfp-img {
 }
 
 footer {
-  background: #324b8a;
+  background: #444971;
   position: relative;
 }
 footer::after {
