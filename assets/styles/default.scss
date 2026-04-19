@@ -23,8 +23,7 @@ $cardShadow: rgba($dark, 0.1) 0rem 0.4375rem 1.8125rem 0rem;
     border: $commonBorder;
     border-radius: 0;
     max-height: 3.125rem;
-}+
-
+}
 
 ::-webkit-scrollbar-thumb:hover {
     background: darken($primary, 10%);
@@ -396,7 +395,7 @@ section:not(.hero) {
 
         h2 {
             font-size: $h2;
-            color: $primary !important;
+            color: $secondary !important;
             margin: 0;
 
             span {
@@ -700,7 +699,7 @@ section:not(.hero) {
     @extend .flex-start-center;
     flex-direction: column;
     height: 100%;
-    min-height: 40.625rem;
+    min-height: 32rem;
     padding: 0 !important;
 
     .breadcrumbContent {

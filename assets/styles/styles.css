@@ -73,7 +73,7 @@ textarea:not([rows]) {
   display: flex;
 }
 
-.flex-center, footer .footerContent .footerCard .social a, .contactUs .contactCard .contactChip .icon, .ventures .ventureCard figure, .cta .ctaCard .ctaContent .roundedBtn .icon, .cta .ctaCard .ctaContent .roundedBtn, .missionVision .mvCard .mvHeader .icon, .specialAwards, .projects .projectCard .projectHeader a, .stats .statCard, .whyUs .whyUsCard .icon, .collaborationCard, .hero .paginationContainer .navigation .swiper-button-next,
+.flex-center, footer .footerContent .footerCard .social a, .contactUs .contactCard .contactChip .icon, .ventures .ventureCard figure, .cta .ctaCard .ctaContent .roundedBtn .icon, .cta .ctaCard .ctaContent .roundedBtn, .missionVision .mvCard .mvHeader .icon, .usp .uspCard, .specialAwards, .projects .projectCard .projectHeader a, .stats .statCard, .whyUs .whyUsCard .icon, .collaborationCard, .hero .paginationContainer .navigation .swiper-button-next,
 .hero .paginationContainer .navigation .swiper-button-prev, .hero .paginationContainer .navigation, .hero .heroSlide, .navbar .circleLink,
 .navbar .circleBtn, .searchModal .nrs, .searchModal .searchResult .resultItem a .productIcon img, .videoBtn, .pgHeader.centered .pgTitle,
 .pgHeader.centered .pgSection, .pgHeader.centered {
@@ -94,13 +94,13 @@ textarea:not([rows]) {
   justify-content: space-around;
 }
 
-.flex-center-start, footer .copyright .copyrightContent .copyrightLinks, footer .footerContent .footerCard .social, footer .footerContent .footerCard .footerLogo, .contactUs .contactCard .contactChip, .career .vacancyCard .vacancyHeader .vacancyMeta, .projectDetails .projectContainer .projectThumb, .missionVision .mvCard .mvHeader, .specialAwards .awardCard, .testimonials .testimonialContainer .testimonialCard, .companyPresentation .presentationVideo, .searchModal .searchResult .resultItem a, .btnGroup {
+.flex-center-start, footer .copyright .copyrightContent .copyrightLinks, footer .footerContent .footerCard .social, footer .footerContent .footerCard .footerLogo, .contactUs .contactCard .contactChip, .career .vacancyCard .vacancyHeader .vacancyMeta, .projectDetails .projectContainer .projectThumb, .missionVision .mvCard .mvHeader, .testimonials .testimonialContainer .testimonialCard, .companyPresentation .presentationVideo, .searchModal .searchResult .resultItem a, .btnGroup {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.flex-center-end, .customers .customerCard::before {
+.flex-center-end, .strength .strengthCard .strengthContent, .customers .customerCard::before {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -244,7 +244,7 @@ textarea:not([rows]) {
   max-height: 3.125rem;
 }
 
-+ ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
   background: rgb(48.8397790055, 52.4309392265, 81.1602209945);
 }
 
@@ -570,7 +570,7 @@ section:not(.hero) .container {
 }
 .pgHeader .pgTitle h2 {
   font-size: 2.375rem;
-  color: #444971 !important;
+  color: #324b8a !important;
   margin: 0;
 }
 .pgHeader .pgTitle h2 span {
@@ -819,7 +819,7 @@ section:not(.hero) .container {
   filter: brightness(0.9) contrast(1.1);
   flex-direction: column;
   height: 100%;
-  min-height: 40.625rem;
+  min-height: 32rem;
   padding: 0 !important;
 }
 .breadcrumbs .breadcrumbContent {
@@ -939,9 +939,6 @@ section:not(.hero) .container {
 .navbar {
   background-color: #ffffff;
   box-shadow: 0 0.125rem 0.25rem rgba(5, 7, 14, 0.1);
-  /* ===============================
-     NAV LINKS
-  =============================== */
 }
 .navbar .nav-link,
 .navbar .dropdown-item {
@@ -951,17 +948,26 @@ section:not(.hero) .container {
   color: #1b2849;
   transition: color 0.3s ease;
 }
-.navbar .nav-link:hover:hover {
-  color: #05070e;
+.navbar .nav-link {
+  position: relative;
+}
+.navbar .nav-link:hover, .navbar .nav-link.active {
+  color: #324b8a;
+}
+.navbar .nav-link:hover::before, .navbar .nav-link.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 20%;
+  background: #06a25d;
 }
 .navbar .dropdown-item:hover {
   background-color: #444971;
   color: #ffffff;
-}
-.navbar {
-  /* ===============================
-     CIRCLE BUTTONS
-  =============================== */
 }
 .navbar .circleLink,
 .navbar .circleBtn {
@@ -1544,17 +1550,15 @@ section:not(.hero) .container {
   gap: 1.25rem;
   padding: 1.25rem;
   background-color: rgba(255, 255, 255, 0.01);
-  backdrop-filter: blur(0.625rem);
-  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .specialAwards .awardCard figure {
-  max-width: 12.5rem;
   box-shadow: 0 20px 40px 0 rgba(226, 202, 6, 0.05);
 }
 .specialAwards .awardCard h6 {
-  font-size: 1.375rem;
+  font-size: 1.25rem;
+  font-weight: 500;
   color: #ffffff;
-  max-width: 18.75rem;
+  text-align: center;
 }
 
 .certificates .certificateCard {
@@ -1589,7 +1593,6 @@ section:not(.hero) .container {
 
 .aboutUs .aboutImgContainer {
   overflow: hidden;
-  border: 0.625rem solid #ffffff;
 }
 .aboutUs .aboutImgContainer img {
   display: block;
@@ -1599,8 +1602,92 @@ section:not(.hero) .container {
      object-fit: cover;
 }
 
+.strength {
+  background: #444971;
+}
+.strength::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../media/purple-abstract.jpg) no-repeat center/cover fixed;
+  mix-blend-mode: soft-light;
+}
+.strength .swiper-pagination-bullet {
+  background: #ffffff !important;
+}
+.strength .strengthCarousel .swiper-slide {
+  max-width: 670px;
+}
+.strength .strengthCard {
+  position: relative;
+}
+.strength .strengthCard::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(180deg, transparent 20%, #05070e 100%);
+}
+.strength .strengthCard .strengthContent {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 5;
+  padding: 2.5rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.strength .strengthCard .strengthContent h3 {
+  font-size: 8.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1;
+}
+.strength .strengthCard .strengthContent span {
+  font-size: 2rem;
+  color: #ffffff;
+  display: block;
+}
+
+.usp .uspCard {
+  background-color: #ffffff;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 1.25rem;
+  height: 100%;
+  border: 0.0625rem solid #e4e4e4;
+  border-radius: 0;
+}
+.usp .uspCard img {
+  max-width: 6.25rem !important;
+  display: block;
+  margin: 0 auto 1.25rem;
+}
+.usp .uspCard .uspContent {
+  text-align: center;
+}
+.usp .uspCard .uspContent h3 {
+  font-size: 1.375rem;
+  color: #05070e;
+  margin: 0;
+}
+.usp .uspCard .uspContent h3::after {
+  content: "+";
+}
+
 .missionVision {
-  background-color: #324b8a !important;
+  background-color: #444971 !important;
 }
 .missionVision::after {
   position: absolute;
@@ -1611,7 +1698,6 @@ section:not(.hero) .container {
   width: 100%;
   height: 100%;
   background: url(../media/mission-bg.jpg) no-repeat center/cover fixed;
-  mix-blend-mode: overlay;
 }
 .missionVision .container {
   position: relative;
@@ -1706,7 +1792,7 @@ img.mfp-img {
 }
 
 .cta .ctaCard {
-  background-color: #324b8a;
+  background-color: #444971;
   border-radius: 0;
   overflow: hidden;
   position: relative;
@@ -1721,7 +1807,6 @@ img.mfp-img {
   width: 100%;
   height: 100%;
   background: url(../media/cta-bg.jpg) no-repeat center/cover fixed;
-  mix-blend-mode: overlay;
 }
 .cta .ctaCard .ctaContent {
   position: relative;
@@ -2352,6 +2437,12 @@ footer .copyright .copyrightContent .copyrightLinks {
 }
 
 @media (max-width: 991px) {
+  /* 28px */
+  /* 24px */
+  /* 22px */
+  /* 20px */
+  /* 18px */
+  /* 16px */
   .dropdown-submenu .dropdown-menu {
     left: 0;
     right: 0;
@@ -2365,7 +2456,7 @@ footer .copyright .copyrightContent .copyrightLinks {
     font-size: 0.875rem;
   }
   section:not(.hero) {
-    padding: 1.25rem 0 !important;
+    padding: 1.25rem !important;
   }
   .pgHeader {
     margin-bottom: 1.25rem;
@@ -2422,7 +2513,15 @@ footer .copyright .copyrightContent .copyrightLinks {
     padding: 1.25rem !important;
   }
   .breadcrumbs {
-    height: 100%;
+    margin-top: 4.625rem;
+    margin-bottom: 4.625rem;
+    min-height: 12rem;
+    max-height: 12rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .breadcrumbs .breadcrumbContent {
+    bottom: -4.375rem !important;
   }
   .breadcrumbs .breadcrumbContent h2 {
     font-size: 1.25rem;

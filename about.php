@@ -162,17 +162,112 @@ $currentPage = 'about';
         <section class="strength">
             <div class="container">
                 <div class="row">
-                    <div class="pgHeader">
+                    <div class="pgHeader darkSection">
                         <div class="pgTitle">
                             <h2>Our Strengths & USPs</h2>
                             <p>Delivering excellence through expertise, innovation, and unwavering commitment to quality
                                 and timely execution.</p>
                         </div>
-                    </div>                    
+                    </div>
+                    <div class="swiper strengthCarousel">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="strengthCard">
+                                    <figure>
+                                        <img src="assets/media/strengths/legacy.jpg" alt="38 years of Legacy" />
+                                    </figure>
+                                    <div class="strengthContent">
+                                        <h3>38</h3>
+                                        <span>Years of Legacy</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="strengthCard">
+                                    <figure>
+                                        <img src="assets/media/strengths/valuation.jpg" alt="2000 Cr Valuation" />
+                                    </figure>
+                                    <div class="strengthContent">
+                                        <h3>2000</h3>
+                                        <span>Cr Valuation</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="strengthCard">
+                                    <figure>
+                                        <img src="assets/media/strengths/projects.jpg" alt="550+ Projects" />
+                                    </figure>
+                                    <div class="strengthContent">
+                                        <h3>550+ </h3>
+                                        <span>Projects</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="strengthCard">
+                                    <figure>
+                                        <img src="assets/media/strengths/staff.jpg" alt="375+ Staff" />
+                                    </figure>
+                                    <div class="strengthContent">
+                                        <h3>375+</h3>
+                                        <span>Staff</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="stats">
+        <section class="usp">
+            <div class="container">
+                <div class="row">
+                    <div class="pgHeader">
+                        <div class="pgTitle">
+                            <h2>What Sets Us Apart</h2>
+                            <p>Our unique strengths and unwavering commitment to excellence make us the preferred choice
+                                for
+                                turnkey projects across various sectors.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 mb-4">
+                        <div class="uspCard">
+                            <img src="assets/media/usp/quality.svg" alt="Quality">
+                            <div class="uspContent">
+                                <h3>Quality</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 mb-4">
+                        <div class="uspCard">
+                            <img src="assets/media/usp/safety.svg" alt="Safety">
+                            <div class="uspContent">
+                                <h3>Safety</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 mb-4">
+                        <div class="uspCard">
+                            <img src="assets/media/usp/time.svg" alt="Timely Completion">
+                            <div class="uspContent">
+                                <h3>Timely Completion</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 mb-4">
+                        <div class="uspCard">
+                            <img src="assets/media/usp/contractor.svg" alt="Top 10 Contractors">
+                            <div class="uspContent">
+                                <h3>Top 10 Contractors</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="stats">
             <div class="container">
                 <div class="row stat">
                     <div class="pgHeader centered full">
@@ -218,7 +313,7 @@ $currentPage = 'about';
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="missionVision">
             <div class="container">
                 <div class="row">
