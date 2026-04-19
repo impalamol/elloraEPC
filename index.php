@@ -622,7 +622,7 @@ $currentPage = 'home';
                             <h2>Only company in India to Achieve these Special Awards </h2>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-6 col-xl-6 col-xxl-6 mb-3">
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
                         <div class="awardCard">
                             <figure>
                                 <img src="https://webcipher.co.in/ellora/assets/uploads/1776149373_award1.png"
@@ -631,7 +631,7 @@ $currentPage = 'home';
                             <h6>Global Safety Award (2021 -2022)</h6>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-6 col-xl-6 col-xxl-6 mb-3">
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
                         <div class="awardCard">
                             <figure>
                                 <img src="https://webcipher.co.in/ellora/assets/uploads/1776149373_award2.png"
@@ -640,7 +640,7 @@ $currentPage = 'home';
                             <h6>Global Safety Award (2022 -2023)</h6>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-6 col-xl-6 col-xxl-6 mb-3">
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
                         <div class="awardCard">
                             <figure>
                                 <img src="https://webcipher.co.in/ellora/assets/uploads/1776149373_award3.png"
@@ -649,7 +649,7 @@ $currentPage = 'home';
                             <h6>Global Safety Award (2023 -2024)</h6>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-6 col-xl-6 col-xxl-6 mb-3">
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 mb-3">
                         <div class="awardCard">
                             <figure>
                                 <img src="https://webcipher.co.in/ellora/assets/uploads/1776149373_award4.png"
