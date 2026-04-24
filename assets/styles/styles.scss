@@ -868,12 +868,132 @@
     // }
     .aboutImgContainer {
         overflow: hidden;
+        @extend .flex-center;
+        flex-direction: column;
+        height: 100%;
 
         img {
             display: block;
-            width: 100% !important;
-            height: 100% !important;
-            object-fit: cover;
+        }
+    }
+    .ourUsp {
+        @extend .flex-center;
+        gap: $commonUnit;
+        position: relative;
+        z-index: 2;
+        max-width: 40.625rem;
+        .uspCardContainer {
+            @extend .flex-center;
+            flex-direction: column;
+            flex: 1 1 0;
+            gap: $commonUnit;
+            min-width: 0;
+            .uspCard {
+                padding: $commonUnit * 2;
+                // max-width: 14.0625rem;
+                width: 100%;
+                @extend .flex-center;
+                // flex-grow: 1;
+                gap: $commonUnit;
+                flex-direction: column;
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+                border: 0.0625rem solid $white;
+                box-shadow: inset 1.25rem 2.5rem 3.125rem rgba(0, 0, 0, 0.01);
+                filter: drop-shadow(3.75rem -5rem 2.5rem rgba(0, 0, 0, 0.01));
+                -webkit-backdrop-filter: blur(0.625rem);
+                backdrop-filter: blur(0.625rem);
+                border-radius: 1rem;
+
+                .icon {
+                    @extend .flex-center;
+                    $wh: 7.5rem;
+                    width: $wh;
+                    height: $wh;
+                    border-radius: $commonUnit / 2;
+
+                    img {
+                        max-width: 9.375rem !important;
+                        display: block;
+                        transition: all 0.6s linear;
+                        animation: upDown 3s linear infinite forwards;
+                    }
+                }
+                h3 {
+                    font-size: $h6;
+                    font-weight: 600;
+                    color: $primary;
+                    margin: 0;
+                }
+
+                &.card1 .icon img {
+                    animation-delay: 1s;
+                }
+                &.card2 .icon img {
+                    animation-delay: 2s
+                }
+                &.card3 .icon img {
+                    animation-delay: 3s
+                }
+                &.card4 .icon img {
+                    animation-delay: 4s
+                }
+                // &.card5 .icon {
+                //     background-color: #264653;
+                // }
+                // &.card6 .icon {
+                //     background-color: #e76f51;
+                // }
+                @keyframes upDown {
+                    0%{
+                        transform: translateY(0px);
+                    }
+                    50%{
+                        transform: translateY(-0.625rem);
+                    }
+                    100%{
+                        transform: translateY(0px);
+                    }
+                    
+                }
+            }
+        }
+        .blurCircle {
+            position: absolute;
+            z-index: -1;
+            $wh: 25rem;
+            width: $wh;
+            height: $wh;
+            border-radius: 50%;
+            opacity: 0.3;
+            filter: blur(6.25rem);
+            &.circle1 {
+                background: $success;
+                top: -20%;
+                left: 0;
+                animation: slideLeft 20s ease-out 0s alternate infinite none running;
+            }
+            &.circle2 {
+                background: $warning;
+                bottom: -10%;
+                right: 0;
+                animation: slideRight 20s ease-out 0s alternate infinite none running;
+            }
+            @keyframes slideLeft {
+                from {
+                    left: 0%;
+                }
+                to {
+                    left: 50%;
+                }
+            }
+            @keyframes slideRight {
+                from {
+                    right: 0%;
+                }
+                to {
+                    right: 50%;
+                }
+            }
         }
     }
 }
