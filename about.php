@@ -39,39 +39,74 @@ $currentPage = 'about';
         </section>
         <section class="aboutUs">
             <div class="container">
-                <div class="row mb-5">
-                    <div class="col-12 col-lg-12 col-xl-7 col-xxl-7">
+                <div class="row">
+                    <div class="col-12 col-lg-12 col-xl-6 col-xxl-6">
                         <div class="pgHeader">
                             <div class="pgTitle">
                                 <h2>The EPC Powerhouse</h2>
                                 <h6>Defining India's Industrial Future.</h6>
-                                <p>Since its incorporation in 1988, Ellora has been a leading EPC contracting and
-                                    construction company, working closely with clients to accurately interpret their
-                                    visions and transform them into reality through innovative engineering solutions. As
-                                    a dedicated EPC and construction partner, Ellora ensures open communication
-                                    throughout every stage of project execution, providing regular updates on timelines
-                                    and maintaining strict adherence to budget.</p>
-                                <p>Ellora is a renowned top industrial contractor in India and turnkey project
-                                    contractor, undertaking a diverse range of projects including industrial,
-                                    commercial, residential, infrastructure, and interior works. We serve a discerning
-                                    clientele comprising corporate houses, government bodies, and private trusts with
-                                    reliable and comprehensive project execution.</p>
-                                <p>The cornerstone of Ellora’s success lies in its highly skilled team, backed by over
-                                    three decades of experience in an EPC commercial and industrial construction company
-                                    in India. This expert team is driven by a vision to deliver high-quality, timely,
-                                    and tailored solutions, reinforcing Ellora’s position as a preferred choice for
-                                    turnkey projects across multiple sectors.</p>
                             </div>
                         </div>
+                        <div class="aboutContent">
+                            <p>Since its incorporation in 1988, Ellora has been a leading EPC contracting and
+                                construction company, working closely with clients to accurately interpret their
+                                visions and transform them into reality through innovative engineering solutions. As
+                                a dedicated EPC and construction partner, Ellora ensures open communication
+                                throughout every stage of project execution, providing regular updates on timelines
+                                and maintaining strict adherence to budget.</p>
+                            <p>Ellora is a renowned top industrial contractor in India and turnkey project
+                                contractor, undertaking a diverse range of projects including industrial,
+                                commercial, residential, infrastructure, and interior works. We serve a discerning
+                                clientele comprising corporate houses, government bodies, and private trusts with
+                                reliable and comprehensive project execution.</p>
+                            <p>The cornerstone of Ellora’s success lies in its highly skilled team, backed by over
+                                three decades of experience in an EPC commercial and industrial construction company
+                                in India. This expert team is driven by a vision to deliver high-quality, timely,
+                                and tailored solutions, reinforcing Ellora’s position as a preferred choice for
+                                turnkey projects across multiple sectors.</p>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-12 col-xl-5 col-xxl-5">
-                        <div class="aboutImgContainer">
-                            <figure>
-                                <img src="assets/media/about.jpg" alt="About" class="aboutImg">
-                            </figure>
+                    <div class="col-12 col-lg-12 col-xl-6 col-xxl-6">
+                        <div class="ourUsp">
+                            <div class="uspCardContainer">
+                                <div class="uspCard card1">
+                                    <div class="icon"> <img src="assets/media/usp/quality.png" alt="Quality"></div>
+                                    <div class="uspContent">
+                                        <h3>Quality</h3>
+                                    </div>
+                                </div>
+                                <div class="uspCard card2">
+                                    <div class="icon"><img src="assets/media/usp/safety.png" alt="Safety"></div>
+                                    <div class="uspContent">
+                                        <h3>Safety</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uspCardContainer mt-5">
+                                <div class="uspCard card5">
+                                    <div class="icon"> <img src="assets/media/usp/time.png" alt="Timely Completion">
+                                    </div>
+                                    <div class="uspContent">
+                                        <h3>Timely Completion</h3>
+                                    </div>
+                                </div>
+                                <div class="uspCard card6">
+                                    <div class="icon"><img src="assets/media/usp/contractor.png"
+                                            alt="Top 10 Contractors"></div>
+                                    <div class="uspContent">
+                                        <h3>Top 10 Contractors</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blurCircle circle1"></div>
+                            <div class="blurCircle circle2"></div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="clients">
+            <div class="container">
                 <div class="row">
                     <div class="pgHeader">
                         <div class="pgTitle">
@@ -159,115 +194,7 @@ $currentPage = 'about';
                 </div>
             </div>
         </section>
-        <section class="strength">
-            <div class="container">
-                <div class="row">
-                    <div class="pgHeader darkSection">
-                        <div class="pgTitle">
-                            <h2>Our Strengths & USPs</h2>
-                            <p>Delivering excellence through expertise, innovation, and unwavering commitment to quality
-                                and timely execution.</p>
-                        </div>
-                    </div>
-                    <div class="swiper strengthCarousel">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="strengthCard">
-                                    <figure>
-                                        <img src="assets/media/strengths/legacy.jpg" alt="38 years of Legacy" />
-                                    </figure>
-                                    <div class="strengthContent">
-                                        <h3>38</h3>
-                                        <span>Years of Legacy</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="strengthCard">
-                                    <figure>
-                                        <img src="assets/media/strengths/valuation.jpg" alt="2000 Cr Valuation" />
-                                    </figure>
-                                    <div class="strengthContent">
-                                        <h3>2000</h3>
-                                        <span>Cr Valuation</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="strengthCard">
-                                    <figure>
-                                        <img src="assets/media/strengths/projects.jpg" alt="550+ Projects" />
-                                    </figure>
-                                    <div class="strengthContent">
-                                        <h3>550+ </h3>
-                                        <span>Projects</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="strengthCard">
-                                    <figure>
-                                        <img src="assets/media/strengths/staff.jpg" alt="375+ Staff" />
-                                    </figure>
-                                    <div class="strengthContent">
-                                        <h3>375+</h3>
-                                        <span>Staff</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="usp">
-            <div class="container">
-                <div class="row">
-                    <div class="pgHeader">
-                        <div class="pgTitle">
-                            <h2>What Sets Us Apart</h2>
-                            <p>Our unique strengths and unwavering commitment to excellence make us the preferred choice
-                                for
-                                turnkey projects across various sectors.</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 mb-4">
-                        <div class="uspCard">
-                            <img src="assets/media/usp/quality.svg" alt="Quality">
-                            <div class="uspContent">
-                                <h3>Quality</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 mb-4">
-                        <div class="uspCard">
-                            <img src="assets/media/usp/safety.svg" alt="Safety">
-                            <div class="uspContent">
-                                <h3>Safety</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 mb-4">
-                        <div class="uspCard">
-                            <img src="assets/media/usp/time.svg" alt="Timely Completion">
-                            <div class="uspContent">
-                                <h3>Timely Completion</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 mb-4">
-                        <div class="uspCard">
-                            <img src="assets/media/usp/contractor.svg" alt="Top 10 Contractors">
-                            <div class="uspContent">
-                                <h3>Top 10 Contractors</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- <section class="stats">
+        <section class="stats">
             <div class="container">
                 <div class="row stat">
                     <div class="pgHeader centered full">
@@ -313,7 +240,7 @@ $currentPage = 'about';
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <section class="missionVision">
             <div class="container">
                 <div class="row">

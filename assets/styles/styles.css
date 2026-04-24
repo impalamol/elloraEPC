@@ -73,7 +73,7 @@ textarea:not([rows]) {
   display: flex;
 }
 
-.flex-center, footer .footerContent .footerCard .social a, .contactUs .contactCard .contactChip .icon, .ventures .ventureCard figure, .cta .ctaCard .ctaContent .roundedBtn .icon, .cta .ctaCard .ctaContent .roundedBtn, .missionVision .mvCard .mvHeader .icon, .usp .uspCard, .specialAwards, .projects .projectCard .projectHeader a, .stats .statCard, .whyUs .whyUsCard .icon, .collaborationCard, .hero .paginationContainer .navigation .swiper-button-next,
+.flex-center, footer .footerContent .footerCard .social a, .contactUs .contactCard .contactChip .icon, .ventures .ventureCard figure, .cta .ctaCard .ctaContent .roundedBtn .icon, .cta .ctaCard .ctaContent .roundedBtn, .missionVision .mvCard .mvHeader .icon, .usp .uspCard, .aboutUs .ourUsp .uspCardContainer .uspCard .icon, .aboutUs .ourUsp .uspCardContainer .uspCard, .aboutUs .ourUsp .uspCardContainer, .aboutUs .ourUsp, .aboutUs .aboutImgContainer, .specialAwards, .projects .projectCard .projectHeader a, .stats .statCard, .whyUs .whyUsCard .icon, .collaborationCard, .hero .paginationContainer .navigation .swiper-button-next,
 .hero .paginationContainer .navigation .swiper-button-prev, .hero .paginationContainer .navigation, .hero .heroSlide, .navbar .circleLink,
 .navbar .circleBtn, .searchModal .nrs, .searchModal .searchResult .resultItem a .productIcon img, .videoBtn, .pgHeader.centered .pgTitle,
 .pgHeader.centered .pgSection, .pgHeader.centered {
@@ -1593,13 +1593,112 @@ section:not(.hero) .container {
 
 .aboutUs .aboutImgContainer {
   overflow: hidden;
+  flex-direction: column;
+  height: 100%;
 }
 .aboutUs .aboutImgContainer img {
   display: block;
-  width: 100% !important;
-  height: 100% !important;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+.aboutUs .ourUsp {
+  gap: 1.25rem;
+  position: relative;
+  z-index: 2;
+  max-width: 40.625rem;
+}
+.aboutUs .ourUsp .uspCardContainer {
+  flex-direction: column;
+  flex: 1 1 0;
+  gap: 1.25rem;
+  min-width: 0;
+}
+.aboutUs .ourUsp .uspCardContainer .uspCard {
+  padding: 2.5rem;
+  width: 100%;
+  gap: 1.25rem;
+  flex-direction: column;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  border: 0.0625rem solid #ffffff;
+  box-shadow: inset 1.25rem 2.5rem 3.125rem rgba(0, 0, 0, 0.01);
+  filter: drop-shadow(3.75rem -5rem 2.5rem rgba(0, 0, 0, 0.01));
+  backdrop-filter: blur(0.625rem);
+  border-radius: 1rem;
+}
+.aboutUs .ourUsp .uspCardContainer .uspCard .icon {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 0.625rem;
+}
+.aboutUs .ourUsp .uspCardContainer .uspCard .icon img {
+  max-width: 9.375rem !important;
+  display: block;
+  transition: all 0.6s linear;
+  animation: upDown 3s linear infinite forwards;
+}
+.aboutUs .ourUsp .uspCardContainer .uspCard h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #444971;
+  margin: 0;
+}
+.aboutUs .ourUsp .uspCardContainer .uspCard.card1 .icon img {
+  animation-delay: 1s;
+}
+.aboutUs .ourUsp .uspCardContainer .uspCard.card2 .icon img {
+  animation-delay: 2s;
+}
+.aboutUs .ourUsp .uspCardContainer .uspCard.card3 .icon img {
+  animation-delay: 3s;
+}
+.aboutUs .ourUsp .uspCardContainer .uspCard.card4 .icon img {
+  animation-delay: 4s;
+}
+@keyframes upDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-0.625rem);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.aboutUs .ourUsp .blurCircle {
+  position: absolute;
+  z-index: -1;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  opacity: 0.3;
+  filter: blur(6.25rem);
+}
+.aboutUs .ourUsp .blurCircle.circle1 {
+  background: #06a25d;
+  top: -20%;
+  left: 0;
+  animation: slideLeft 20s ease-out 0s alternate infinite none running;
+}
+.aboutUs .ourUsp .blurCircle.circle2 {
+  background: #e2ca06;
+  bottom: -10%;
+  right: 0;
+  animation: slideRight 20s ease-out 0s alternate infinite none running;
+}
+@keyframes slideLeft {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes slideRight {
+  from {
+    right: 0%;
+  }
+  to {
+    right: 50%;
+  }
 }
 
 .strength {
